@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="packt_post_before_save">
+        <observer name="packt_post_change_name" instance="Packt\HelloWorld\Observer\ChangeName"/>
+    </event>
+</config>

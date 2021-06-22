@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchemainstance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <!--        add bên trong-->
+        <add
+            id="Packt_HelloWorld::helloworld"
+            title="HelloWorld"
+            module="Packt_HelloWorld"
+            sortOrder="50"
+            parent="Magento_Backend::marketing"
+            resource="Packt_HelloWorld::helloworld"
+        />
+        <add
+            id="Packt_HelloWorld::index"
+            title="Helloworld Index"
+            module="Packt_HelloWorld"
+            sortOrder="55"
+            parent="Packt_HelloWorld::helloworld"
+            action="helloworld/index/"
+            resource="Packt_HelloWorld::index"
+        />
+
+        <add id="Packt_HelloWorld::menu" title="Custom Menu" module="Packt_HelloWorld" sortOrder="10"
+             resource="Packt_HelloWorld::menu"/>
+<!--        <add id="Packt_HelloWorld::create" title="Create" module="Packt_HelloWorld" sortOrder="10"-->
+<!--             parent="Packt_HelloWorld::menu" action="custommenu/create/index" resource="Packt_HelloWorld::create"/>-->
+        <add id="Packt_HelloWorld::delete" title="Delete" module="Packt_HelloWorld" sortOrder="20"
+             parent="Packt_HelloWorld::menu" action="custommenu/delete/index" resource="Packt_HelloWorld::delete"/>
+        <add id="Packt_HelloWorld::view" title="View" module="Packt_HelloWorld" sortOrder="30"
+             parent="Packt_HelloWorld::menu" action="custommenu/view/index" resource="Packt_HelloWorld::view"/>
+        <add
+            id="Packt_HelloWorld::subscription"
+            title="Subscriptions"
+            module="Packt_HelloWorld"
+            sortOrder="70"
+            parent="Packt_HelloWorld::helloworld"
+            action="helloworld/subscription/"
+            resource="Packt_HelloWorld::subscription"
+        />
+        <add
+            id="Packt_HelloWorld::component"
+            title="Components"
+            module="Packt_HelloWorld"
+            sortOrder="80"
+            parent="Packt_HelloWorld::helloworld"
+            action="helloworld/component/"
+            resource="Packt_HelloWorld::helloworld"
+        />
+    </menu>
+</config>
+

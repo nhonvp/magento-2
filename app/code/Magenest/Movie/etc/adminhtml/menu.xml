@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchemainstance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <!--        add bên trong-->
+        <!--        add ngoài thanh menu-->
+        <add
+            id="Magenest_Movie::create"
+            title="Movie" module="Magenest_Movie"
+            sortOrder="51"
+            resource="Magenest_Movie::movie"
+        />
+
+        <add
+            id="Magenest_Movie::view"
+            title="View Logs"
+            module="Packt_HelloWorld"
+            sortOrder="10" action="movie/post"
+            resource="Magenest_Movie::post"
+            parent="Magenest_Movie::create"
+        />
+        <add
+            id="Magenest_Movie::queue"
+            title="Queue List"
+            module="Packt_HelloWorld"
+            sortOrder="10" action="movie/post"
+            resource="Magenest_Movie::post"
+            parent="Magenest_Movie::create"
+        />
+        <add
+            id="Magenest_Movie::report"
+            title="Request Daily Report"
+            module="Packt_HelloWorld"
+            sortOrder="10" action="movie/post"
+            resource="Magenest_Movie::post"
+            parent="Magenest_Movie::create"
+        />
+        <add
+            id="Magenest_Movie::configuration"
+            title="Configuration"
+            module="Packt_HelloWorld"
+            sortOrder="10" action="movie/post"
+            resource="Magenest_Movie::post"
+            parent="Magenest_Movie::create"
+        />
+    </menu>
+</config>
+

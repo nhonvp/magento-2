@@ -1,0 +1,32 @@
+<?php
+$collection = $this->getMovieCollection();
+?>
+<table class="data table" id="test-data-table">
+    <caption class="table-caption">Vky Test Data</caption>
+    <thead>
+    <tr>
+        <th scope="col" class="col title">movie_id</th>
+        <th scope="col" class="col author">name</th>
+        <th scope="col" class="col content">description</th>
+        <th scope="col" class="col created_at">rating</th>
+        <th scope="col" class="col actions">director_id</th>
+        <th scope="col" class="col actions">actor_id</th>
+        <th scope="col" class="col actions">name_director_id</th>
+        <th scope="col" class="col actions">name_actor</th>
+    </tr>
+    </thead>
+    <tbody>
+    <?php foreach ($collection as $key => $data): ?>
+        <tr>
+            <td data-th="Title" class="col title"><?php echo $data->getMovie_id(); ?></td>
+            <td data-th="Name" class="col title"><?php echo $data->getName() ?></td>
+            <td data-th="Description" class="col author"><?php echo $data->getDescription(); ?></td>
+            <td data-th="Rating" class="col content"><?php echo $data->getRating(); ?></td>
+            <td data-th="Director" class="col created_at"><?php echo $data->getDirector_id(); ?></td>
+            <td data-th="Director" class="col created_at"><?php echo $data->getActor_id(); ?></td>
+            <td data-th="Director" class="col created_at"><?php echo $data->getName_director(); ?></td>
+            <td data-th="Director" class="col created_at"><?php echo $data->getName_actor(); ?></td>
+        </tr>
+    <?php endforeach; ?>
+    </tbody>
+</table>

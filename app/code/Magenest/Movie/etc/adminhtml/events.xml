@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="adminhtml_customer_prepare_save">
+        <observer name="customer_register_change_firstname" instance="Magenest\Movie\Observer\ChangeCustomerInfo"/>
+    </event>
+    <event name="admin_system_config_changed_section_general">
+        <observer name="custom_admin_system_config_changed_text" instance="Magenest\Movie\Observer\ChangeText"/>
+    </event>
+</config>
