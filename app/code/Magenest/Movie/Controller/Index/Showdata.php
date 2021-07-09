@@ -21,15 +21,8 @@ class Showdata extends Action
 
     public function execute()
     {
-//        $data = $this->MovieFactory->create()->getCollection();
-//        foreach ($data as $value) {
-//            echo "<pre>";
-//            print_r($value->getData());
-//            echo "</pre>";
-//        }
         $resultPage = $this->resultPageFactory->create();
         return $resultPage;
-
 
     }
 }

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="content">
+            <action method="setPageTitle">
+                <argument translate="true" name="title" xsi:type="string">Modal Test Page</argument>
+            </action>
+            <block class="Magenest\Movie\Block\Button" name="my_tab" template="Magenest_Movie::button.phtml">
+            </block>
+        </referenceBlock>
+    </body>
+</page>
