@@ -6,7 +6,7 @@
 namespace Magento\Newsletter\Controller\Adminhtml;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class NewsletterTemplateTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {

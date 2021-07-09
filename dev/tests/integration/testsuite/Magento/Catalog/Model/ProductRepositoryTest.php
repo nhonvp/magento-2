@@ -213,7 +213,7 @@ class ProductRepositoryTest extends TestCase
      * Test Product Repository can change(update) "sku" for given product.
      *
      * @magentoDataFixture Magento/Catalog/_files/product_simple.php
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @return void
      */
     public function testUpdateProductSku(): void
@@ -254,7 +254,7 @@ class ProductRepositoryTest extends TestCase
 
     /**
      * @magentoDataFixture Magento/Catalog/_files/product_simple_duplicated.php
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      *
      * @return void
      */

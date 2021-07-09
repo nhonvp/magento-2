@@ -50,7 +50,7 @@ class DiConfigFilesTest extends \PHPUnit\Framework\TestCase
         self::$_moduleGlobalFiles = $modulesReader->getConfigurationFiles('di.xml');
 
         //init module area configs
-        $areas = ['adminhtml', 'frontend'];
+        $areas = ['Adminhtml', 'frontend'];
         foreach ($areas as $area) {
             $moduleAreaFiles = $modulesReader->getConfigurationFiles($area . '/di.xml');
             self::$_moduleAreaFiles[$area] = $moduleAreaFiles;

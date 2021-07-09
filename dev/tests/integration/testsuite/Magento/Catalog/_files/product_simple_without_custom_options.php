@@ -16,7 +16,7 @@ $objectManager = \Magento\TestFramework\Helper\Bootstrap::getObjectManager();
 
 $productExtensionAttributesFactory = $objectManager->get(ProductExtensionInterfaceFactory::class);
 
-$adminWebsite = $objectManager->get(\Magento\Store\Api\WebsiteRepositoryInterface::class)->get('adminhtml');
+$adminWebsite = $objectManager->get(\Magento\Store\Api\WebsiteRepositoryInterface::class)->get('Adminhtml');
 /** @var  $tpExtensionAttributes */
 $tpExtensionAttributesFactory = $objectManager->get(ProductTierPriceExtensionFactory::class);
 $tierPriceExtensionAttributes1 = $tpExtensionAttributesFactory->create()

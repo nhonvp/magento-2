@@ -17,7 +17,7 @@ use Magento\Widget\Model\ResourceModel\Widget\Instance\CollectionFactory;
  * Test for delete widget controller
  *
  * @see \Magento\Widget\Controller\Adminhtml\Widget\Instance\Delete
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  */
 class DeleteTest extends AbstractBackendController
@@ -46,11 +46,11 @@ class DeleteTest extends AbstractBackendController
         $this->assertNotNull($widget->getInstanceId());
         $this->getRequest()->setMethod(Http::METHOD_POST);
         $this->getRequest()->setParams(['instance_id' => $widget->getInstanceId()]);
-        $this->dispatch('backend/adminhtml/widget_instance/delete');
+        $this->dispatch('backend/Adminhtml/widget_instance/delete');
         $this->assertSessionMessages(
             $this->containsEqual((string)__('The widget instance has been deleted.')),
             MessageInterface::TYPE_SUCCESS
         );
-        $this->assertRedirect($this->stringContains('adminhtml/widget_instance/index'));
+        $this->assertRedirect($this->stringContains('Adminhtml/widget_instance/index'));
     }
 }

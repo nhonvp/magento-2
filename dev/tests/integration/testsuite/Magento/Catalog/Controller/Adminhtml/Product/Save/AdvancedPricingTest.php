@@ -16,7 +16,7 @@ use Magento\TestFramework\TestCase\AbstractBackendController;
 /**
  * Test cases for set advanced price to product.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  */
 class AdvancedPricingTest extends AbstractBackendController

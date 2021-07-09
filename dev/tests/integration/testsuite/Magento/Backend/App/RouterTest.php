@@ -6,7 +6,7 @@
 namespace Magento\Backend\App;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
 class RouterTest extends \PHPUnit\Framework\TestCase
@@ -30,7 +30,7 @@ class RouterTest extends \PHPUnit\Framework\TestCase
     public function testRouterCanProcessRequestsWithProperPathInfo()
     {
         $request = $this->createMock(\Magento\Framework\App\Request\Http::class);
-        $request->expects($this->once())->method('getPathInfo')->willReturn('backend/adminhtml/dashboard');
+        $request->expects($this->once())->method('getPathInfo')->willReturn('backend/Adminhtml/dashboard');
 
         $this->assertInstanceOf(\Magento\Backend\Controller\Adminhtml\Dashboard::class, $this->model->match($request));
     }

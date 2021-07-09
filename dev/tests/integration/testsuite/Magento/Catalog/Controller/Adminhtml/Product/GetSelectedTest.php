@@ -9,7 +9,7 @@ declare(strict_types=1);
 namespace Magento\Catalog\Controller\Adminhtml\Product;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class GetSelectedTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {

@@ -53,7 +53,7 @@ class ProductIndexerTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDataFixture Magento/Bundle/_files/PriceCalculator/fixed_bundle_product.php
      * @magentoDataFixture Magento/Catalog/_files/indexer_catalog_category.php
      * @magentoDbIsolation disabled
@@ -87,7 +87,7 @@ class ProductIndexerTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDataFixture Magento/Bundle/_files/PriceCalculator/fixed_bundle_product.php
      * @magentoDataFixture Magento/Catalog/_files/indexer_catalog_category.php
      * @magentoDbIsolation disabled
@@ -131,7 +131,7 @@ class ProductIndexerTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDataFixture Magento/Bundle/_files/PriceCalculator/dynamic_bundle_product.php
      * @magentoDataFixture Magento/Bundle/_files/PriceCalculator/fixed_bundle_product.php
      * @magentoDataFixture Magento/Catalog/_files/indexer_catalog_category.php
@@ -164,7 +164,7 @@ class ProductIndexerTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDataFixture Magento/Bundle/_files/PriceCalculator/dynamic_bundle_product.php
      * @magentoDataFixture Magento/Bundle/_files/PriceCalculator/fixed_bundle_product.php
      * @magentoDataFixture Magento/Catalog/_files/indexer_catalog_category.php

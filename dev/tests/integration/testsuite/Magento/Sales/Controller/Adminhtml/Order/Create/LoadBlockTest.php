@@ -22,7 +22,7 @@ use Magento\TestFramework\TestCase\AbstractBackendController;
  *
  * @see \Magento\Sales\Controller\Adminhtml\Order\Create\LoadBlock
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  */
 class LoadBlockTest extends AbstractBackendController

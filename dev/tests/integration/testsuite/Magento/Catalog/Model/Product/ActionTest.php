@@ -41,7 +41,7 @@ class ActionTest extends \PHPUnit\Framework\TestCase
     /**
      * @magentoDataFixture Magento/Catalog/_files/product_simple.php
      * @magentoDataFixture Magento/Store/_files/core_second_third_fixturestore.php
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDbIsolation disabled
      * @magentoAppIsolation enabled
      */
@@ -86,7 +86,7 @@ class ActionTest extends \PHPUnit\Framework\TestCase
 
     /**
      * @magentoDataFixture Magento/ConfigurableProduct/_files/product_configurable.php
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @param string $status
      * @param string $productsCount
      * @dataProvider updateAttributesDataProvider

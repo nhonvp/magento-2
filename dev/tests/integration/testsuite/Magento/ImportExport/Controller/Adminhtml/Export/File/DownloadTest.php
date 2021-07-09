@@ -74,8 +74,8 @@ class DownloadTest extends AbstractBackendController
      * @param string $file
      * @dataProvider testExecuteProvider
      * @return void
-     * @magentoConfigFixture default_store adminhtml/security/use_form_key 1
-     * @magentoAppArea adminhtml
+     * @magentoConfigFixture default_store Adminhtml/security/use_form_key 1
+     * @magentoAppArea Adminhtml
      */
     public function testExecute($file): void
     {
@@ -91,7 +91,7 @@ class DownloadTest extends AbstractBackendController
         $request->setParam(BackendUrl::SECRET_KEY_PARAM_NAME, $this->backendUrl->getSecretKey());
 
         ob_start();
-        $this->dispatch('backend/adminhtml/export_file/download');
+        $this->dispatch('backend/Adminhtml/export_file/download');
         ob_end_clean();
 
         $contentType = $this->getResponse()->getHeader('content-type');

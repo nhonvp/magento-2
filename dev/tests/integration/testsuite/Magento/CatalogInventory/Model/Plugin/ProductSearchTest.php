@@ -11,7 +11,7 @@ namespace Magento\CatalogInventory\Model\Plugin;
 use Magento\CatalogInventory\Api\Data\StockItemInterface;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class ProductSearchTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {

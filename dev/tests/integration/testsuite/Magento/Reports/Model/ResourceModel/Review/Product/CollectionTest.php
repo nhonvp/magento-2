@@ -6,7 +6,7 @@
 namespace Magento\Reports\Model\ResourceModel\Review\Product;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class CollectionTest extends \PHPUnit\Framework\TestCase
 {

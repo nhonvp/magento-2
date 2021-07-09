@@ -14,7 +14,7 @@ use Magento\TestFramework\Bootstrap;
  * \Magento\Integration\Controller\Adminhtml\Integration
  *
  * @magentoDataFixture Magento/Integration/_files/integration_all_permissions.php
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  */
 class IntegrationTest extends \Magento\TestFramework\TestCase\AbstractBackendController
@@ -39,7 +39,7 @@ class IntegrationTest extends \Magento\TestFramework\TestCase\AbstractBackendCon
      */
     public function testIndexAction()
     {
-        $this->dispatch('backend/adminhtml/integration/index');
+        $this->dispatch('backend/Adminhtml/integration/index');
         $response = $this->getResponse()->getBody();
 
         $this->assertStringContainsString('Integrations', $response);
@@ -57,7 +57,7 @@ class IntegrationTest extends \Magento\TestFramework\TestCase\AbstractBackendCon
      */
     public function testNewAction()
     {
-        $this->dispatch('backend/adminhtml/integration/new');
+        $this->dispatch('backend/Adminhtml/integration/new');
         $response = $this->getResponse()->getBody();
 
         $this->assertEquals('new', $this->getRequest()->getActionName());
@@ -79,7 +79,7 @@ class IntegrationTest extends \Magento\TestFramework\TestCase\AbstractBackendCon
     {
         $integrationId = $this->_integration->getId();
         $this->getRequest()->setParam('id', $integrationId);
-        $this->dispatch('backend/adminhtml/integration/edit');
+        $this->dispatch('backend/Adminhtml/integration/edit');
         $response = $this->getResponse()->getBody();
         $saveLink = 'integration/save/';
 
@@ -124,12 +124,12 @@ class IntegrationTest extends \Magento\TestFramework\TestCase\AbstractBackendCon
                 'current_password' => Bootstrap::ADMIN_PASSWORD,
             ]
         );
-        $this->dispatch('backend/adminhtml/integration/save');
+        $this->dispatch('backend/Adminhtml/integration/save');
         $this->assertSessionMessages(
             $this->equalTo(["The integration '{$integrationName}' has been saved."]),
             \Magento\Framework\Message\MessageInterface::TYPE_SUCCESS
         );
-        $this->assertRedirect($this->stringContains('backend/adminhtml/integration/index/'));
+        $this->assertRedirect($this->stringContains('backend/Adminhtml/integration/index/'));
     }
 
     /**
@@ -150,12 +150,12 @@ class IntegrationTest extends \Magento\TestFramework\TestCase\AbstractBackendCon
                 'current_password' => Bootstrap::ADMIN_PASSWORD,
             ]
         );
-        $this->dispatch('backend/adminhtml/integration/save');
+        $this->dispatch('backend/Adminhtml/integration/save');
 
         $this->assertSessionMessages(
             $this->equalTo(["The integration '{$integrationName}' has been saved."]),
             \Magento\Framework\Message\MessageInterface::TYPE_SUCCESS
         );
-        $this->assertRedirect($this->stringContains('backend/adminhtml/integration/index/'));
+        $this->assertRedirect($this->stringContains('backend/Adminhtml/integration/index/'));
     }
 }

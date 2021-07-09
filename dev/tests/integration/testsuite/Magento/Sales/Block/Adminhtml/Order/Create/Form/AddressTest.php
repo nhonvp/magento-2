@@ -25,7 +25,7 @@ use PHPUnit\Framework\MockObject\MockObject as MockObject;
 
 /**
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class AddressTest extends \PHPUnit\Framework\TestCase
 {

@@ -16,7 +16,7 @@ use Magento\TestFramework\TestCase\AbstractBackendController;
 /**
  * Tests for configure quote item in customer shopping cart.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class ConfigureTest extends AbstractBackendController
 {

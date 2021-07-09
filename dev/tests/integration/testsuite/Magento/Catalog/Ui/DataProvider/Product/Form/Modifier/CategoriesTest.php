@@ -10,7 +10,7 @@ use Magento\Catalog\Model\Product;
 use Magento\TestFramework\Helper\CacheCleaner;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDataFixture Magento/Catalog/_files/categories.php
  * @magentoDbIsolation enabled
  * @magentoAppIsolation enabled
@@ -28,7 +28,7 @@ class CategoriesTest extends \PHPUnit\Framework\TestCase
         $registry = $objectManager->get(\Magento\Framework\Registry::class);
         /** @var $store \Magento\Store\Model\Store */
         $store = $objectManager->create(\Magento\Store\Model\Store::class);
-        $store->load('adminhtml');
+        $store->load('Adminhtml');
         $registry->register('current_store', $store);
         $product = $objectManager->create(Product::class);
         $registry->register('current_product', $product);

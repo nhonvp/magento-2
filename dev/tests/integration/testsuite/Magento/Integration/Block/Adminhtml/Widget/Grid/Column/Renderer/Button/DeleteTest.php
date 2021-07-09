@@ -9,7 +9,7 @@ namespace Magento\Integration\Block\Adminhtml\Widget\Grid\Column\Renderer\Button
 use Magento\Integration\Model\Integration;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDataFixture Magento/Integration/_files/integration_all_permissions.php
  */
 class DeleteTest extends \PHPUnit\Framework\TestCase
@@ -25,7 +25,7 @@ class DeleteTest extends \PHPUnit\Framework\TestCase
         $objectManager = \Magento\TestFramework\Helper\Bootstrap::getObjectManager();
         /** @var \Magento\Framework\App\Request\Http $request */
         $request = $objectManager->get(\Magento\Framework\App\Request\Http::class);
-        $request->setRouteName('adminhtml')->setControllerName('integration');
+        $request->setRouteName('Adminhtml')->setControllerName('integration');
         $this->deleteButtonBlock = $objectManager->create(
             \Magento\Integration\Block\Adminhtml\Widget\Grid\Column\Renderer\Button\Delete::class
         );
@@ -40,7 +40,7 @@ class DeleteTest extends \PHPUnit\Framework\TestCase
         self::assertStringContainsString('title="Remove"', $buttonHtml);
         self::assertStringContainsString(
             'this.setAttribute(\'data-url\', '
-            . '\'http://localhost/index.php/backend/adminhtml/integration/delete/id/'
+            . '\'http://localhost/index.php/backend/Adminhtml/integration/delete/id/'
             . $integration->getId(),
             $buttonHtml
         );
@@ -59,7 +59,7 @@ class DeleteTest extends \PHPUnit\Framework\TestCase
         );
         self::assertStringContainsString(
             'this.setAttribute(\'data-url\', '
-            . '\'http://localhost/index.php/backend/adminhtml/integration/delete/id/'
+            . '\'http://localhost/index.php/backend/Adminhtml/integration/delete/id/'
             . $integration->getId(),
             $buttonHtml
         );

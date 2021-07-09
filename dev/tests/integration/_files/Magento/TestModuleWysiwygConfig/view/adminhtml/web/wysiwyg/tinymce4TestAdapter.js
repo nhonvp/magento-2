@@ -6,7 +6,7 @@
 /* global popups, tinyMceEditors, MediabrowserUtility, Base64 */
 /* eslint-disable strict */
 define([
-    'mage/adminhtml/wysiwyg/tiny_mce/tinymce4Adapter'
+    'mage/Adminhtml/wysiwyg/tiny_mce/tinymce4Adapter'
 ], function (tinyMCE4) {
     'use strict';
 

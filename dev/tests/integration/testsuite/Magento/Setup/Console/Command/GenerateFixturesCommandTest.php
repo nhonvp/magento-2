@@ -107,7 +107,7 @@ class GenerateFixturesCommandTest extends \Magento\TestFramework\Indexer\TestCas
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoAppIsolation enabled
      */
     public function testExecute()

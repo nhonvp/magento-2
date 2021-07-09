@@ -16,7 +16,7 @@ class SkinFilesTest extends \PHPUnit\Framework\TestCase
         $assetRepo = \Magento\TestFramework\Helper\Bootstrap::getObjectmanager()
             ->get(\Magento\Framework\View\Asset\Repository::class);
         $this->assertFileExists(
-            $assetRepo->createAsset($skinImage, ['area' => 'adminhtml'])->getSourceFile()
+            $assetRepo->createAsset($skinImage, ['area' => 'Adminhtml'])->getSourceFile()
         );
     }
 

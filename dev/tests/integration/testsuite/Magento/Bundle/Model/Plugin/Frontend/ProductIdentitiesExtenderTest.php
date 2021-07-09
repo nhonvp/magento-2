@@ -57,10 +57,10 @@ class ProductIdentitiesExtenderTest extends TestCase
     }
 
     /**
-     * Check plugin won't add children ids to bundle product identities in adminhtml area.
+     * Check plugin won't add children ids to bundle product identities in Adminhtml area.
      *
      * @magentoDataFixture Magento/Bundle/_files/product.php
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @return void
      */
     public function testGetIdentitiesForBundleProductInAdminArea(): void

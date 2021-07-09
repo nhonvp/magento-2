@@ -267,7 +267,7 @@ class QuoteRepositoryTest extends TestCase
         $expectedExtensionAttributes = [
             'firstname' => 'firstname',
             'lastname' => 'lastname',
-            'email' => 'adminhtml@example.com',
+            'email' => 'Adminhtml@example.com',
         ];
         $items = $searchResult->getItems();
         $actualQuote = array_pop($items);

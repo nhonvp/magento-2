@@ -7,7 +7,7 @@ namespace Magento\UrlRewrite\Block\Catalog\Category;
 
 /**
  * Test for \Magento\UrlRewrite\Block\Catalog\Category\Edit
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class EditTest extends \PHPUnit\Framework\TestCase
 {

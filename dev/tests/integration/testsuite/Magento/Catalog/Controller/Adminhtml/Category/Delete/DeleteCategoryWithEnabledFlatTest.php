@@ -19,7 +19,7 @@ use Magento\TestFramework\TestCase\AbstractBackendController;
 /**
  * Test cases related to delete category with enabled category flat.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation disabled
  */
 class DeleteCategoryWithEnabledFlatTest extends AbstractBackendController

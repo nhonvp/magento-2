@@ -6,7 +6,7 @@
 use Magento\TestFramework\Workaround\Override\Fixture\Resolver;
 
 \Magento\TestFramework\Helper\Bootstrap::getObjectManager()->get(\Magento\Framework\App\AreaList::class)
-    ->getArea('adminhtml')
+    ->getArea('Adminhtml')
     ->load(\Magento\Framework\App\Area::PART_CONFIG);
 Resolver::getInstance()->requireDataFixture('Magento/Catalog/_files/product_simple.php');
 Resolver::getInstance()->requireDataFixture('Magento/Catalog/_files/product_simple_duplicated.php');

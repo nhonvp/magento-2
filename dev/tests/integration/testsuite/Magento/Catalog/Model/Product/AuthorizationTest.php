@@ -20,7 +20,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Verify additional authorization for product operations
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class AuthorizationTest extends TestCase
 {

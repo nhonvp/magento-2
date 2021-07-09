@@ -25,7 +25,7 @@ class InfoTest extends \PHPUnit\Framework\TestCase
      *
      * @magentoConfigFixture current_store payment/banktransfer/title Bank Method Title
      * @magentoConfigFixture current_store payment/checkmo/title Checkmo Title Of The Method
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testGetChildPdfAsArray()
     {

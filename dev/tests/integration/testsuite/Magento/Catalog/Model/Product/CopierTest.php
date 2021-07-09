@@ -23,7 +23,7 @@ class CopierTest extends TestCase
      * Case when url_key is set for store view and has equal value to default store.
      *
      * @magentoDataFixture Magento/Catalog/_files/product_simple_multistore_with_url_key.php
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testProductCopyWithExistingUrlKey()
     {

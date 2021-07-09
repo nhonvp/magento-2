@@ -83,7 +83,7 @@ class InstallCommandTest extends TestCase
             '--' . SetupConfigOptionsList::INPUT_KEY_DB_HOST => 'localhost',
             '--' . SetupConfigOptionsList::INPUT_KEY_DB_NAME => 'magento',
             '--' . SetupConfigOptionsList::INPUT_KEY_DB_USER => 'root',
-            '--' . BackendConfigOptionsList::INPUT_KEY_BACKEND_FRONTNAME => 'adminhtml',
+            '--' . BackendConfigOptionsList::INPUT_KEY_BACKEND_FRONTNAME => 'Adminhtml',
             '--' . StoreConfigurationDataMapper::KEY_BASE_URL => 'http://127.0.0.1/magento2ce/',
             '--' . StoreConfigurationDataMapper::KEY_LANGUAGE => 'en_US',
             '--' . StoreConfigurationDataMapper::KEY_TIMEZONE => 'America/Chicago',
@@ -244,7 +244,7 @@ class InstallCommandTest extends TestCase
     }
 
     /**
-     * Get list of options for adminhtml user
+     * Get list of options for Adminhtml user
      *
      * @return array
      */

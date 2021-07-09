@@ -10,7 +10,7 @@ namespace Magento\Backend\Controller\Adminhtml;
 use Magento\TestFramework\TestCase\AbstractBackendController;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class ConsecutiveCallTest extends AbstractBackendController
 {
@@ -19,7 +19,7 @@ class ConsecutiveCallTest extends AbstractBackendController
      */
     public function testConsecutiveCallShouldNotFail()
     {
-        $this->dispatch('backend/adminhtml/auth/login');
-        $this->dispatch('backend/adminhtml/auth/login');
+        $this->dispatch('backend/Adminhtml/auth/login');
+        $this->dispatch('backend/Adminhtml/auth/login');
     }
 }

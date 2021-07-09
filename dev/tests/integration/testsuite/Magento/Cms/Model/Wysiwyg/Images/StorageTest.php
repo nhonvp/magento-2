@@ -127,7 +127,7 @@ class StorageTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @return void
      */
     public function testGetThumbsPath(): void
@@ -306,7 +306,7 @@ class StorageTest extends \PHPUnit\Framework\TestCase
      * @param string $expectedUrl
      * @return void
      * @magentoAppIsolation enabled
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @dataProvider getThumbnailUrlDataProvider
      */
     public function testGetThumbnailUrl(string $directory, string $filename, string $expectedUrl): void

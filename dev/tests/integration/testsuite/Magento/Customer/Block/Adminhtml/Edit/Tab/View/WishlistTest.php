@@ -17,7 +17,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Tests for customer wish list tab.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation disabled
  */
 class WishlistTest extends TestCase

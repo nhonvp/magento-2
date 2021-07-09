@@ -6,7 +6,7 @@
 namespace Magento\Catalog\Block\Adminhtml\Product\Edit\Tab\Options\Type;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class SelectTest extends \PHPUnit\Framework\TestCase
 {

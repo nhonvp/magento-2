@@ -16,7 +16,7 @@ use PHPUnit\Framework\TestCase;
  * Checks customer products reviews tab
  *
  * @see \Magento\Review\Block\Adminhtml\Edit\Tab\Reviews
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class ReviewsTest extends TestCase
 {

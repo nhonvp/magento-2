@@ -24,7 +24,7 @@ class ControllerAclTest extends \PHPUnit\Framework\TestCase
     /**
      * Default value from the AbstractResource.
      */
-    const DEFAULT_BACKEND_RESOURCE = 'Magento_Backend::adminhtml';
+    const DEFAULT_BACKEND_RESOURCE = 'Magento_Backend::Adminhtml';
 
     /**
      * Several backend controllers should be accessible always, and can't be closed by ACL.
@@ -62,7 +62,7 @@ class ControllerAclTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Test ACL in the adminhtml area by various assertions.
+     * Test ACL in the Adminhtml area by various assertions.
      */
     public function testAcl()
     {
@@ -242,7 +242,7 @@ class ControllerAclTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Try to get reflection for a adminhtml html controller class by it path.
+     * Try to get reflection for a Adminhtml html controller class by it path.
      *
      * @param string  $controllerPath
      * @return \ReflectionClass

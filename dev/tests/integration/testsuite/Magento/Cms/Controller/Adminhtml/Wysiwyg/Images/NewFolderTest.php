@@ -11,7 +11,7 @@ use Magento\Framework\App\Filesystem\DirectoryList;
 /**
  * Test for \Magento\Cms\Controller\Adminhtml\Wysiwyg\Images\NewFolder class.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class NewFolderTest extends \PHPUnit\Framework\TestCase
 {

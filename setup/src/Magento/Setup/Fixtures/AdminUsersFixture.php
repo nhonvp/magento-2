@@ -15,10 +15,10 @@ use Magento\User\Model\ResourceModel\User\CollectionFactory as UserCollectionFac
 use Magento\User\Model\UserFactory;
 
 /**
- * Generate adminhtml users
+ * Generate Adminhtml users
  *
  * Support the following format:
- * <!-- Number of adminhtml users -->
+ * <!-- Number of Adminhtml users -->
  * <admin_users>{int}</admin_users>
  */
 class AdminUsersFixture extends Fixture
@@ -94,10 +94,10 @@ class AdminUsersFixture extends Fixture
         for ($i = $adminUsersStartIndex; $i <= $adminUsersNumber; $i++) {
             $adminUser = $this->userFactory->create();
             $adminUser->setRoleId($role->getId())
-                ->setEmail('adminhtml' . $i . '@example.com')
+                ->setEmail('Adminhtml' . $i . '@example.com')
                 ->setFirstName('Firstname')
                 ->setLastName('Lastname')
-                ->setUserName('adminhtml' . $i)
+                ->setUserName('Adminhtml' . $i)
                 ->setPassword('123123q')
                 ->setIsActive(1);
             $adminUser->save();
@@ -109,7 +109,7 @@ class AdminUsersFixture extends Fixture
      */
     public function getActionTitle()
     {
-        return 'Generating adminhtml users';
+        return 'Generating Adminhtml users';
     }
 
     /**

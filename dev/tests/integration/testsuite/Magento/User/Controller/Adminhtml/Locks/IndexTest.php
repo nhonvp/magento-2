@@ -9,7 +9,7 @@ namespace Magento\User\Controller\Adminhtml\Locks;
 /**
  * Locked users page test.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class IndexTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {
@@ -21,7 +21,7 @@ class IndexTest extends \Magento\TestFramework\TestCase\AbstractBackendControlle
      */
     public function testIndexAction()
     {
-        $this->dispatch('backend/adminhtml/locks/index');
+        $this->dispatch('backend/Adminhtml/locks/index');
 
         $body = $this->getResponse()->getBody();
         $this->assertStringContainsString('<h1 class="page-title">Locked Users</h1>', $body);

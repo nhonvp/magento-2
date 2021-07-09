@@ -1,0 +1,15 @@
+{
+    "promo_notification": {
+        "column": {
+            "entity_id": true,
+            "name": true,
+            "status": true,
+            "short_description": true,
+            "redirect_url": true,
+            "created_at": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

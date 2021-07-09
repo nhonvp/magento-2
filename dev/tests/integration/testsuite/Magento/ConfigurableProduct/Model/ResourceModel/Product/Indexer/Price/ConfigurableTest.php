@@ -24,7 +24,7 @@ use Magento\Catalog\Api\Data\ProductInterface;
  * Test reindex of configurable products
  *
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class ConfigurableTest extends TestCase
 {

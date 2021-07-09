@@ -14,7 +14,7 @@ use Magento\TestFramework\Helper\Bootstrap;
 /**
  * Test class for \Magento\Integration\Block\Adminhtml\Integration\Edit
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class EditTest extends \PHPUnit\Framework\TestCase
 {

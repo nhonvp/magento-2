@@ -23,10 +23,10 @@ use Magento\Framework\Serialize\SerializerInterface;
 use Magento\TestFramework\TestCase\AbstractBackendController;
 
 /**
- * Tests for configurable product adminhtml save.
+ * Tests for configurable product Adminhtml save.
  *
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  */
 class ProductTest extends AbstractBackendController

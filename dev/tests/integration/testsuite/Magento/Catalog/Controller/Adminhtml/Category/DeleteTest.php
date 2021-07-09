@@ -14,7 +14,7 @@ use Magento\TestFramework\TestCase\AbstractBackendController;
 /**
  * Test for class \Magento\Catalog\Controller\Adminhtml\Category\Delete
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class DeleteTest extends AbstractBackendController
 {

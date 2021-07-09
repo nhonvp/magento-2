@@ -87,7 +87,7 @@ class CustomerRegistryTest extends TestCase
 
     /**
      * @magentoDataFixture Magento/Customer/_files/customer.php
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      *
      * @return void
      */
@@ -128,7 +128,7 @@ class CustomerRegistryTest extends TestCase
 
     /**
      * @magentoDataFixture Magento/Customer/_files/customer.php
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      *
      * @return void
      */
@@ -145,7 +145,7 @@ class CustomerRegistryTest extends TestCase
 
     /**
      * @magentoDataFixture Magento/Customer/_files/customer.php
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      *
      * @return void
      */

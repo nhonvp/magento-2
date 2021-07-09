@@ -17,7 +17,7 @@ use PHPUnit\Framework\TestCase;
 
 /**
  * @magentoDbIsolation disabled
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class CustomerManagementTest extends TestCase
 {

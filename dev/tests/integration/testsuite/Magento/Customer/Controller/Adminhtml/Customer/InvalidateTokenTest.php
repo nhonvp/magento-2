@@ -15,7 +15,7 @@ use Magento\TestFramework\TestCase\AbstractBackendController;
 /**
  * Invalidate customer token tests.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  */
 class InvalidateTokenTest extends AbstractBackendController

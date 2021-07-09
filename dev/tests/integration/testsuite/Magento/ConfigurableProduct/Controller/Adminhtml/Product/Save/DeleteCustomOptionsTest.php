@@ -13,7 +13,7 @@ use Magento\Catalog\Controller\Adminhtml\Product\Save\DeleteCustomOptionsTest as
  * Base test cases for delete configurable product custom option with type "field".
  * Option deleting via product controller action save.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  * @magentoDataFixture Magento/ConfigurableProduct/_files/product_configurable.php
  */

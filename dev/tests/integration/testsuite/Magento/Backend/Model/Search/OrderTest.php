@@ -9,7 +9,7 @@ namespace Magento\Backend\Model\Search;
 use Magento\TestFramework\Helper\Bootstrap;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDataFixture Magento/Sales/_files/order.php
  * @magentoDataFixture Magento/Sales/_files/order_shipping_address_different_to_billing.php
  */

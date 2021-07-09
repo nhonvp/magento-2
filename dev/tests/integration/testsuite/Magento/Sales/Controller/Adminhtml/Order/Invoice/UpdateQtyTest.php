@@ -14,7 +14,7 @@ use Magento\TestFramework\Helper\Xpath;
  * Class tests invoice items qty update.
  *
  * @magentoDbIsolation enabled
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class UpdateQtyTest extends AbstractInvoiceControllerTest
 {

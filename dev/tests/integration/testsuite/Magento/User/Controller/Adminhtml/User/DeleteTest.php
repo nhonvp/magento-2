@@ -7,7 +7,7 @@ namespace Magento\User\Controller\Adminhtml\User;
 
 /**
  * Test class for \Magento\User\Controller\Adminhtml\User\Delete
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class DeleteTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {
@@ -24,7 +24,7 @@ class DeleteTest extends \Magento\TestFramework\TestCase\AbstractBackendControll
         $user->load(1);
         $this->getRequest()->setPostValue('user_id', $user->getId() . '_suffix_ignored_in_mysql_casting_to_int');
 
-        $this->dispatch('backend/adminhtml/user/delete');
+        $this->dispatch('backend/Adminhtml/user/delete');
         $message = $messageManager->getMessages()->getLastAddedMessage()->getText();
         $this->assertEquals('You cannot delete your own account.', $message);
     }

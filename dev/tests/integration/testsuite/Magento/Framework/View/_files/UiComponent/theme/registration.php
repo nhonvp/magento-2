@@ -6,4 +6,4 @@
 
 use Magento\Framework\Component\ComponentRegistrar;
 
-ComponentRegistrar::register(ComponentRegistrar::THEME, 'adminhtml/FrameworkViewUiComponent/default', __DIR__);
+ComponentRegistrar::register(ComponentRegistrar::THEME, 'Adminhtml/FrameworkViewUiComponent/default', __DIR__);

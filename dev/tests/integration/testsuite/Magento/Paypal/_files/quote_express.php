@@ -3,7 +3,7 @@
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
-\Magento\TestFramework\Helper\Bootstrap::getInstance()->loadArea('adminhtml');
+\Magento\TestFramework\Helper\Bootstrap::getInstance()->loadArea('Adminhtml');
 \Magento\TestFramework\Helper\Bootstrap::getObjectManager()->get(
     \Magento\Framework\App\Config\MutableScopeConfigInterface::class
 )->setValue(
@@ -93,4 +93,4 @@ $quote->getPayment()->setMethod(\Magento\Paypal\Model\Config::METHOD_WPS_EXPRESS
 $quoteRepository = $objectManager->get(\Magento\Quote\Api\CartRepositoryInterface::class);
 $quoteRepository->save($quote);
 $quote = $quoteRepository->get($quote->getId());
-$quote->setCustomerEmail('adminhtml@example.com');
+$quote->setCustomerEmail('Adminhtml@example.com');

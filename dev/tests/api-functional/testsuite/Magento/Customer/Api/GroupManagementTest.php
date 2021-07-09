@@ -76,7 +76,7 @@ class GroupManagementTest extends WebapiAbstract
     public function getDefaultGroupDataProvider()
     {
         return [
-            'adminhtml' => [
+            'Adminhtml' => [
                 0,
                 [
                     CustomerGroup::ID => 1,

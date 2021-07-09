@@ -6,7 +6,7 @@
 namespace Magento\ImportExport\Controller\Adminhtml;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class ExportTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {
@@ -66,7 +66,7 @@ class ExportTest extends \Magento\TestFramework\TestCase\AbstractBackendControll
         $this->getRequest()->getHeaders()
             ->addHeaderLine('X_REQUESTED_WITH', 'XMLHttpRequest');
 
-        $url = 'backend/adminhtml/export/getFilter/entity/' . $entityType;
+        $url = 'backend/Adminhtml/export/getFilter/entity/' . $entityType;
         if ($customerEntityType) {
             $url .= '/customer_entity/' . $customerEntityType;
         }
@@ -80,7 +80,7 @@ class ExportTest extends \Magento\TestFramework\TestCase\AbstractBackendControll
      */
     public function testIndexAction()
     {
-        $this->dispatch('backend/adminhtml/export/index');
+        $this->dispatch('backend/Adminhtml/export/index');
 
         $body = $this->getResponse()->getBody();
 

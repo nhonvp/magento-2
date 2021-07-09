@@ -11,7 +11,7 @@ use Magento\TestFramework\Helper\Bootstrap;
 use Magento\TestFramework\ObjectManager;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
 class PaymentInfoTest extends \PHPUnit\Framework\TestCase
@@ -56,7 +56,7 @@ class PaymentInfoTest extends \PHPUnit\Framework\TestCase
         /** @var \Magento\Quote\Model\Quote\Payment $paymentQuote */
         $paymentQuote = $quote->getPayment();
         $paymentQuote->unsAdditionalInformation('testing');
-        
+
         $this->assertFalse($paymentOrder->hasAdditionalInformation('testing'));
         $this->assertFalse($paymentQuote->hasAdditionalInformation('testing'));
     }

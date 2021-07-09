@@ -15,7 +15,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Tests for Tax Rate Import/Export form.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class ImportExportTest extends TestCase
 {

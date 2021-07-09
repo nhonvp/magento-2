@@ -38,7 +38,7 @@ class IndexTest extends \Magento\TestFramework\TestCase\AbstractBackendControlle
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testExecute()
     {
@@ -49,7 +49,7 @@ class IndexTest extends \Magento\TestFramework\TestCase\AbstractBackendControlle
             ->method('getContent')
             ->willReturn($content);
 
-        $this->dispatch('backend/adminhtml/dashboard/index/');
+        $this->dispatch('backend/Adminhtml/dashboard/index/');
 
         $this->assertEquals(200, $this->getResponse()->getHttpResponseCode());
 
@@ -67,7 +67,7 @@ class IndexTest extends \Magento\TestFramework\TestCase\AbstractBackendControlle
             ->method('getContent')
             ->willReturn('[]');
 
-        $this->dispatch('backend/adminhtml/dashboard/index/');
+        $this->dispatch('backend/Adminhtml/dashboard/index/');
 
         $this->assertEquals(200, $this->getResponse()->getHttpResponseCode());
 
@@ -82,7 +82,7 @@ class IndexTest extends \Magento\TestFramework\TestCase\AbstractBackendControlle
             ->method('getContent')
             ->willReturn(false);
 
-        $this->dispatch('backend/adminhtml/dashboard/index/');
+        $this->dispatch('backend/Adminhtml/dashboard/index/');
 
         $this->assertEquals(200, $this->getResponse()->getHttpResponseCode());
 

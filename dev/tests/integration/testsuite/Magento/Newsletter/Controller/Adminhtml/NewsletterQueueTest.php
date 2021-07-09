@@ -8,7 +8,7 @@ namespace Magento\Newsletter\Controller\Adminhtml;
 use Magento\Framework\App\Request\Http as HttpRequest;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class NewsletterQueueTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {

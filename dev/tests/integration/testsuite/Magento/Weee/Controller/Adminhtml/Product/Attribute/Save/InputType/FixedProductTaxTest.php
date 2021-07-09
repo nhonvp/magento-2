@@ -13,7 +13,7 @@ use Magento\Catalog\Controller\Adminhtml\Product\Attribute\Save\AbstractSaveAttr
  * Test cases related to create attribute with input type fixed product tax.
  *
  * @magentoDbIsolation enabled
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class FixedProductTaxTest extends AbstractSaveAttributeTest
 {

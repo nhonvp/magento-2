@@ -6,7 +6,7 @@
 namespace Magento\Indexer\Controller\Adminhtml;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class IndexerTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {

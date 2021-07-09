@@ -7,7 +7,7 @@ namespace Magento\UrlRewrite\Block;
 
 /**
  * Test for \Magento\UrlRewrite\Block\Selector
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class SelectorTest extends \PHPUnit\Framework\TestCase
 {
@@ -25,6 +25,6 @@ class SelectorTest extends \PHPUnit\Framework\TestCase
         $block = $layout->createBlock(\Magento\UrlRewrite\Block\Selector::class);
 
         $modeUrl = $block->getModeUrl('mode');
-        $this->assertEquals(1, preg_match('/adminhtml\/index\/index\/key\/[0-9a-zA-Z]+\/mode/', $modeUrl));
+        $this->assertEquals(1, preg_match('/Adminhtml\/index\/index\/key\/[0-9a-zA-Z]+\/mode/', $modeUrl));
     }
 }

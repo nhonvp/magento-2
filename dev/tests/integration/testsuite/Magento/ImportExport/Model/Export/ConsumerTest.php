@@ -24,7 +24,7 @@ use PHPUnit\Framework\TestCase;
  * @see \Magento\ImportExport\Model\Export\Consumer
  *
  * @magentoDbIsolation enabled
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class ConsumerTest extends TestCase
 {
@@ -77,7 +77,7 @@ class ConsumerTest extends TestCase
     }
 
     /**
-     * @magentoConfigFixture default_store adminhtml/security/use_form_key 1
+     * @magentoConfigFixture default_store Adminhtml/security/use_form_key 1
      *
      * @magentoDataFixture Magento/ImportExport/_files/export_queue_data.php
      * @magentoDataFixture Magento/Catalog/_files/product_virtual.php

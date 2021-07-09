@@ -22,7 +22,7 @@ use PHPUnit\Framework\TestCase;
  * Test Qty block in composite product configuration layout
  *
  * @see \Magento\Catalog\Block\Adminhtml\Product\Composite\Fieldset\Qty
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class QtyTest extends TestCase
 {

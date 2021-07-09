@@ -9,7 +9,7 @@ namespace Magento\Config\Model\Config\Backend;
 use Magento\TestFramework\Helper\Bootstrap;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class EncryptedTest extends \PHPUnit\Framework\TestCase
 {

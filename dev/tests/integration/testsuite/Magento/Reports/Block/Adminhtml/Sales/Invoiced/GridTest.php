@@ -6,7 +6,7 @@
 namespace Magento\Reports\Block\Adminhtml\Sales\Invoiced;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class GridTest extends \PHPUnit\Framework\TestCase
 {

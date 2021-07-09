@@ -46,7 +46,7 @@ class TemplateTest extends \PHPUnit\Framework\TestCase
     {
         $expected = file_get_contents(__DIR__ . '/../../../../_files/UiComponent/expected/config.xml');
 
-        \Magento\TestFramework\Helper\Bootstrap::getInstance()->loadArea('adminhtml');
+        \Magento\TestFramework\Helper\Bootstrap::getInstance()->loadArea('Adminhtml');
         $this->objectManager->get(\Magento\Framework\View\DesignInterface::class)
             ->setDesignTheme('FrameworkViewUiComponent/default');
         CacheCleaner::cleanAll();

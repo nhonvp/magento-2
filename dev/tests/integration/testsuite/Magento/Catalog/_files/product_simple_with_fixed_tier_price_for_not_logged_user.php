@@ -25,7 +25,7 @@ $websiteRepository = $objectManager->get(WebsiteRepositoryInterface::class);
 $tierPriceFactory = $objectManager->get(ProductTierPriceInterfaceFactory::class);
 /** @var ProductTierPriceExtensionFactory $tpExtensionAttributeFactory */
 $tpExtensionAttributeFactory = $objectManager->get(ProductTierPriceExtensionFactory::class);
-$adminWebsite = $websiteRepository->get('adminhtml');
+$adminWebsite = $websiteRepository->get('Adminhtml');
 $tierPriceExtensionAttribute = $tpExtensionAttributeFactory->create(
     [
         'data' => [

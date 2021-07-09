@@ -223,8 +223,8 @@ class DesignTest extends \PHPUnit\Framework\TestCase
         return [
             'default store - UTC+12:00' => ['default', 'Etc/GMT-12', '+12 hours'],
             'default store - UTC-12:00' => ['default', 'Etc/GMT+12', '-12 hours'],
-            'adminhtml store - UTC+12:00' => ['adminhtml', 'Etc/GMT-12', '+12 hours'],
-            'adminhtml store - UTC-12:00' => ['adminhtml', 'Etc/GMT+12', '-12 hours']
+            'Adminhtml store - UTC+12:00' => ['Adminhtml', 'Etc/GMT-12', '+12 hours'],
+            'Adminhtml store - UTC-12:00' => ['Adminhtml', 'Etc/GMT+12', '-12 hours']
         ];
     }
 }

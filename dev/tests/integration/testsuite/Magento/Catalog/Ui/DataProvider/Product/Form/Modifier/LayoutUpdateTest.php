@@ -23,7 +23,7 @@ use Magento\Catalog\Ui\DataProvider\Product\Form\Modifier\Eav as EavModifier;
  *
  * @magentoDbIsolation enabled
  * @magentoAppIsolation enabled
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
 class LayoutUpdateTest extends TestCase

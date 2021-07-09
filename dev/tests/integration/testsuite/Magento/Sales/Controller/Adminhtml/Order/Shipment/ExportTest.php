@@ -12,7 +12,7 @@ use Magento\Sales\Api\Data\ShipmentInterfaceFactory;
 use Magento\Sales\Controller\Adminhtml\Order\ExportBase;
 
 /**
- * Tests for shipment export via adminhtml grids.
+ * Tests for shipment export via Adminhtml grids.
  */
 class ExportTest extends ExportBase
 {
@@ -32,7 +32,7 @@ class ExportTest extends ExportBase
 
     /**
      * @magentoDbIsolation disabled
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoConfigFixture general/locale/timezone America/Chicago
      * @magentoConfigFixture test_website general/locale/timezone America/Adak
      * @magentoDataFixture Magento/Sales/_files/order_with_invoice_shipment_creditmemo_on_second_website.php

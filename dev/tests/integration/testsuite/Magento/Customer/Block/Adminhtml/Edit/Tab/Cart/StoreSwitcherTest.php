@@ -20,7 +20,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @see \Magento\Customer\Block\Adminhtml\Edit\Tab\Cart
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  */
 class StoreSwitcherTest extends TestCase
@@ -55,7 +55,7 @@ class StoreSwitcherTest extends TestCase
      */
     public function testStoreSwitcherDisplayed(): void
     {
-        $html = $this->getBlockHtml('adminhtml.customer.view.edit.cart');
+        $html = $this->getBlockHtml('Adminhtml.customer.view.edit.cart');
         $this->assertEquals(
             1,
             Xpath::getElementsCountForXpath(self::WEBSITE_FILTER_XPATH, $html),
@@ -71,7 +71,7 @@ class StoreSwitcherTest extends TestCase
      */
     public function testStoreSwitcherIsNotDisplayed(): void
     {
-        $html = $this->getBlockHtml('adminhtml.customer.view.edit.cart');
+        $html = $this->getBlockHtml('Adminhtml.customer.view.edit.cart');
         $this->assertEmpty(Xpath::getElementsCountForXpath(self::WEBSITE_FILTER_XPATH, $html));
     }
 
@@ -86,7 +86,7 @@ class StoreSwitcherTest extends TestCase
             $this->storeManager->getWebsite('base')->getName(),
             $this->storeManager->getWebsite('test')->getName(),
         ];
-        $html = $this->getBlockHtml('adminhtml.customer.view.edit.cart');
+        $html = $this->getBlockHtml('Adminhtml.customer.view.edit.cart');
         $this->assertEquals(1, Xpath::getElementsCountForXpath(self::WEBSITE_FILTER_XPATH, $html));
         $this->checkFilterOptions($html, $expectedWebsites);
     }

@@ -146,7 +146,7 @@ class ControllerActionTest extends TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testInheritanceBasedAdminhtmlActionDispatchesEvents()
     {
@@ -164,7 +164,7 @@ class ControllerActionTest extends TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testInterfaceOnlyAdminhtmlActionDispatchesEvents()
     {

@@ -22,9 +22,9 @@ use Magento\Catalog\Model\Product;
 use Magento\TestFramework\Helper\CacheCleaner;
 
 /**
- * Test class for Product adminhtml actions
+ * Test class for Product Adminhtml actions
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
 class ProductTest extends \Magento\TestFramework\TestCase\AbstractBackendController

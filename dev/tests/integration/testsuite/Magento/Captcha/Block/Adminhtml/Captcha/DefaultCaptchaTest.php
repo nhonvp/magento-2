@@ -24,10 +24,10 @@ class DefaultCaptchaTest extends \PHPUnit\Framework\TestCase
     /**
      * @magentoDbIsolation enabled
      * @magentoAppIsolation enabled
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testGetRefreshUrl()
     {
-        $this->assertStringContainsString('backend/adminhtml/refresh/refresh', $this->_block->getRefreshUrl());
+        $this->assertStringContainsString('backend/Adminhtml/refresh/refresh', $this->_block->getRefreshUrl());
     }
 }

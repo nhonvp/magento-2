@@ -13,7 +13,7 @@ use PHPUnit\Framework\Constraint\StringContains;
  * Class verifies shipment creation functionality.
  *
  * @magentoDbIsolation enabled
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDataFixture Magento/Sales/_files/order.php
  */
 class SaveTest extends AbstractShipmentControllerTest
@@ -21,7 +21,7 @@ class SaveTest extends AbstractShipmentControllerTest
     /**
      * @var string
      */
-    protected $uri = 'backend/adminhtml/order_shipment/save';
+    protected $uri = 'backend/Adminhtml/order_shipment/save';
 
     /**
      * @return void
@@ -36,7 +36,7 @@ class SaveTest extends AbstractShipmentControllerTest
             ]
         ];
         $order = $this->prepareRequest(['shipment' => ['send_email' => true], 'tracking' => $tracking]);
-        $this->dispatch('backend/adminhtml/order_shipment/save');
+        $this->dispatch('backend/Adminhtml/order_shipment/save');
 
         $this->assertSessionMessages(
             $this->equalTo([(string)__('The shipment has been created.')]),

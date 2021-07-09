@@ -17,7 +17,7 @@ use Magento\Customer\Api\CustomerRepositoryInterface;
 use Magento\Customer\Api\Data\CustomerInterface;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class MassSubscribeTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {

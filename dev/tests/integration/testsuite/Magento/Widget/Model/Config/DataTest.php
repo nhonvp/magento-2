@@ -7,7 +7,7 @@
 namespace Magento\Widget\Model\Config;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class DataTest extends \PHPUnit\Framework\TestCase
 {
@@ -19,7 +19,7 @@ class DataTest extends \PHPUnit\Framework\TestCase
         $fileResolver = $this->getMockForAbstractClass(\Magento\Framework\Config\FileResolverInterface::class);
         $fileResolver->expects($this->exactly(3))->method('get')->willReturnMap([
             ['widget.xml', 'global', [file_get_contents(__DIR__ . '/_files/orders_and_returns.xml')]],
-            ['widget.xml', 'adminhtml', []],
+            ['widget.xml', 'Adminhtml', []],
             ['widget.xml', 'design', [file_get_contents(__DIR__ . '/_files/orders_and_returns_customized.xml')]],
         ]);
         $objectManager = \Magento\TestFramework\Helper\Bootstrap::getObjectManager();

@@ -15,7 +15,7 @@ use Magento\TestFramework\TestCase\AbstractBackendController;
 /**
  * Test for customer product reviews page.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class ProductReviewsTest extends AbstractBackendController
 {
@@ -51,7 +51,7 @@ class ProductReviewsTest extends AbstractBackendController
     {
         $customerId = 1;
         $this->dispatchWithIdParam($customerId);
-        $block = $this->layout->getBlock('adminhtml.customer.reviews');
+        $block = $this->layout->getBlock('Adminhtml.customer.reviews');
         $this->assertNotFalse($block);
         $this->assertEquals(
             $customerId,

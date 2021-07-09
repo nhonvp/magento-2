@@ -348,7 +348,7 @@ class CartTest extends \Magento\TestFramework\TestCase\AbstractController
     {
         return [
             'frontend' => ['frontend', 'expected_price' => 10],
-            'adminhtml' => ['adminhtml', 'expected_price' => 1]
+            'Adminhtml' => ['Adminhtml', 'expected_price' => 1]
         ];
     }
 

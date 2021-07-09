@@ -7,7 +7,7 @@
 namespace Magento\Backend\Controller\Adminhtml;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class CacheTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {
@@ -23,7 +23,7 @@ class CacheTest extends \Magento\TestFramework\TestCase\AbstractBackendControlle
         );
         $this->assertNotEmpty($cache->load('APPLICATION_FIXTURE'));
 
-        $this->dispatch('backend/adminhtml/cache/flushAll');
+        $this->dispatch('backend/Adminhtml/cache/flushAll');
 
         /** @var $cachePool \Magento\Framework\App\Cache\Frontend\Pool */
         $this->assertFalse($cache->load('APPLICATION_FIXTURE'));
@@ -43,7 +43,7 @@ class CacheTest extends \Magento\TestFramework\TestCase\AbstractBackendControlle
      */
     public function testFlushSystemAction()
     {
-        $this->dispatch('backend/adminhtml/cache/flushSystem');
+        $this->dispatch('backend/Adminhtml/cache/flushSystem');
 
         /** @var $cache \Magento\Framework\App\Cache */
         $cache = \Magento\TestFramework\Helper\Bootstrap::getObjectManager()->create(
@@ -71,7 +71,7 @@ class CacheTest extends \Magento\TestFramework\TestCase\AbstractBackendControlle
     public function testMassActionsInvalidTypes($action)
     {
         $this->getRequest()->setParams(['types' => ['invalid_type_1', 'invalid_type_2', 'config']]);
-        $this->dispatch('backend/adminhtml/cache/' . $action);
+        $this->dispatch('backend/Adminhtml/cache/' . $action);
         $this->assertSessionMessages(
             $this->containsEqual("These cache type(s) don&#039;t exist: invalid_type_1, invalid_type_2"),
             \Magento\Framework\Message\MessageInterface::TYPE_ERROR

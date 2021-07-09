@@ -9,7 +9,7 @@ namespace Magento\Integration\Block\Adminhtml\Widget\Grid\Column\Renderer\Button
 use Magento\Integration\Model\Integration;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDataFixture Magento/Integration/_files/integration_all_permissions.php
  */
 class EditTest extends \PHPUnit\Framework\TestCase
@@ -25,7 +25,7 @@ class EditTest extends \PHPUnit\Framework\TestCase
         $objectManager = \Magento\TestFramework\Helper\Bootstrap::getObjectManager();
         /** @var \Magento\Framework\App\Request\Http $request */
         $request = $objectManager->get(\Magento\Framework\App\Request\Http::class);
-        $request->setRouteName('adminhtml')->setControllerName('integration');
+        $request->setRouteName('Adminhtml')->setControllerName('integration');
         $this->editButtonBlock = $objectManager->create(
             \Magento\Integration\Block\Adminhtml\Widget\Grid\Column\Renderer\Button\Edit::class
         );
@@ -40,7 +40,7 @@ class EditTest extends \PHPUnit\Framework\TestCase
         $this->assertStringContainsString('title="Edit"', $buttonHtml);
         $this->assertStringContainsString('class="' .$this->editButtonBlock->escapeHtmlAttr('action edit') .'"', $buttonHtml);
         $this->assertStringContainsString(
-            'window.location.href=\'http://localhost/index.php/backend/adminhtml/integration/edit/id/'
+            'window.location.href=\'http://localhost/index.php/backend/Adminhtml/integration/edit/id/'
             . $integration->getId(),
             $buttonHtml
         );

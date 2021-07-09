@@ -10,7 +10,7 @@ use Magento\Framework\Exception\LocalizedException;
 /**
  * Test \Magento\Cookie\Model\Config\Backend\Domain
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class DomainTest extends \PHPUnit\Framework\TestCase
 {

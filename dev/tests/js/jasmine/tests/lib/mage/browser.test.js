@@ -4,7 +4,7 @@
  */
 
 define([
-    'mage/adminhtml/browser',
+    'mage/Adminhtml/browser',
     'jquery'
 ], function (browser, $) {
     'use strict';

@@ -6,7 +6,7 @@
 namespace Magento\PageCache\Block\System\Config\Form\Field;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class ExportTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {
@@ -20,7 +20,7 @@ class ExportTest extends \Magento\TestFramework\TestCase\AbstractBackendControll
      */
     public function testExportButtons()
     {
-        $this->dispatch('backend/adminhtml/system_config/edit/section/system/');
+        $this->dispatch('backend/Adminhtml/system_config/edit/section/system/');
         $body = $this->getResponse()->getBody();
         $this->assertStringContainsString('system_full_page_cache_varnish_export_button_version4', $body);
         $this->assertStringContainsString('system_full_page_cache_varnish_export_button_version5', $body);

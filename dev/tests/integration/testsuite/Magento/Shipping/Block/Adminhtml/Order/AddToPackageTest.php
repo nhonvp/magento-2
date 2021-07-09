@@ -19,7 +19,7 @@ use Magento\Sales\Api\OrderRepositoryInterface;
 /**
  * Class verifies packaging popup.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class AddToPackageTest extends TestCase
 {

@@ -8,13 +8,13 @@ namespace Magento\ImportExport\Controller\Adminhtml;
 use Magento\Framework\Filesystem\DirectoryList;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class ImportTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {
     public function testGetFilterAction()
     {
-        $this->dispatch('backend/adminhtml/import/index');
+        $this->dispatch('backend/Adminhtml/import/index');
         $body = $this->getResponse()->getBody();
         $this->assertStringContainsString(
             (string)\Magento\TestFramework\Helper\Bootstrap::getObjectManager()->get(

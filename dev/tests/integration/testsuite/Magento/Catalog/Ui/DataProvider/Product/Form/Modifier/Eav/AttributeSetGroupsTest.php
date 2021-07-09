@@ -30,7 +30,7 @@ class AttributeSetGroupsTest extends AbstractEavTest
         $this->assertArrayNotHasKey(
             'test-attribute-group-name',
             $meta,
-            'Attribute set group without attributes appear on product page in adminhtml panel'
+            'Attribute set group without attributes appear on product page in Adminhtml panel'
         );
     }
 }

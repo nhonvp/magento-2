@@ -19,7 +19,7 @@ use Magento\TestFramework\Helper\CacheCleaner;
 /**
  * Test Eav Resource Entity Attribute functionality
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDataFixture Magento/Catalog/_files/dropdown_attribute.php
  * @magentoDataFixture Magento/Catalog/_files/multiselect_attribute.php
  * @magentoDataFixture Magento/Catalog/_files/product_without_options.php

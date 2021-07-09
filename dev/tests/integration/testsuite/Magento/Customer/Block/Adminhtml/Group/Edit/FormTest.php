@@ -13,7 +13,7 @@ use Magento\TestFramework\Helper\Bootstrap;
 /**
  * Magento\Customer\Block\Adminhtml\Group\Edit\Form
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class FormTest extends \PHPUnit\Framework\TestCase
 {

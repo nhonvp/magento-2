@@ -42,7 +42,7 @@ class FetchRatesTest extends \Magento\TestFramework\TestCase\AbstractBackendCont
             'rate_services',
             null
         );
-        $this->dispatch('backend/adminhtml/system_currency/fetchRates');
+        $this->dispatch('backend/Adminhtml/system_currency/fetchRates');
 
         $this->assertSessionMessages(
             $this->containsEqual('The Import Service is incorrect. Verify the service and try again.'),
@@ -62,7 +62,7 @@ class FetchRatesTest extends \Magento\TestFramework\TestCase\AbstractBackendCont
             'rate_services',
             'non-existent-service'
         );
-        $this->dispatch('backend/adminhtml/system_currency/fetchRates');
+        $this->dispatch('backend/Adminhtml/system_currency/fetchRates');
 
         $this->assertSessionMessages(
             $this->containsEqual(

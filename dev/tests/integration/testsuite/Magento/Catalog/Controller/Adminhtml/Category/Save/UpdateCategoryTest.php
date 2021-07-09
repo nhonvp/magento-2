@@ -15,7 +15,7 @@ use Magento\Store\Model\StoreManagerInterface;
 /**
  * Test related to update category.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  */
 class UpdateCategoryTest extends AbstractSaveCategoryTest

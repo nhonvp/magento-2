@@ -8,7 +8,7 @@ namespace Magento\Backend\Block\Widget\Grid;
 use Magento\TestFramework\App\State;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoComponentsDir Magento/Backend/Block/_files/design
  * @magentoDbIsolation enabled
  */
@@ -62,13 +62,13 @@ class MassactionTest extends \PHPUnit\Framework\TestCase
         $this->objectManager->get(State::class)->setMode($mageMode);
         $this->_layout = $this->objectManager->create(
             \Magento\Framework\View\LayoutInterface::class,
-            ['area' => 'adminhtml']
+            ['area' => 'Adminhtml']
         );
         $this->_layout->getUpdate()->load('layout_test_grid_handle');
         $this->_layout->generateXml();
         $this->_layout->generateElements();
 
-        $this->_block = $this->_layout->getBlock('adminhtml.test.grid.massaction');
+        $this->_block = $this->_layout->getBlock('Adminhtml.test.grid.massaction');
         $this->assertNotFalse($this->_block, 'Could not load the block for testing');
     }
 

@@ -507,13 +507,13 @@ class ProductTest extends \PHPUnit\Framework\TestCase
      * @magentoDataFixture Magento/Store/_files/second_website_with_two_stores.php
      * @magentoConfigFixture current_store catalog/price/scope 1
      * @magentoDbIsolation disabled
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      *
      * @return void
      */
     public function testExportProductWithTwoWebsites(): void
     {
-        $globalStoreCode = 'adminhtml';
+        $globalStoreCode = 'Adminhtml';
         $secondStoreCode = 'fixture_second_store';
 
         $expectedData = [

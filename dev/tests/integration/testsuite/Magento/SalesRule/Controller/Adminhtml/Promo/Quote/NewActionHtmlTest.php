@@ -13,7 +13,7 @@ use Magento\TestFramework\TestCase\AbstractBackendController;
  * New action html test
  *
  * Verify the request object contains the proper form object for action
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class NewActionHtmlTest extends AbstractBackendController
 {

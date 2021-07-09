@@ -13,7 +13,7 @@ use Magento\Catalog\Controller\Adminhtml\Product\MassDeleteTest as CatalogMassDe
  * Test for mass bundle product deleting.
  *
  * @see \Magento\Bundle\Controller\Adminhtml\Bundle\Product\Edit\MassDelete
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  */
 class MassDeleteTest extends CatalogMassDeleteTest

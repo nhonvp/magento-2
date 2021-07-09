@@ -13,7 +13,7 @@ use Magento\Catalog\Controller\Adminhtml\Product\Attribute\Delete\AbstractDelete
  * Delete catalog product attributes with input types like "swatch_text" and "swatch_visual".
  * Attributes from Magento_Swatches module.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  */
 class SwatchesAttributesControllerTest extends AbstractDeleteAttributeControllerTest

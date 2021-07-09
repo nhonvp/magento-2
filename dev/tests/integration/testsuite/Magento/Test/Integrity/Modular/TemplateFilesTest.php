@@ -79,7 +79,7 @@ class TemplateFilesTest extends \Magento\TestFramework\TestCase\AbstractIntegrit
                     \Magento\Backend\Block\Template::class
                 )
                 ) {
-                    $area = 'adminhtml';
+                    $area = 'Adminhtml';
                 }
 
                 \Magento\TestFramework\Helper\Bootstrap::getObjectManager()->get(

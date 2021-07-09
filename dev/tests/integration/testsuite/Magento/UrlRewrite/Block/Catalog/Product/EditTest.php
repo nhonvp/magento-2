@@ -6,7 +6,7 @@
 namespace Magento\UrlRewrite\Block\Catalog\Product;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
 class EditTest extends \PHPUnit\Framework\TestCase

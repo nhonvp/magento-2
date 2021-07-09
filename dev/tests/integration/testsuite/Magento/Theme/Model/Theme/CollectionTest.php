@@ -49,7 +49,7 @@ class CollectionTest extends \PHPUnit\Framework\TestCase
     {
         $this->_model->addConstraint(\Magento\Theme\Model\Theme\Collection::CONSTRAINT_AREA, 'frontend');
         $this->assertNotEmpty($this->_model->getItemById('frontend/Magento_FrameworkThemeTest/default'));
-        $this->assertEmpty($this->_model->getItemById('adminhtml/FrameworkThemeTest/test'));
+        $this->assertEmpty($this->_model->getItemById('Adminhtml/FrameworkThemeTest/test'));
     }
 
     /**

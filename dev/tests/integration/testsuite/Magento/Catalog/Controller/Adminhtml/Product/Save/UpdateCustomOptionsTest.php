@@ -20,7 +20,7 @@ use Magento\TestFramework\TestCase\AbstractBackendController;
  * Base test cases for update product custom options with type "field".
  * Option updating via dispatch product controller action save with updated options data in POST data.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  * @magentoDataFixture Magento/Catalog/_files/product_without_options.php
  */

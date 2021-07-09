@@ -8,7 +8,7 @@ namespace Magento\Authorization\Model\ResourceModel;
 /**
  * Role resource test
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class RoleTest extends \PHPUnit\Framework\TestCase
 {

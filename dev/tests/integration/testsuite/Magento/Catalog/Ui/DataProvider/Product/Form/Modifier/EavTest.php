@@ -14,7 +14,7 @@ use Magento\TestFramework\Eav\Model\GetAttributeGroupByName;
 use Magento\TestFramework\Eav\Model\ResourceModel\GetEntityIdByAttributeId;
 
 /**
- * Provides tests for eav modifier used in products adminhtml form data provider.
+ * Provides tests for eav modifier used in products Adminhtml form data provider.
  *
  * @magentoDbIsolation enabled
  */

@@ -5,7 +5,7 @@
  */
 
 /**
- * Create an adminhtml user with an assigned role
+ * Create an Adminhtml user with an assigned role
  */
 
 /** @var $model \Magento\User\Model\User */

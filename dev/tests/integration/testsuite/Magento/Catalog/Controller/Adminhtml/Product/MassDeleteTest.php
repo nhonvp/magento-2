@@ -16,7 +16,7 @@ use Magento\TestFramework\TestCase\AbstractBackendController;
  * Test for mass product deleting.
  *
  * @see \Magento\Catalog\Controller\Adminhtml\Product\MassDelete
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  */
 class MassDeleteTest extends AbstractBackendController

@@ -18,7 +18,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Class checks Create Order button visibility
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  */
 class OrderButtonTest extends TestCase

@@ -189,7 +189,7 @@ class CliCommand
     }
 
     /**
-     * Convert from raw params to CLI arguments, like --adminhtml-username.
+     * Convert from raw params to CLI arguments, like --Adminhtml-username.
      *
      * @param  array $params
      * @return array

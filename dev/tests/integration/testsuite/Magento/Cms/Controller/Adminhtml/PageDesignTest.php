@@ -22,9 +22,9 @@ use Magento\UrlRewrite\Model\ResourceModel\UrlRewriteCollectionFactory;
 use Magento\UrlRewrite\Model\UrlRewrite;
 
 /**
- * Test the saving CMS pages design via adminhtml area interface.
+ * Test the saving CMS pages design via Adminhtml area interface.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
 class PageDesignTest extends AbstractBackendController

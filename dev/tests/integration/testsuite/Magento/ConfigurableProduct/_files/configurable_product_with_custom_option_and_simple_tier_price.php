@@ -32,7 +32,7 @@ $productRepository->save($firstSimple);
 
 $secondSimple = $productRepository->get('simple_20');
 $tierPriceExtensionAttribute = $tpExtensionAttributeFactory->create(
-    ['data' => ['website_id' => $websiteRepository->get('adminhtml')->getId(), 'percentage_value' => 25]]
+    ['data' => ['website_id' => $websiteRepository->get('Adminhtml')->getId(), 'percentage_value' => 25]]
 );
 $tierPrices[] = $tierPriceFactory
     ->create(['data' => ['customer_group_id' => Group::CUST_GROUP_ALL, 'qty' => 1]])

@@ -304,9 +304,9 @@ class PhpRuleTest extends \PHPUnit\Framework\TestCase
                 '$this->getUrl("Catalog/*/View")',
                 []
             ],
-            'getUrl with in adminhtml controller for controllerName wildcard' => [
+            'getUrl with in Adminhtml controller for controllerName wildcard' => [
                 'Magento\Backend\Controller\Adminhtml\System\Store\DeleteStore',
-                '$this->getUrl("adminhtml/*/deleteStorePost")',
+                '$this->getUrl("Adminhtml/*/deleteStorePost")',
                 []
             ],
         ];
@@ -335,8 +335,8 @@ class PhpRuleTest extends \PHPUnit\Framework\TestCase
     public function getDependencyInfoDataCaseGetTemplateUrlDataProvider()
     {
         return [ 'getUrl from ignore template' => [
-            'app/code/Magento/Backend/view/adminhtml/templates/dashboard/totalbar/script.phtml',
-            '$getUrl("adminhtml/*/ajaxBlock")',
+            'app/code/Magento/Backend/view/Adminhtml/templates/dashboard/totalbar/script.phtml',
+            '$getUrl("Adminhtml/*/ajaxBlock")',
             []]];
     }
 
@@ -389,11 +389,11 @@ class PhpRuleTest extends \PHPUnit\Framework\TestCase
                     'action_name' => 'index'
                 ]
             ],
-            'adminhtml wildcard controller route' => [
+            'Adminhtml wildcard controller route' => [
                 'Magento\Backend\Controller\Adminhtml\System\Store\DeleteStore',
-                '$this->getUrl("adminhtml/*/deleteStorePost")',
+                '$this->getUrl("Adminhtml/*/deleteStorePost")',
                     [
-                        'route_id' => 'adminhtml',
+                        'route_id' => 'Adminhtml',
                         'controller_name' => 'system_store',
                         'action_name' => 'deletestorepost'
                     ]

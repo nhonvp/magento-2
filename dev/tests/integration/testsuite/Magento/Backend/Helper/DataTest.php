@@ -6,7 +6,7 @@
 namespace Magento\Backend\Helper;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoAppIsolation enabled
  * @magentoDbIsolation enabled
  */
@@ -142,7 +142,7 @@ class DataTest extends \PHPUnit\Framework\TestCase
     public function testGetHomePageUrl()
     {
         $this->assertStringEndsWith(
-            'index.php/backend/adminhtml/',
+            'index.php/backend/Adminhtml/',
             $this->_helper->getHomePageUrl(),
             'Incorrect home page URL'
         );

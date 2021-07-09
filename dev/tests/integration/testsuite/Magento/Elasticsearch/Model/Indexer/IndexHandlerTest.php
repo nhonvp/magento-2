@@ -130,7 +130,7 @@ class IndexHandlerTest extends TestCase
      */
     public function testReindexRowAfterEdit(): void
     {
-        $this->storeManager->setCurrentStore('adminhtml');
+        $this->storeManager->setCurrentStore('Adminhtml');
         $productApple = $this->productRepository->get('fulltext-1');
         $productApple->setName('Simple Product Cucumber');
         $this->productRepository->save($productApple);
@@ -188,7 +188,7 @@ class IndexHandlerTest extends TestCase
 
     /**
      * @magentoConfigFixture current_store catalog/search/elasticsearch_index_prefix indexerhandlertest
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @return void
      */
     public function testReindexRowAfterDelete(): void
@@ -207,7 +207,7 @@ class IndexHandlerTest extends TestCase
 
     /**
      * @magentoDbIsolation enabled
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoConfigFixture current_store catalog/search/elasticsearch_index_prefix indexerhandlertest
      * @magentoDataFixture Magento/Elasticsearch/_files/configurable_products.php
      * @return void

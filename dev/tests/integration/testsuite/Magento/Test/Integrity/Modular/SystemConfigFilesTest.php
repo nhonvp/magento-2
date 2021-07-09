@@ -25,7 +25,7 @@ class SystemConfigFilesTest extends \PHPUnit\Framework\TestCase
         /** @var $moduleDirSearch \Magento\Framework\Component\DirSearch */
         $moduleDirSearch = $objectManager->get(\Magento\Framework\Component\DirSearch::class);
         $fileList = $moduleDirSearch
-            ->collectFiles(ComponentRegistrar::MODULE, 'etc/adminhtml/system.xml');
+            ->collectFiles(ComponentRegistrar::MODULE, 'etc/Adminhtml/system.xml');
         $configMock = $this->createPartialMock(
             \Magento\Framework\Module\Dir\Reader::class,
             ['getConfigurationFiles', 'getModuleDir']

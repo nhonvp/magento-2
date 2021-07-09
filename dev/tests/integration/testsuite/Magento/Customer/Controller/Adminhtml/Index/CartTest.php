@@ -17,7 +17,7 @@ use Magento\TestFramework\TestCase\AbstractBackendController;
  * Class checks customer's shopping cart controller.
  *
  * @see \Magento\Customer\Controller\Adminhtml\Index\Cart
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class CartTest extends AbstractBackendController
 {
@@ -83,7 +83,7 @@ class CartTest extends AbstractBackendController
     }
 
     /**
-     * Dispatch adminhtml shopping cart using backend/customer/index/cart action.
+     * Dispatch Adminhtml shopping cart using backend/customer/index/cart action.
      *
      * @param array $params
      * @param array $postValue

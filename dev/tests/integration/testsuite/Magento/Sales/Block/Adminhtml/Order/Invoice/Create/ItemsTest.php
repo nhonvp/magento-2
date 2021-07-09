@@ -20,7 +20,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @see \Magento\Sales\Block\Adminhtml\Order\Invoice\Create\Items
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  */
 class ItemsTest extends TestCase

@@ -13,7 +13,7 @@ use Magento\Catalog\Controller\Adminhtml\Product\Attribute\Delete\AbstractDelete
  * Delete catalog product attributes with input types like "weee".
  * Attributes from Magento_Weee module.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  */
 class WeeeAttributesControllerTest extends AbstractDeleteAttributeControllerTest

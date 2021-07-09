@@ -6,7 +6,7 @@
 namespace Magento\Backend\Block\System\Store;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class DeleteTest extends \PHPUnit\Framework\TestCase
 {

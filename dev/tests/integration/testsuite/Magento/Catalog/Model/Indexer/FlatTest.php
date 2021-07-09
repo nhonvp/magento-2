@@ -225,7 +225,7 @@ class FlatTest extends \Magento\TestFramework\Indexer\TestCase
      * Delete created categories at testCreateCategory()
      *
      * @magentoConfigFixture current_store catalog/frontend/flat_catalog_category true
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testDeleteCategory()
     {
@@ -417,7 +417,7 @@ class FlatTest extends \Magento\TestFramework\Indexer\TestCase
     }
 
     /**
-     * Execute callable in an adminhtml area with enabled flat catalog.
+     * Execute callable in an Adminhtml area with enabled flat catalog.
      * After execution area and config option for flat catalog would be restored.
      *
      * @param callable $task
@@ -432,7 +432,7 @@ class FlatTest extends \Magento\TestFramework\Indexer\TestCase
         );
         $invocationArea = $app->getArea();
 
-        $this->switchAppArea($app, 'adminhtml');
+        $this->switchAppArea($app, 'Adminhtml');
         $this->getActiveConfigInstance()->setValue(
             'catalog/frontend/flat_catalog_category',
             true,

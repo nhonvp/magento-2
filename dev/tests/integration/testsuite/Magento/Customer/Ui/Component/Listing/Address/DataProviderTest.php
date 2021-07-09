@@ -18,7 +18,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Class to test Data Provider for customer address listing
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class DataProviderTest extends TestCase
 {

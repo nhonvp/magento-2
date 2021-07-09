@@ -14,7 +14,7 @@ use Magento\UrlRewrite\Service\V1\Data\UrlRewrite;
 /**
  * Class defines url rewrite creation for category save controller
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  */
 class UrlRewriteTest extends AbstractSaveCategoryTest

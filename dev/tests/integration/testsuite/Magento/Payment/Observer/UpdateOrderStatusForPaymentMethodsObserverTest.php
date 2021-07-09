@@ -8,7 +8,7 @@ namespace Magento\Payment\Observer;
 use Magento\Framework\App\Config\ScopeConfigInterface;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
 class UpdateOrderStatusForPaymentMethodsObserverTest extends \PHPUnit\Framework\TestCase

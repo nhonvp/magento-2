@@ -13,7 +13,7 @@ use Magento\Catalog\Controller\Adminhtml\Product\Attribute\Update\AbstractUpdate
  * Test cases related to update attribute with yes/no input type.
  *
  * @magentoDbIsolation enabled
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class YesNoTest extends AbstractUpdateAttributeTest
 {

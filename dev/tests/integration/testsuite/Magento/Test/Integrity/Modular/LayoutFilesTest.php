@@ -58,7 +58,7 @@ class LayoutFilesTest extends \PHPUnit\Framework\TestCase
      */
     public function layoutArgumentsDataProvider()
     {
-        $areas = ['adminhtml', 'frontend', 'email'];
+        $areas = ['Adminhtml', 'frontend', 'email'];
         $data = [];
         foreach ($areas as $area) {
             $layoutFiles = \Magento\Framework\App\Utility\Files::init()->getLayoutFiles(['area' => $area], false);

@@ -7,13 +7,13 @@ namespace Magento\Backend\App;
 
 /**
  * Test class for \Magento\Backend\App\AbstractAction.
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class AbstractActionTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {
     /**
      * Check redirection to startup page for logged user
-     * @magentoConfigFixture current_store adminhtml/security/use_form_key 1
+     * @magentoConfigFixture current_store Adminhtml/security/use_form_key 1
      * @magentoAppIsolation enabled
      */
     public function testPreDispatchWithEmptyUrlRedirectsToStartupPage()
@@ -57,9 +57,9 @@ class AbstractActionTest extends \Magento\TestFramework\TestCase\AbstractBackend
         ];
 
         $this->getRequest()->setPostValue($postLogin);
-        $this->dispatch('backend/adminhtml/system_account/index');
+        $this->dispatch('backend/Adminhtml/system_account/index');
 
-        $expected = 'backend/adminhtml/system_account/index';
+        $expected = 'backend/Adminhtml/system_account/index';
         $this->assertRedirect($this->stringContains($expected));
     }
 
@@ -94,7 +94,7 @@ class AbstractActionTest extends \Magento\TestFramework\TestCase\AbstractBackend
             $acl->deny(null, $resource);
         }
 
-        $this->dispatch('backend/adminhtml/dashboard');
+        $this->dispatch('backend/Adminhtml/dashboard');
 
         $layout = \Magento\TestFramework\Helper\Bootstrap::getObjectManager()->get(
             \Magento\Framework\View\LayoutInterface::class

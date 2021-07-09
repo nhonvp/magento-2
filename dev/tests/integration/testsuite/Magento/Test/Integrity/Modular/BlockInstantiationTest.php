@@ -123,7 +123,7 @@ class BlockInstantiationTest extends \Magento\TestFramework\TestCase\AbstractInt
             \Magento\Backend\Block\Template::class
         )
         ) {
-            $area = 'adminhtml';
+            $area = 'Adminhtml';
         }
         \Magento\TestFramework\Helper\Bootstrap::getObjectManager()->get(
             \Magento\Framework\App\AreaList::class

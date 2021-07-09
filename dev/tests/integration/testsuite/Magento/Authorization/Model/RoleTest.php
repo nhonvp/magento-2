@@ -6,7 +6,7 @@
 namespace Magento\Authorization\Model;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class RoleTest extends \PHPUnit\Framework\TestCase
 {

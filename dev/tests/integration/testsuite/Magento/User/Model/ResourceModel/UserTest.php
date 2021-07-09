@@ -16,7 +16,7 @@ use Magento\User\Model\User;
 use Magento\User\Model\UserFactory;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class UserTest extends \PHPUnit\Framework\TestCase
 {
@@ -50,7 +50,7 @@ class UserTest extends \PHPUnit\Framework\TestCase
      * when password lifetime config value is zero (disabled as fact)
      *
      * @return void
-     * @magentoConfigFixture current_store adminhtml/security/password_lifetime 0
+     * @magentoConfigFixture current_store Adminhtml/security/password_lifetime 0
      * @magentoDataFixture Magento/User/_files/dummy_user.php
      */
     public function testGetLatestPasswordWhenZeroPasswordLifetime(): void

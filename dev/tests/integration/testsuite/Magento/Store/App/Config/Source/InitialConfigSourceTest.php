@@ -116,7 +116,7 @@ class InitialConfigSourceTest extends TestCase
         return [
             [
                 [
-                    'adminhtml',
+                    'Adminhtml',
                     'main',
                 ],
                 'main',
@@ -124,7 +124,7 @@ class InitialConfigSourceTest extends TestCase
             ],
             [
                 [
-                    'adminhtml',
+                    'Adminhtml',
                     'base',
                 ],
                 'base',

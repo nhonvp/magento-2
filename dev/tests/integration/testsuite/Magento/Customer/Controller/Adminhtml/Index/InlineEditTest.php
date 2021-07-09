@@ -24,7 +24,7 @@ use Magento\TestFramework\TestCase\AbstractBackendController;
 /**
  * Test inline edit action on customers grid.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */

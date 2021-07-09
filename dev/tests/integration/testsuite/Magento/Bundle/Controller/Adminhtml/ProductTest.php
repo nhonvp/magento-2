@@ -17,8 +17,8 @@ use Magento\TestFramework\Helper\Bootstrap;
 use Magento\TestFramework\TestCase\AbstractBackendController;
 
 /**
- * Provide tests for product adminhtml controllers.
- * @magentoAppArea adminhtml
+ * Provide tests for product Adminhtml controllers.
+ * @magentoAppArea Adminhtml
  */
 class ProductTest extends AbstractBackendController
 {

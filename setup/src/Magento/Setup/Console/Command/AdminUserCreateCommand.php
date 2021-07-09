@@ -17,7 +17,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Question\Question;
 
 /**
- * Command to create an adminhtml user.
+ * Command to create an Adminhtml user.
  */
 class AdminUserCreateCommand extends AbstractSetupCommand
 {
@@ -49,14 +49,14 @@ class AdminUserCreateCommand extends AbstractSetupCommand
      */
     protected function configure()
     {
-        $this->setName('adminhtml:user:create')
+        $this->setName('Adminhtml:user:create')
             ->setDescription('Creates an administrator')
             ->setDefinition($this->getOptionsList());
         parent::configure();
     }
 
     /**
-     * Creation adminhtml user in interaction mode.
+     * Creation Adminhtml user in interaction mode.
      *
      * @param \Symfony\Component\Console\Input\InputInterface $input
      * @param \Symfony\Component\Console\Output\OutputInterface $output
@@ -215,7 +215,7 @@ class AdminUserCreateCommand extends AbstractSetupCommand
     }
 
     /**
-     * Check if all adminhtml options are provided
+     * Check if all Adminhtml options are provided
      *
      * @param InputInterface $input
      * @return string[]

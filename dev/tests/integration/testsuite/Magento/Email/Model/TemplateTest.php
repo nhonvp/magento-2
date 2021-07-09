@@ -182,7 +182,7 @@ class TemplateTest extends \PHPUnit\Framework\TestCase
     public function templateFallbackDataProvider()
     {
         return [
-            'Template from module - adminhtml' => [
+            'Template from module - Adminhtml' => [
                 BackendFrontNameResolver::AREA_CODE,
                 'customer_create_account_email_template',
                 'To sign in to our site, use these credentials during checkout',
@@ -210,7 +210,7 @@ class TemplateTest extends \PHPUnit\Framework\TestCase
                 'customer_create_account_email_confirmed_template template from Magento/default',
                 Area::AREA_FRONTEND,
             ],
-            'Template from grandparent theme - adminhtml' => [
+            'Template from grandparent theme - Adminhtml' => [
                 BackendFrontNameResolver::AREA_CODE,
                 'catalog_productalert_cron_error_email_template',
                 'catalog_productalert_cron_error_email_template template from Magento/default',
@@ -286,7 +286,7 @@ class TemplateTest extends \PHPUnit\Framework\TestCase
     public function templateDirectiveDataProvider()
     {
         return [
-            'Template from module folder - adminhtml' => [
+            'Template from module folder - Adminhtml' => [
                 BackendFrontNameResolver::AREA_CODE,
                 TemplateTypesInterface::TYPE_HTML,
                 '{{template config_path="design/email/footer_template"}}',
@@ -305,11 +305,11 @@ class TemplateTest extends \PHPUnit\Framework\TestCase
                 'Thank you',
                 "</table>\n<!-- End wrapper table -->",
             ],
-            'Template overridden in backend - adminhtml' => [
+            'Template overridden in backend - Adminhtml' => [
                 BackendFrontNameResolver::AREA_CODE,
                 TemplateTypesInterface::TYPE_HTML,
                 '{{template config_path="design/email/footer_template"}}',
-                '<b>Footer configured in backend - email loaded via adminhtml</b>',
+                '<b>Footer configured in backend - email loaded via Adminhtml</b>',
                 null,
                 'design/email/footer_template',
             ],
@@ -339,7 +339,7 @@ class TemplateTest extends \PHPUnit\Framework\TestCase
                 '{{template config_path="customer/create_account/email_confirmed_template"}}',
                 '<strong>customer_create_account_email_confirmed_template template from Magento/default</strong',
             ],
-            'Template from grandparent theme - adminhtml' => [
+            'Template from grandparent theme - Adminhtml' => [
                 BackendFrontNameResolver::AREA_CODE,
                 TemplateTypesInterface::TYPE_HTML,
                 '{{template config_path="catalog/productalert_cron/error_email_template"}}',
@@ -528,7 +528,7 @@ class TemplateTest extends \PHPUnit\Framework\TestCase
     public function templateStylesVariableDataProvider()
     {
         return [
-            'Styles from <!--@styles @--> comment - adminhtml' => [
+            'Styles from <!--@styles @--> comment - Adminhtml' => [
                 BackendFrontNameResolver::AREA_CODE,
                 'p { color: #111; }',
                 [
@@ -544,7 +544,7 @@ class TemplateTest extends \PHPUnit\Framework\TestCase
                     '{{var template_styles}}',
                 ],
             ],
-            'Styles from "Template Styles" textarea from backend - adminhtml' => [
+            'Styles from "Template Styles" textarea from backend - Adminhtml' => [
                 BackendFrontNameResolver::AREA_CODE,
                 'p { color: #222; }',
                 ['{{var template_styles}}'],
@@ -584,9 +584,9 @@ class TemplateTest extends \PHPUnit\Framework\TestCase
         );
         $registration->register();
 
-        // The Vendor_EmailTest/custom_theme adminhtml theme is set in the
+        // The Vendor_EmailTest/custom_theme Adminhtml theme is set in the
         // dev/tests/integration/testsuite/Magento/Email/Model/_files/design/themes.php file, as it must be set
-        // before the adminhtml area is loaded below.
+        // before the Adminhtml area is loaded below.
 
         Bootstrap::getInstance()->loadArea(BackendFrontNameResolver::AREA_CODE);
 
@@ -596,7 +596,7 @@ class TemplateTest extends \PHPUnit\Framework\TestCase
 
         $this->model->setDesignConfig(
             [
-                'area' => 'adminhtml',
+                'area' => 'Adminhtml',
                 'store' => $adminStore->getId(),
             ]
         );

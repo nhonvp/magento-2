@@ -12,7 +12,7 @@ define([
     'use strict';
 
     /*
-     * jQuery ui version 1.9.2 belongs to the adminhtml.
+     * jQuery ui version 1.9.2 belongs to the Adminhtml.
      *
      * This test will fail on frontend since mage/backend/form only belongs to backend.
      */

@@ -15,7 +15,7 @@ use Magento\Sales\Block\Adminhtml\Order\Create\Shipping\Address;
 /**
  * Class checks billing address form behaviour
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  *
  */

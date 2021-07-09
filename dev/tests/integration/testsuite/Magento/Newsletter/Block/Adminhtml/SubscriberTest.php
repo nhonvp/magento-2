@@ -6,7 +6,7 @@
 namespace Magento\Newsletter\Block\Adminhtml;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class SubscriberTest extends \PHPUnit\Framework\TestCase
 {

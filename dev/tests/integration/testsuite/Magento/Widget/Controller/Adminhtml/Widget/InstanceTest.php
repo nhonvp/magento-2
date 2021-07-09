@@ -7,7 +7,7 @@
 namespace Magento\Widget\Controller\Adminhtml\Widget;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class InstanceTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {
@@ -33,7 +33,7 @@ class InstanceTest extends \Magento\TestFramework\TestCase\AbstractBackendContro
 
     public function testEditAction()
     {
-        $this->dispatch('backend/adminhtml/widget_instance/edit');
+        $this->dispatch('backend/Adminhtml/widget_instance/edit');
         $this->assertRegExp(
             '/<option value="cms_page_link".*?selected="selected"\>/is',
             $this->getResponse()->getBody()
@@ -48,14 +48,14 @@ class InstanceTest extends \Magento\TestFramework\TestCase\AbstractBackendContro
             \Magento\Framework\View\DesignInterface::class
         )->setDefaultDesignTheme()->getDesignTheme();
         $this->getRequest()->setParam('theme_id', $theme->getId());
-        $this->dispatch('backend/adminhtml/widget_instance/blocks');
+        $this->dispatch('backend/Adminhtml/widget_instance/blocks');
         $this->assertStringStartsWith('<select name="block" id=""', $this->getResponse()->getBody());
     }
 
     public function testTemplateAction()
     {
         $this->getRequest()->setMethod('POST');
-        $this->dispatch('backend/adminhtml/widget_instance/template');
+        $this->dispatch('backend/Adminhtml/widget_instance/template');
         $this->assertStringStartsWith('<select name="template" id=""', $this->getResponse()->getBody());
     }
 }

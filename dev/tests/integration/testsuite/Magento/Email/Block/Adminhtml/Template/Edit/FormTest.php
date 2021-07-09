@@ -10,7 +10,7 @@ use Magento\Framework\App\TemplateTypesInterface;
 
 /**
  * Test class for \Magento\Email\Block\Adminhtml\Template\Edit\Form
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoAppIsolation enabled
  */
 class FormTest extends \PHPUnit\Framework\TestCase

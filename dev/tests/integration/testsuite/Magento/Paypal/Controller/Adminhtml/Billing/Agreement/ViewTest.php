@@ -8,7 +8,7 @@ namespace Magento\Paypal\Controller\Adminhtml\Billing\Agreement;
 use Magento\TestFramework\Helper\Bootstrap;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class ViewTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {

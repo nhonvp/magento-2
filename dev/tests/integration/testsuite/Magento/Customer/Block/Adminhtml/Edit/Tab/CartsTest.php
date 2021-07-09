@@ -9,7 +9,7 @@ namespace Magento\Customer\Block\Adminhtml\Edit\Tab;
 /**
  * Magento\Customer\Block\Adminhtml\Edit\Tab\Carts
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class CartsTest extends \PHPUnit\Framework\TestCase
 {

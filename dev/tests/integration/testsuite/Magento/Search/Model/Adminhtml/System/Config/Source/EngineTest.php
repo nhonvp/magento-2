@@ -6,7 +6,7 @@
 namespace Magento\Search\Model\Adminhtml\System\Config\Source;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class EngineTest extends \PHPUnit\Framework\TestCase
 {

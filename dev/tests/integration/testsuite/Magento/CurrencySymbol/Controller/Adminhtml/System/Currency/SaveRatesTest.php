@@ -54,7 +54,7 @@ class SaveRatesTest extends \Magento\TestFramework\TestCase\AbstractBackendContr
                 $currencyCode => [$currencyTo => $rate]
             ]
         );
-        $this->dispatch('backend/adminhtml/system_currency/saveRates');
+        $this->dispatch('backend/Adminhtml/system_currency/saveRates');
 
         $this->assertSessionMessages(
             $this->containsEqual((string)__('All valid rates have been saved.')),
@@ -87,7 +87,7 @@ class SaveRatesTest extends \Magento\TestFramework\TestCase\AbstractBackendContr
                 $currencyCode => [$currencyTo => $rate]
             ]
         );
-        $this->dispatch('backend/adminhtml/system_currency/saveRates');
+        $this->dispatch('backend/Adminhtml/system_currency/saveRates');
 
         $this->assertSessionMessages(
             $this->containsEqual(

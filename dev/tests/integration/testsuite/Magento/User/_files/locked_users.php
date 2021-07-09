@@ -7,7 +7,7 @@
 $objectManager = \Magento\TestFramework\Helper\Bootstrap::getObjectManager();
 
 /**
- * Create an adminhtml user with an assigned role
+ * Create an Adminhtml user with an assigned role
  */
 $userIds = [];
 

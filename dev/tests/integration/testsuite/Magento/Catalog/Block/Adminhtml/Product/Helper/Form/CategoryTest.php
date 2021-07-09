@@ -8,7 +8,7 @@ namespace Magento\Catalog\Block\Adminhtml\Product\Helper\Form;
 class CategoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testGetAfterElementHtml()
     {

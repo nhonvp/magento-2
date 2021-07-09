@@ -229,7 +229,7 @@ class ProductUrlRewriteTest extends AbstractUrlRewriteTest
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDataFixture Magento/Catalog/_files/second_product_simple.php
      */
     public function testUrlRewritesAfterProductDelete(): void

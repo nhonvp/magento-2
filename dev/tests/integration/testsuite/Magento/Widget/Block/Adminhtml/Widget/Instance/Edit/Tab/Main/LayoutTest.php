@@ -18,7 +18,7 @@ use Magento\Widget\Model\Widget\Instance;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class LayoutTest extends TestCase
 {

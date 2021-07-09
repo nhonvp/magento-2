@@ -44,7 +44,7 @@ class ConfigManagerTest extends TestCase
     /**
      * Check the default configurations of CSP.
      *
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @return void
      */
     public function testAdminDefault(): void
@@ -72,9 +72,9 @@ class ConfigManagerTest extends TestCase
     /**
      * Check that class returns correct configurations.
      *
-     * @magentoAppArea adminhtml
-     * @magentoConfigFixture default_store csp/mode/adminhtml/report_only 0
-     * @magentoConfigFixture default_store csp/mode/adminhtml/report_uri https://magento.com
+     * @magentoAppArea Adminhtml
+     * @magentoConfigFixture default_store csp/mode/Adminhtml/report_only 0
+     * @magentoConfigFixture default_store csp/mode/Adminhtml/report_uri https://magento.com
      * @return void
      */
     public function testAdminConfigured(): void

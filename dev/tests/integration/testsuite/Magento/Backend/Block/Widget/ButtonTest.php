@@ -15,7 +15,7 @@ use Magento\Framework\View\LayoutInterface;
 /**
  * Test for the button widget.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class ButtonTest extends TestCase
 {

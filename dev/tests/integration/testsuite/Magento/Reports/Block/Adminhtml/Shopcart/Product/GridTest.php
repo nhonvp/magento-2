@@ -11,7 +11,7 @@ use Magento\TestFramework\Helper\Bootstrap;
 /**
  * Test class for \Magento\Reports\Block\Adminhtml\Shopcart\Product\Grid
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDataFixture Magento/Sales/_files/quote.php
  * @magentoDataFixture Magento/Customer/_files/customer.php
  */

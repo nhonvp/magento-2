@@ -43,7 +43,7 @@ use Psr\Log\LoggerInterface;
  *
  * @magentoAppIsolation enabled
  * @magentoDbIsolation enabled
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDataFixtureBeforeTransaction Magento/Catalog/_files/enable_reindex_schedule.php
  * @magentoDataFixtureBeforeTransaction Magento/Catalog/_files/enable_catalog_product_reindex_schedule.php
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
@@ -465,7 +465,7 @@ class ProductTest extends TestCase
         /** @var StoreManagerInterface $storeManager */
         $storeManager = $objectManager->get(StoreManagerInterface::class);
         $storeCodes = [
-            'adminhtml',
+            'Adminhtml',
             'default',
             'secondstore',
         ];
@@ -714,7 +714,7 @@ class ProductTest extends TestCase
         $expectedValues = [];
         $storeRowId = null;
         foreach ($productData['data'] as $rowId => $rowData) {
-            $storeCode = ($storeCode == 'adminhtml') ? '' : $storeCode;
+            $storeCode = ($storeCode == 'Adminhtml') ? '' : $storeCode;
             if ($rowData['store_view_code'] == $storeCode) {
                 $storeRowId = $rowId;
                 break;
@@ -1436,7 +1436,7 @@ class ProductTest extends TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @dataProvider categoryTestDataProvider
      * @magentoDbIsolation enabled
      * @magentoAppIsolation enabled
@@ -1485,7 +1485,7 @@ class ProductTest extends TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDbIsolation disabled
      * @magentoAppIsolation enabled
      * @magentoDataFixture Magento/Catalog/_files/multiple_products.php
@@ -1560,7 +1560,7 @@ class ProductTest extends TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDbIsolation disabled
      * @magentoAppIsolation enabled
      * @magentoDataFixture Magento/CatalogImportExport/_files/update_category_duplicates.php
@@ -1722,7 +1722,7 @@ class ProductTest extends TestCase
 
     /**
      * @magentoDataFixture Magento/CatalogImportExport/_files/product_export_with_product_links_data.php
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDbIsolation enabled
      * @magentoAppIsolation enabled
      */
@@ -1764,7 +1764,7 @@ class ProductTest extends TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDbIsolation enabled
      * @magentoAppIsolation enabled
      */
@@ -2434,7 +2434,7 @@ class ProductTest extends TestCase
      * @param array $row
      * @param string|null $behavior
      * @param bool $expectedResult
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoAppIsolation enabled
      * @magentoDbIsolation enabled
      * @magentoDataFixture Magento/Catalog/Model/ResourceModel/_files/product_simple.php
@@ -2930,7 +2930,7 @@ class ProductTest extends TestCase
     }
 
     /**
-     * Set the current adminhtml session user based on a username
+     * Set the current Adminhtml session user based on a username
      *
      * @param string $username
      */

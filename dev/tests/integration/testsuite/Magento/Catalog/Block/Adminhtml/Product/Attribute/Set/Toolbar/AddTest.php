@@ -6,7 +6,7 @@
 namespace Magento\Catalog\Block\Adminhtml\Product\Attribute\Set\Toolbar;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class AddTest extends \PHPUnit\Framework\TestCase
 {
@@ -18,7 +18,7 @@ class AddTest extends \PHPUnit\Framework\TestCase
         );
 
         $block = $layout->addBlock(\Magento\Catalog\Block\Adminhtml\Product\Attribute\Set\Toolbar\Add::class, 'block');
-        $block->setArea('adminhtml')->unsetChild('setForm');
+        $block->setArea('Adminhtml')->unsetChild('setForm');
 
         $childBlock = $layout->addBlock(\Magento\Framework\View\Element\Template::class, 'setForm', 'block');
         $form = new \Magento\Framework\DataObject();

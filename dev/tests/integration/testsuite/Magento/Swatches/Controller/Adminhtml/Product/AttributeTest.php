@@ -14,7 +14,7 @@ use Magento\Framework\Exception\LocalizedException;
 /**
  * Test for product attribute save controller.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  */
 class AttributeTest extends \Magento\TestFramework\TestCase\AbstractBackendController

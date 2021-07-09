@@ -12,7 +12,7 @@ use Magento\Framework\App\Request\Http as HttpRequest;
 use Magento\TestFramework\Helper\Bootstrap;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class ConfigTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {
@@ -36,7 +36,7 @@ class ConfigTest extends \Magento\TestFramework\TestCase\AbstractBackendControll
             ->setParam('section', $section)
             ->setMethod(HttpRequest::METHOD_POST);
 
-        $this->dispatch('backend/adminhtml/system_config/save');
+        $this->dispatch('backend/Adminhtml/system_config/save');
 
         $this->assertSessionMessages($this->equalTo(['You saved the configuration.']));
 

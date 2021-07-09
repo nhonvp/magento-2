@@ -18,7 +18,7 @@ use Laminas\Http\Request;
 /**
  * Test Mass Update action.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class MassUpdateTest extends AbstractBackendController
 {

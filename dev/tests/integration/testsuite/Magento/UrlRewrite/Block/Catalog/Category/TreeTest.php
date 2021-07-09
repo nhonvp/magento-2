@@ -9,7 +9,7 @@ namespace Magento\UrlRewrite\Block\Catalog\Category;
 /**
  * Test for \Magento\UrlRewrite\Block\Catalog\Category\Tree
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class TreeTest extends \PHPUnit\Framework\TestCase
 {

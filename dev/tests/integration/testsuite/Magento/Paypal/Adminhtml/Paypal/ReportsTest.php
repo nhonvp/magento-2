@@ -6,7 +6,7 @@
 namespace Magento\Paypal\Adminhtml\Paypal;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class ReportsTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {

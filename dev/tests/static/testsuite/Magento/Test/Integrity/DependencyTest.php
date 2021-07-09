@@ -943,7 +943,7 @@ class DependencyTest extends \PHPUnit\Framework\TestCase
         $files = Files::init()->getLayoutFiles([], false);
         foreach ($files as $file) {
             $area = 'default';
-            if (preg_match('/[\/](?<area>adminhtml|frontend)[\/]/', $file, $matches)) {
+            if (preg_match('/[\/](?<area>Adminhtml|frontend)[\/]/', $file, $matches)) {
                 $area = $matches['area'];
                 self::$_mapLayoutBlocks[$area] = self::$_mapLayoutBlocks[$area] ?? [];
             }
@@ -973,7 +973,7 @@ class DependencyTest extends \PHPUnit\Framework\TestCase
         $files = Files::init()->getLayoutFiles([], false);
         foreach ($files as $file) {
             $area = 'default';
-            if (preg_match('/\/(?<area>adminhtml|frontend)\//', $file, $matches)) {
+            if (preg_match('/\/(?<area>Adminhtml|frontend)\//', $file, $matches)) {
                 $area = $matches['area'];
                 self::$_mapLayoutHandles[$area] = self::$_mapLayoutHandles[$area] ?? [];
             }

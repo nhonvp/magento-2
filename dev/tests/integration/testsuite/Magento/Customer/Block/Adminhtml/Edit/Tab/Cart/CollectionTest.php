@@ -23,7 +23,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @see \Magento\Customer\Block\Adminhtml\Edit\Tab\Cart::_prepareCollection()
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation disabled
  */
 class CollectionTest extends TestCase

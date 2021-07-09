@@ -49,7 +49,7 @@ class SaveInventoryDataObserverTest extends TestCase
     /**
      * Check that parent product will be out of stock
      *
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoAppIsolation enabled
      * @magentoDataFixture Magento/ConfigurableProduct/_files/product_configurable.php
      * @magentoDataFixture Magento/CatalogInventory/_files/configurable_options_with_low_stock.php

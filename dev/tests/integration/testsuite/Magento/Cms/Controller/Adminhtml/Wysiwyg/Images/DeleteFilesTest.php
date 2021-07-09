@@ -11,7 +11,7 @@ use Magento\Framework\App\Filesystem\DirectoryList;
 /**
  * Test for \Magento\Cms\Controller\Adminhtml\Wysiwyg\Images\DeleteFiles class.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class DeleteFilesTest extends \PHPUnit\Framework\TestCase
 {

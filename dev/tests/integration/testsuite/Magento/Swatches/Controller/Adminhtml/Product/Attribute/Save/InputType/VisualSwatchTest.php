@@ -15,7 +15,7 @@ use Magento\Eav\Model\Entity\Attribute\Source\Table;
  * Test cases related to create attribute with input type visual swatch.
  *
  * @magentoDbIsolation enabled
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class VisualSwatchTest extends AbstractSaveAttributeTest
 {

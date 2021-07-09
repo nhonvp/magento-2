@@ -157,7 +157,7 @@ class PathInfoProcessorTest extends \PHPUnit\Framework\TestCase
         $config = Bootstrap::getObjectManager()->get(\Magento\Framework\App\Config\ReinitableConfigInterface::class);
         $config->setValue(Store::XML_PATH_STORE_IN_URL, true);
         $config->setValue(Store::XML_PATH_STORE_IN_URL, false, ScopeInterface::SCOPE_STORE, $store->getCode());
-        $pathInfo = sprintf('/%s/m/c/a', 'adminhtml');
+        $pathInfo = sprintf('/%s/m/c/a', 'Adminhtml');
         $this->assertEquals($pathInfo, $this->pathProcessor->process($request, $pathInfo));
     }
 

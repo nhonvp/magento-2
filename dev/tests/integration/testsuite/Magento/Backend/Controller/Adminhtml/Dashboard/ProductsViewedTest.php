@@ -13,14 +13,14 @@ namespace Magento\Backend\Controller\Adminhtml\Dashboard;
 class ProductsViewedTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDataFixture Magento/Reports/_files/viewed_products.php
      * @magentoConfigFixture default/reports/options/enabled 1
      */
     public function testExecute()
     {
         $this->getRequest()->setMethod("POST");
-        $this->dispatch('backend/adminhtml/dashboard/productsViewed/');
+        $this->dispatch('backend/Adminhtml/dashboard/productsViewed/');
 
         $this->assertEquals(200, $this->getResponse()->getHttpResponseCode());
 

@@ -21,7 +21,7 @@ use Magento\Downloadable\Api\Data\LinkInterface;
 $objectManager = Bootstrap::getObjectManager();
 
 $storeManager = $objectManager->get(StoreManagerInterface::class);
-$storeManager->setCurrentStore($storeManager->getStore('adminhtml')->getId());
+$storeManager->setCurrentStore($storeManager->getStore('Adminhtml')->getId());
 
 $domainManager = $objectManager->get(DomainManagerInterface::class);
 $domainManager->addDomains(

@@ -6,7 +6,7 @@
 namespace Magento\Backend\Block\System\Account\Edit;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class FormTest extends \PHPUnit\Framework\TestCase
 {
@@ -37,7 +37,7 @@ class FormTest extends \PHPUnit\Framework\TestCase
 
         $this->assertInstanceOf(\Magento\Framework\Data\Form::class, $form);
         $this->assertEquals('post', $form->getData('method'));
-        $this->assertEquals($block->getUrl('adminhtml/system_account/save'), $form->getData('action'));
+        $this->assertEquals($block->getUrl('Adminhtml/system_account/save'), $form->getData('action'));
         $this->assertEquals('edit_form', $form->getId());
         $this->assertTrue($form->getUseContainer());
 

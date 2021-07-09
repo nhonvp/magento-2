@@ -152,7 +152,7 @@ class FulltextTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testReindexRowAfterDelete()
     {
@@ -172,7 +172,7 @@ class FulltextTest extends \PHPUnit\Framework\TestCase
      * and the configurable cannot be sold anymore.
      *
      * @return void
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDataFixture Magento/CatalogSearch/_files/product_configurable_with_single_child.php
      */
     public function testReindexParentProductWhenChildBeingDisabled()

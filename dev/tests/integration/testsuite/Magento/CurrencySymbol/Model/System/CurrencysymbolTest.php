@@ -11,7 +11,7 @@ use Magento\TestFramework\Helper\Bootstrap;
 /**
  * Test for Magento\CurrencySymbol\Model\System\Currencysymbol
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class CurrencysymbolTest extends \PHPUnit\Framework\TestCase
 {

@@ -40,7 +40,7 @@ $shippingAddress->setShippingMethod('flatrate_flatrate');
 
 /** @var $quote \Magento\Quote\Model\Quote */
 $quote = $objectManager->create(\Magento\Quote\Model\Quote::class);
-$quote->setCustomerEmail('adminhtml@example.com');
+$quote->setCustomerEmail('Adminhtml@example.com');
 $quote->setCustomerIsGuest(true);
 $quote->setStoreId($objectManager->get(\Magento\Store\Model\StoreManagerInterface::class)->getStore()->getId());
 $quote->setReservedOrderId('100000001');

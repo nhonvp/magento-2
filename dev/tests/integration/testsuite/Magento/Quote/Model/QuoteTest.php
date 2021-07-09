@@ -187,7 +187,7 @@ class QuoteTest extends TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      *
      * @return void
      */

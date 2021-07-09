@@ -9,7 +9,7 @@ use Magento\Framework\Filesystem;
 use Magento\Framework\Filesystem\DirectoryList;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class ThemeControllerTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {
@@ -22,7 +22,7 @@ class ThemeControllerTest extends \Magento\TestFramework\TestCase\AbstractBacken
             ->getFirstItem();
 
         $this->getRequest()->setPostValue('id', $theme->getId());
-        $this->dispatch('backend/adminhtml/system_design_theme/uploadjs');
+        $this->dispatch('backend/Adminhtml/system_design_theme/uploadjs');
         $output = $this->getResponse()->getBody();
         $this->assertStringContainsString('"error":false', $output);
         $this->assertStringContainsString($name, $output);

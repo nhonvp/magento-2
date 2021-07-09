@@ -356,7 +356,7 @@ abstract class WebapiAbstract extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Enable secure/adminhtml area
+     * Enable secure/Adminhtml area
      *
      * @param bool $flag
      * @return void

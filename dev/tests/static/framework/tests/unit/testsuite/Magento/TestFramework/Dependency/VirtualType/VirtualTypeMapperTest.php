@@ -24,7 +24,7 @@ class VirtualTypeMapperTest extends \PHPUnit\Framework\TestCase
                     'virtualType2' => 'Magento\SomeModule\Some\Class2',
                     'virtualType3' => 'Magento\SomeModule\Some\Class3',
                 ],
-                'adminhtml' => [
+                'Adminhtml' => [
                     'virtualType1' => 'Magento\SomeModule\Some\Class4',
                     'virtualType4' => 'Magento\SomeModule\Some\Class5',
                 ]
@@ -66,17 +66,17 @@ class VirtualTypeMapperTest extends \PHPUnit\Framework\TestCase
                 'Magento\SomeModule\Some\Class2'
             ],
             [
-                'adminhtml',
+                'Adminhtml',
                 'virtualType3',
                 'Magento\SomeModule\Some\Class3'
             ],
             [
-                'adminhtml',
+                'Adminhtml',
                 'virtualType1',
                 'Magento\SomeModule\Some\Class4'
             ],
             [
-                'adminhtml',
+                'Adminhtml',
                 'virtualType4',
                 'Magento\SomeModule\Some\Class5'
             ]
@@ -136,16 +136,16 @@ class VirtualTypeMapperTest extends \PHPUnit\Framework\TestCase
 
             /**
              * expectation is the same for global area,
-             * but extended for adminhtml as it contains own virtual types definitions
+             * but extended for Adminhtml as it contains own virtual types definitions
              */
             [
-                'diFilesPath' => [$this->getFilePath('etc/di.xml'), $this->getFilePath('etc/adminhtml/di.xml')],
+                'diFilesPath' => [$this->getFilePath('etc/di.xml'), $this->getFilePath('etc/Adminhtml/di.xml')],
                 'expectedVirtualTypesDependencies' => [
                     'global' => [
                         'Magento\Internal\Some\Class' => 'ExternalVirtualType',
                         'MyVirtualType' => 'Magento\Internal\Some\Class'
                     ],
-                    'adminhtml' => [
+                    'Adminhtml' => [
                         'MyVirtualType2' => 'ExternalVirtualType'
                     ]
                 ]

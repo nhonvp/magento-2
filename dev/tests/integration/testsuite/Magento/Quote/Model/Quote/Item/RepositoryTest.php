@@ -17,7 +17,7 @@ class RepositoryTest extends \PHPUnit\Framework\TestCase
         $expectedExtensionAttributes = [
             'firstname' => 'firstname',
             'lastname' => 'lastname',
-            'email' => 'adminhtml@example.com'
+            'email' => 'Adminhtml@example.com'
         ];
 
         /** @var \Magento\Quote\Api\CartItemRepositoryInterface $quoteItemRepository */

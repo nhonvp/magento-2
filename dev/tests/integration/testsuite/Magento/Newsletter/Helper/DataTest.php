@@ -32,7 +32,7 @@ class DataTest extends \PHPUnit\Framework\TestCase
             \Magento\Newsletter\Helper\Data::class
         )->getConfirmationUrl($this->_subscriber);
         $this->assertTrue(strpos($url, 'newsletter/subscriber/confirm') > 0);
-        $this->assertFalse(strpos($url, 'adminhtml'));
+        $this->assertFalse(strpos($url, 'Adminhtml'));
     }
 
     /**
@@ -44,6 +44,6 @@ class DataTest extends \PHPUnit\Framework\TestCase
             \Magento\Newsletter\Helper\Data::class
         )->getUnsubscribeUrl($this->_subscriber);
         $this->assertTrue(strpos($url, 'newsletter/subscriber/unsubscribe') > 0);
-        $this->assertFalse(strpos($url, 'adminhtml'));
+        $this->assertFalse(strpos($url, 'Adminhtml'));
     }
 }

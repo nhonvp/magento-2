@@ -6,7 +6,7 @@
 namespace Magento\Theme\Block\Adminhtml\System\Design\Theme\Edit\Tab;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class GeneralTest extends \PHPUnit\Framework\TestCase
 {
@@ -39,7 +39,7 @@ class GeneralTest extends \PHPUnit\Framework\TestCase
         /** @var $objectManager \Magento\TestFramework\ObjectManager */
         $objectManager = \Magento\TestFramework\Helper\Bootstrap::getObjectManager();
         $objectManager->get(\Magento\Framework\Registry::class)->register('current_theme', $this->_theme);
-        $this->_block->setArea('adminhtml');
+        $this->_block->setArea('Adminhtml');
 
         $this->_block->toHtml();
 
@@ -52,10 +52,10 @@ class GeneralTest extends \PHPUnit\Framework\TestCase
         /** @var $objectManager \Magento\TestFramework\ObjectManager */
         $this->_theme->setType(\Magento\Framework\View\Design\ThemeInterface::TYPE_PHYSICAL);
         $this->_theme->setPreviewImage('preview_image_test.jpg');
-        $this->_block->setArea('adminhtml');
+        $this->_block->setArea('Adminhtml');
 
         $html = $this->_block->toHtml();
-        preg_match_all('/pub\/static\/adminhtml\/_view\/en_US/', $html, $result);
+        preg_match_all('/pub\/static\/Adminhtml\/_view\/en_US/', $html, $result);
         $this->assertEmpty($result[0]);
     }
 }

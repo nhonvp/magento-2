@@ -439,7 +439,7 @@ class CategoryRepositoryTest extends WebapiAbstract
     }
 
     /**
-     * Update adminhtml role resources list.
+     * Update Adminhtml role resources list.
      *
      * @param string $roleName
      * @param string[] $resources
@@ -483,10 +483,10 @@ class CategoryRepositoryTest extends WebapiAbstract
      */
     public function testSaveDesign(): void
     {
-        //Updating our adminhtml user's role to allow saving categories but not their design settings.
+        //Updating our Adminhtml user's role to allow saving categories but not their design settings.
         $roleName = 'test_custom_role';
         $this->updateRoleResources($roleName, ['Magento_Catalog::categories']);
-        //Using the adminhtml user with custom role.
+        //Using the Adminhtml user with custom role.
         $token = $this->adminTokens->createAdminAccessToken(
             'customRoleUser',
             \Magento\TestFramework\Bootstrap::ADMIN_PASSWORD

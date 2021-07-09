@@ -6,7 +6,7 @@
 namespace Magento\ConfigurableProduct\Block\Adminhtml\Product\Edit\Tab\Variations\Config;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class MatrixTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {

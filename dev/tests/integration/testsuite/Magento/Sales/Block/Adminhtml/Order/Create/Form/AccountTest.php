@@ -30,7 +30,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Class for test Account
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
 class AccountTest extends TestCase

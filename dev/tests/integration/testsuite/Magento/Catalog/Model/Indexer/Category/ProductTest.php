@@ -72,7 +72,7 @@ class ProductTest extends TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testReindexAll()
     {
@@ -110,7 +110,7 @@ class ProductTest extends TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testCategoryMove()
     {
@@ -156,7 +156,7 @@ class ProductTest extends TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @depends testReindexAll
      */
     public function testCategoryDelete()
@@ -224,7 +224,7 @@ class ProductTest extends TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      *
      * @magentoDataFixture Magento/Catalog/_files/category_tree.php
      *
@@ -248,7 +248,7 @@ class ProductTest extends TestCase
     /**
      * Test invalidate reindex after change product position on category
      *
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDataFixture Magento/Catalog/_files/category_with_different_price_products.php
      *
      * @return void

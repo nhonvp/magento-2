@@ -24,7 +24,7 @@ class TransactionTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testSaveDelete()
     {

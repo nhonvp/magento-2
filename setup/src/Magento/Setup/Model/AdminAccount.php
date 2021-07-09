@@ -17,11 +17,11 @@ class AdminAccount
     /**#@+
      * Data keys
      */
-    const KEY_USER = 'adminhtml-user';
-    const KEY_PASSWORD = 'adminhtml-password';
-    const KEY_EMAIL = 'adminhtml-email';
-    const KEY_FIRST_NAME = 'adminhtml-firstname';
-    const KEY_LAST_NAME = 'adminhtml-lastname';
+    const KEY_USER = 'Adminhtml-user';
+    const KEY_PASSWORD = 'Adminhtml-password';
+    const KEY_EMAIL = 'Adminhtml-email';
+    const KEY_FIRST_NAME = 'Adminhtml-firstname';
+    const KEY_LAST_NAME = 'Adminhtml-lastname';
     const KEY_PREFIX = 'db-prefix';
     /**#@- */
 
@@ -85,12 +85,12 @@ class AdminAccount
     }
 
     /**
-     * Uses the information in data[] to create the adminhtml user.
+     * Uses the information in data[] to create the Adminhtml user.
      *
      * If the username already exists, it will update the record with information from data[]
      * and set the is_active flag.
      *
-     * @return int The adminhtml user id
+     * @return int The Adminhtml user id
      */
     private function saveAdminUser()
     {
@@ -207,7 +207,7 @@ class AdminAccount
     }
 
     /**
-     * Creates the adminhtml user role if one does not exist.
+     * Creates the Adminhtml user role if one does not exist.
      *
      * Do nothing if a role already exists for this user
      *

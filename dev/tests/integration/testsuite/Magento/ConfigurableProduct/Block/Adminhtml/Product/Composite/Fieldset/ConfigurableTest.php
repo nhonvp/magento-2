@@ -20,7 +20,7 @@ use PHPUnit\Framework\TestCase;
  * Test Configurable block in composite product configuration layout
  *
  * @see \Magento\ConfigurableProduct\Block\Adminhtml\Product\Composite\Fieldset\Configurable
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class ConfigurableTest extends TestCase
 {

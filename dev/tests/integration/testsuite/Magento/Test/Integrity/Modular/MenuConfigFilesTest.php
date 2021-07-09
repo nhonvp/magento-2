@@ -26,6 +26,6 @@ class MenuConfigFilesTest extends \PHPUnit\Framework\TestCase
 
     public function testValidateMenuFiles()
     {
-        $this->_model->read('adminhtml');
+        $this->_model->read('Adminhtml');
     }
 }

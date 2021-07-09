@@ -34,7 +34,7 @@ class FormTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testToHtmlNoExistingIntegrationData()
     {
@@ -45,7 +45,7 @@ class FormTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoAppIsolation enabled
      */
     public function testToHtmlWithIntegrationData()

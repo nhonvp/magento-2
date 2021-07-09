@@ -28,7 +28,7 @@ $order->setIncrementId(
 )->setBaseSubtotal(
     100
 )->setCustomerEmail(
-    'adminhtml@example.com'
+    'Adminhtml@example.com'
 )->setCustomerIsGuest(
     true
 )->setBillingAddress(

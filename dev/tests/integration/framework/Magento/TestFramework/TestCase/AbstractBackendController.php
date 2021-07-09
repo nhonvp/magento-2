@@ -6,7 +6,7 @@
 namespace Magento\TestFramework\TestCase;
 
 /**
- * A parent class for backend controllers - contains directives for adminhtml user creation and authentication.
+ * A parent class for backend controllers - contains directives for Adminhtml user creation and authentication.
  *
  * @SuppressWarnings(PHPMD.NumberOfChildren)
  */
@@ -61,7 +61,7 @@ abstract class AbstractBackendController extends \Magento\TestFramework\TestCase
         /**
          * Authorization can be created on test bootstrap...
          * If it will be created on test bootstrap we will have invalid RoleLocator object.
-         * As tests by default are run not from adminhtml area...
+         * As tests by default are run not from Adminhtml area...
          */
         \Magento\TestFramework\ObjectManager::getInstance()->removeSharedInstance(
             \Magento\Framework\Authorization::class
@@ -74,7 +74,7 @@ abstract class AbstractBackendController extends \Magento\TestFramework\TestCase
     }
 
     /**
-     * Get credentials to login adminhtml user
+     * Get credentials to login Adminhtml user
      *
      * @return array
      */

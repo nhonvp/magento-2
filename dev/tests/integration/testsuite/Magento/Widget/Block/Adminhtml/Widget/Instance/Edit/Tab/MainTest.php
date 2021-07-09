@@ -6,7 +6,7 @@
 namespace Magento\Widget\Block\Adminhtml\Widget\Instance\Edit\Tab;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class MainTest extends \PHPUnit\Framework\TestCase
 {

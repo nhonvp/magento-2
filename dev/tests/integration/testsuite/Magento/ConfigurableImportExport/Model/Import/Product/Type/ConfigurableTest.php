@@ -9,7 +9,7 @@ use Magento\Catalog\Api\ProductRepositoryInterface;
 use Magento\Framework\App\Filesystem\DirectoryList;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
 class ConfigurableTest extends \PHPUnit\Framework\TestCase
@@ -64,7 +64,7 @@ class ConfigurableTest extends \PHPUnit\Framework\TestCase
      * @param $productName Name/sku of configurable product
      * @param $optionSkuList Name of variations for configurable product
      * @magentoDataFixture Magento/ConfigurableProduct/_files/configurable_attribute.php
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoAppIsolation enabled
      * @dataProvider configurableImportDataProvider
      */
@@ -155,7 +155,7 @@ class ConfigurableTest extends \PHPUnit\Framework\TestCase
      * @magentoDataFixture Magento/Catalog/_files/enable_reindex_schedule.php
      * @magentoDataFixture Magento/Store/_files/second_store.php
      * @magentoDataFixture Magento/ConfigurableProduct/_files/configurable_attribute.php
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoAppIsolation enabled
      * @magentoDbIsolation disabled
      */
@@ -208,7 +208,7 @@ class ConfigurableTest extends \PHPUnit\Framework\TestCase
      * @magentoDataFixture Magento/Store/_files/second_store.php
      * @magentoDataFixture Magento/ConfigurableProduct/_files/configurable_attribute.php
      * @magentoDbIsolation disabled
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testConfigurableImportWithStoreSpecifiedMainItem()
     {

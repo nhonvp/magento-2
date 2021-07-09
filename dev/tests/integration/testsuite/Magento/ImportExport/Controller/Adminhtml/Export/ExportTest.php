@@ -20,7 +20,7 @@ use Magento\TestFramework\TestCase\AbstractBackendController;
  *
  * @see \Magento\ImportExport\Controller\Adminhtml\Export\Export
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  */
 class ExportTest extends AbstractBackendController
@@ -64,7 +64,7 @@ class ExportTest extends AbstractBackendController
     }
 
     /**
-     * @magentoConfigFixture default_store adminhtml/security/use_form_key 1
+     * @magentoConfigFixture default_store Adminhtml/security/use_form_key 1
      *
      * @return void
      */
@@ -82,7 +82,7 @@ class ExportTest extends AbstractBackendController
                     'file_format' => $fileFormat,
                 ]
             );
-        $this->dispatch('backend/adminhtml/export/export');
+        $this->dispatch('backend/Adminhtml/export/export');
         $this->assertSessionMessages($this->containsEqual($expectedSessionMessage));
         $this->assertRedirect($this->stringContains('/export/index/key/'));
         $messages = $this->queueManagement->readMessages('export');

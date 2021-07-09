@@ -174,7 +174,7 @@ class JoinDirectivesTest extends \Magento\TestFramework\TestCase\WebapiAbstract
     }
 
     /**
-     * Retrieve the adminhtml user's information.
+     * Retrieve the Adminhtml user's information.
      *
      * @return array
      */

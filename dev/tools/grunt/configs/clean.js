@@ -56,7 +56,7 @@ var cleanOptions = {
                 "dot": true,
                 "src": [
                     "<%= path.pub %>frontend/**/*",
-                    "<%= path.pub %>adminhtml/**/*",
+                    "<%= path.pub %>Adminhtml/**/*",
                     "<%= path.deployedVersion %>"
                 ]
             }
@@ -73,8 +73,8 @@ var cleanOptions = {
                     "<%= path.tmp %>/cache/**/*",
                     "<%= path.pub %>frontend/**/*.less",
                     "<%= path.pub %>frontend/**/*.css",
-                    "<%= path.pub %>adminhtml/**/*.less",
-                    "<%= path.pub %>adminhtml/**/*.css",
+                    "<%= path.pub %>Adminhtml/**/*.less",
+                    "<%= path.pub %>Adminhtml/**/*.css",
                     "<%= path.deployedVersion %>"
                 ]
             }

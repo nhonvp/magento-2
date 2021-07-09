@@ -15,7 +15,7 @@ use Magento\TestFramework\TestCase\AbstractController;
 /**
  * Magento\Customer\Block\Adminhtml\Group\Edit
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class EditTest extends AbstractController
 {

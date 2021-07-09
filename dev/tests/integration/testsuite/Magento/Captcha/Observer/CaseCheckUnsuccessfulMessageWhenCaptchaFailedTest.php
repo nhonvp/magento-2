@@ -8,16 +8,16 @@ namespace Magento\Captcha\Observer;
 /**
  * Test captcha observer behavior
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class CaseCheckUnsuccessfulMessageWhenCaptchaFailedTest extends \Magento\TestFramework\TestCase\AbstractController
 {
     /**
      * @magentoDbIsolation enabled
      * @magentoAppIsolation enabled
-     * @magentoAdminConfigFixture adminhtml/captcha/enable 1
-     * @magentoAdminConfigFixture adminhtml/captcha/forms backend_forgotpassword
-     * @magentoAdminConfigFixture adminhtml/captcha/mode always
+     * @magentoAdminConfigFixture Adminhtml/captcha/enable 1
+     * @magentoAdminConfigFixture Adminhtml/captcha/forms backend_forgotpassword
+     * @magentoAdminConfigFixture Adminhtml/captcha/mode always
      */
     public function testCheckUnsuccessfulMessageWhenCaptchaFailed()
     {
@@ -25,7 +25,7 @@ class CaseCheckUnsuccessfulMessageWhenCaptchaFailedTest extends \Magento\TestFra
             \Magento\Backend\Model\UrlInterface::class
         )->turnOffSecretKey();
         $this->getRequest()->setPostValue(['email' => 'dummy@dummy.com', 'captcha' => '1234']);
-        $this->dispatch('backend/adminhtml/auth/forgotpassword');
+        $this->dispatch('backend/Adminhtml/auth/forgotpassword');
         $this->assertSessionMessages(
             $this->equalTo(['Incorrect CAPTCHA']),
             \Magento\Framework\Message\MessageInterface::TYPE_ERROR

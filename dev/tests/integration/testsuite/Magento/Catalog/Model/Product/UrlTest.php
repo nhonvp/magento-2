@@ -55,7 +55,7 @@ class UrlTest extends \PHPUnit\Framework\TestCase
      * @magentoDataFixture Magento/Catalog/_files/product_simple_multistore.php
      * @dataProvider getUrlsWithSecondStoreProvider
      * @magentoDbIsolation disabled
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testGetUrlInStoreWithSecondStore($storeCode, $expectedProductUrl)
     {

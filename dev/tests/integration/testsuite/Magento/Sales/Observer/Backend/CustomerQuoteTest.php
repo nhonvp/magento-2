@@ -12,7 +12,7 @@ use Magento\Quote\Model\Quote;
 use Magento\TestFramework\Helper\Bootstrap;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class CustomerQuoteTest extends \PHPUnit\Framework\TestCase
 {

@@ -226,7 +226,7 @@ class ConfigFixtureTest extends TestCase
             '_getConfigValue'
         )->with(
             'dev/restrict/allow_ips',
-            'adminhtml'
+            'Adminhtml'
         )->willReturn(
             '192.168.0.1'
         );
@@ -237,7 +237,7 @@ class ConfigFixtureTest extends TestCase
         )->with(
             'dev/restrict/allow_ips',
             '192.168.0.2',
-            'adminhtml'
+            'Adminhtml'
         );
         $this->object->startTest($this);
 
@@ -249,7 +249,7 @@ class ConfigFixtureTest extends TestCase
             'dev/restrict/allow_ips',
             '192.168.0.1',
             ScopeInterface::SCOPE_STORES,
-            'adminhtml'
+            'Adminhtml'
         );
         $this->object->endTest($this);
     }

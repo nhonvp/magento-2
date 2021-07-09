@@ -9,7 +9,7 @@ namespace Magento\Backend\Block\Page;
 /**
  * Test \Magento\Backend\Block\Page\Footer
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class FooterTest extends \PHPUnit\Framework\TestCase
 {

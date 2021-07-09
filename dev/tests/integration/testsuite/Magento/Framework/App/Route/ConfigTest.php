@@ -38,7 +38,7 @@ class ConfigTest extends \PHPUnit\Framework\TestCase
     public function getRouteFrontNameDataProvider()
     {
         return [
-            ['adminhtml', 'adminhtml'],
+            ['Adminhtml', 'Adminhtml'],
             ['catalog', 'frontend'],
         ];
     }

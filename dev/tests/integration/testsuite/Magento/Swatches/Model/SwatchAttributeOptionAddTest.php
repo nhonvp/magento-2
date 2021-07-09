@@ -26,7 +26,7 @@ class SwatchAttributeOptionAddTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDbIsolation enabled
      * @magentoDataFixture Magento/Swatches/_files/swatch_attribute.php
      */

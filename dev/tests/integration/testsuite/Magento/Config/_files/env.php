@@ -5,7 +5,7 @@
  */
 return [
     'backend' => [
-        'frontName' => 'adminhtml',
+        'frontName' => 'Adminhtml',
     ],
     'crypt' => [
         'key' => 'some_key',

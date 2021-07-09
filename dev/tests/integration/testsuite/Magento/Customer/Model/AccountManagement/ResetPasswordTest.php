@@ -54,7 +54,7 @@ class ResetPasswordTest extends TestCase
     }
 
     /**
-     * Assert that when you reset customer password via adminhtml, link with "Set a New Password" is send to customer email.
+     * Assert that when you reset customer password via Adminhtml, link with "Set a New Password" is send to customer email.
      *
      * @magentoDataFixture Magento/Customer/_files/customer.php
      * @return void

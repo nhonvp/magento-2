@@ -445,7 +445,7 @@ class AddressTest extends TestCase
     /**
      * Case when attribute settings for two websites are different.
      *
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoAppIsolation enabled
      * @magentoDbIsolation enabled
      * @magentoDataFixture Magento/CustomerImportExport/_files/two_addresses.php

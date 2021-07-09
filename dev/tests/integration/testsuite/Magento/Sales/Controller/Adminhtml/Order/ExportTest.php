@@ -8,13 +8,13 @@ declare(strict_types=1);
 namespace Magento\Sales\Controller\Adminhtml\Order;
 
 /**
- * Tests for order export via adminhtml grid.
+ * Tests for order export via Adminhtml grid.
  */
 class ExportTest extends ExportBase
 {
     /**
      * @magentoDbIsolation disabled
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoConfigFixture general/locale/timezone America/Chicago
      * @magentoConfigFixture test_website general/locale/timezone America/Adak
      * @magentoDataFixture Magento/Sales/_files/order_with_invoice_shipment_creditmemo_on_second_website.php

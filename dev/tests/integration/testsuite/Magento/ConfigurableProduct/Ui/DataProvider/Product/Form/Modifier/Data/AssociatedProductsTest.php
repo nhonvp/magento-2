@@ -42,7 +42,7 @@ class AssociatedProductsTest extends TestCase
      * @dataProvider getProductMatrixDataProvider
      * @param string $interfaceLocale
      * @magentoDataFixture Magento/ConfigurableProduct/_files/product_configurable.php
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testGetProductMatrix($interfaceLocale)
     {
@@ -56,7 +56,7 @@ class AssociatedProductsTest extends TestCase
         $this->registry->register('current_product', $productRepository->get($productSku));
         /** @var $store \Magento\Store\Model\Store */
         $store = $this->objectManager->create(\Magento\Store\Model\Store::class);
-        $store->load('adminhtml');
+        $store->load('Adminhtml');
         $this->registry->register('current_store', $store);
         /** @var \Magento\Framework\Locale\ResolverInterface|\PHPUnit\Framework\MockObject\MockObject $localeResolver */
         $localeResolver = $this->getMockBuilder(\Magento\Framework\Locale\ResolverInterface::class)
@@ -87,7 +87,7 @@ class AssociatedProductsTest extends TestCase
      *
      * @return void
      * @magentoDataFixture Magento/ConfigurableProduct/_files/product_configurable.php
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testAddManuallyConfigurationsWithNotFilterableInGridAttribute(): void
     {

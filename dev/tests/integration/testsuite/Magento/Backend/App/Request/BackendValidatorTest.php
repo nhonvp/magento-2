@@ -248,8 +248,8 @@ class BackendValidatorTest extends TestCase
     }
 
     /**
-     * @magentoConfigFixture adminhtml/security/use_form_key 1
-     * @magentoAppArea adminhtml
+     * @magentoConfigFixture Adminhtml/security/use_form_key 1
+     * @magentoAppArea Adminhtml
      */
     public function testValidateWithValidKey()
     {
@@ -270,8 +270,8 @@ class BackendValidatorTest extends TestCase
 
     /**
      *
-     * @magentoConfigFixture adminhtml/security/use_form_key 1
-     * @magentoAppArea adminhtml
+     * @magentoConfigFixture Adminhtml/security/use_form_key 1
+     * @magentoAppArea Adminhtml
      */
     public function testValidateWithInvalidKey()
     {
@@ -295,8 +295,8 @@ class BackendValidatorTest extends TestCase
 
     /**
      *
-     * @magentoConfigFixture adminhtml/security/use_form_key 0
-     * @magentoAppArea adminhtml
+     * @magentoConfigFixture Adminhtml/security/use_form_key 0
+     * @magentoAppArea Adminhtml
      */
     public function testValidateWithInvalidFormKey()
     {
@@ -314,8 +314,8 @@ class BackendValidatorTest extends TestCase
     }
 
     /**
-     * @magentoConfigFixture adminhtml/security/use_form_key 0
-     * @magentoAppArea adminhtml
+     * @magentoConfigFixture Adminhtml/security/use_form_key 0
+     * @magentoAppArea Adminhtml
      */
     public function testValidateInvalidWithAwareAction()
     {
@@ -344,7 +344,7 @@ class BackendValidatorTest extends TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testValidateValidWithAwareAction()
     {
@@ -359,8 +359,8 @@ class BackendValidatorTest extends TestCase
     }
 
     /**
-     * @magentoConfigFixture adminhtml/security/use_form_key 1
-     * @magentoAppArea adminhtml
+     * @magentoConfigFixture Adminhtml/security/use_form_key 1
+     * @magentoAppArea Adminhtml
      */
     public function testValidateWithCsrfAwareAction()
     {

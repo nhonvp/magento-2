@@ -16,7 +16,7 @@ use Magento\ImportExport\Controller\Adminhtml\Import\HttpFactoryMock;
 /**
  * Test for \Magento\ImportExport\Controller\Adminhtml\ImportResult class.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class ImportResultTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {
@@ -71,7 +71,7 @@ class ImportResultTest extends \Magento\TestFramework\TestCase\AbstractBackendCo
             ]
         );
 
-        $this->dispatch('backend/adminhtml/import/validate');
+        $this->dispatch('backend/Adminhtml/import/validate');
         $this->assertStringNotContainsString('&lt;br&gt;', $this->getResponse()->getBody());
     }
 

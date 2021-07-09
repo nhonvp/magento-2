@@ -7,7 +7,7 @@ namespace Magento\UrlRewrite\Block\Catalog\Product;
 
 /**
  * Test for \Magento\UrlRewrite\Block\Catalog\Product\Grid
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class GridTest extends \PHPUnit\Framework\TestCase
 {
@@ -36,7 +36,7 @@ class GridTest extends \PHPUnit\Framework\TestCase
 
         $row = new \Magento\Framework\DataObject(['id' => 1]);
         $this->assertStringStartsWith(
-            'http://localhost/index.php/backend/adminhtml/index/edit/product/1',
+            'http://localhost/index.php/backend/Adminhtml/index/edit/product/1',
             $gridBlock->getRowUrl($row),
             'Grid row URL is invalid'
         );

@@ -17,7 +17,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Class to test wishlist collection by customer functionality
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class GridTest extends TestCase
 {

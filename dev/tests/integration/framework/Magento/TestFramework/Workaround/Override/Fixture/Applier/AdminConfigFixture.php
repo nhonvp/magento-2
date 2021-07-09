@@ -8,7 +8,7 @@ declare(strict_types=1);
 namespace Magento\TestFramework\Workaround\Override\Fixture\Applier;
 
 /**
- * Class represent adminhtml config fixtures applying logic
+ * Class represent Adminhtml config fixtures applying logic
  */
 class AdminConfigFixture extends ConfigFixture
 {

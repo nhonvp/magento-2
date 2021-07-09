@@ -334,7 +334,7 @@ class CategoryTest extends TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testDeleteChildren(): void
     {
@@ -359,7 +359,7 @@ class CategoryTest extends TestCase
 
     /**
      * @magentoDbIsolation enabled
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDataFixture Magento/Catalog/_files/categories_no_products.php
      */
     public function testChildrenCountAfterDeleteParentCategory(): void

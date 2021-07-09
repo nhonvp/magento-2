@@ -17,9 +17,9 @@ use Magento\Framework\Message\MessageInterface;
 use Magento\TestFramework\TestCase\AbstractBackendController;
 
 /**
- * Provide tests for adminhtml product save action with images.
+ * Provide tests for Adminhtml product save action with images.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class ImagesTest extends AbstractBackendController
 {

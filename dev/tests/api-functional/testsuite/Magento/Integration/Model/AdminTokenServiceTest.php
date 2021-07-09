@@ -22,7 +22,7 @@ class AdminTokenServiceTest extends WebapiAbstract
 {
     const SERVICE_NAME = "integrationAdminTokenServiceV1";
     const SERVICE_VERSION = "V1";
-    const RESOURCE_PATH_ADMIN_TOKEN = "/V1/integration/adminhtml/token";
+    const RESOURCE_PATH_ADMIN_TOKEN = "/V1/integration/Adminhtml/token";
 
     /**
      * @var \Magento\Integration\Api\AdminTokenServiceInterface

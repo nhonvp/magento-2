@@ -11,7 +11,7 @@ namespace Magento\Integration\Block\Adminhtml\System\Config;
 /**
  * Testing Oauth section in configs.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class OauthSectionTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {
@@ -20,7 +20,7 @@ class OauthSectionTest extends \Magento\TestFramework\TestCase\AbstractBackendCo
      */
     public function testOAuthSection()
     {
-        $this->dispatch('backend/adminhtml/system_config/edit/section/oauth/');
+        $this->dispatch('backend/Adminhtml/system_config/edit/section/oauth/');
         $body = $this->getResponse()->getBody();
         $this->assertStringContainsString('id="oauth_access_token_lifetime-head"', $body);
         $this->assertStringContainsString('id="oauth_cleanup-head"', $body);

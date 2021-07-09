@@ -17,7 +17,7 @@ use Magento\TestFramework\Helper\Bootstrap;
  * Test export coupon xml
  *
  * Verify export xml
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDataFixture Magento/SalesRule/_files/cart_rule_with_coupon_list.php
  */
 class ExportCouponsXmlTest extends AbstractBackendController

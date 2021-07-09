@@ -14,7 +14,7 @@ class CleanStaticFilesTest extends \Magento\TestFramework\TestCase\AbstractBacke
     protected function setUp(): void
     {
         $this->resource = 'Magento_Backend::cache';
-        $this->uri = 'backend/adminhtml/cache/cleanStaticFiles';
+        $this->uri = 'backend/Adminhtml/cache/cleanStaticFiles';
         parent::setUp();
     }
 

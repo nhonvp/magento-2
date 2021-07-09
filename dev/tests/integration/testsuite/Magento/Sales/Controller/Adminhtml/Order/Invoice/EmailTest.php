@@ -13,7 +13,7 @@ use PHPUnit\Framework\Constraint\StringContains;
  * Class verifies invoice send email functionality.
  *
  * @magentoDbIsolation enabled
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDataFixture Magento/Sales/_files/invoice.php
  */
 class EmailTest extends AbstractInvoiceControllerTest

@@ -9,7 +9,7 @@ use Magento\Framework\Message\MessageInterface;
 
 /**
  * Test class for \Magento\Backend\Controller\Adminhtml\Auth
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  */
 class AuthTest extends \Magento\TestFramework\TestCase\AbstractController
@@ -67,13 +67,13 @@ class AuthTest extends \Magento\TestFramework\TestCase\AbstractController
      */
     public function testNotLoggedLoginAction()
     {
-        $this->dispatch('backend/adminhtml/auth/login');
+        $this->dispatch('backend/Adminhtml/auth/login');
         /** @var $backendUrlModel \Magento\Backend\Model\UrlInterface */
         $backendUrlModel = \Magento\TestFramework\Helper\Bootstrap::getObjectManager()->get(
             \Magento\Backend\Model\UrlInterface::class
         );
         $backendUrlModel->turnOffSecretKey();
-        $url = $backendUrlModel->getUrl('adminhtml');
+        $url = $backendUrlModel->getUrl('Adminhtml');
         $this->assertRedirect($this->stringStartsWith($url));
     }
 
@@ -86,7 +86,7 @@ class AuthTest extends \Magento\TestFramework\TestCase\AbstractController
     {
         $this->_login();
 
-        $this->dispatch('backend/adminhtml/auth/login');
+        $this->dispatch('backend/Adminhtml/auth/login');
         /** @var $backendUrlModel \Magento\Backend\Model\UrlInterface */
         $backendUrlModel = \Magento\TestFramework\Helper\Bootstrap::getObjectManager()->get(
             \Magento\Backend\Model\UrlInterface::class
@@ -115,7 +115,7 @@ class AuthTest extends \Magento\TestFramework\TestCase\AbstractController
             ]
         );
 
-        $this->dispatch('backend/adminhtml/index/index');
+        $this->dispatch('backend/Adminhtml/index/index');
 
         $response = \Magento\TestFramework\Helper\Bootstrap::getObjectManager()
             ->get(\Magento\Framework\App\ResponseInterface::class);
@@ -136,7 +136,7 @@ class AuthTest extends \Magento\TestFramework\TestCase\AbstractController
     public function testLogoutAction()
     {
         $this->_login();
-        $this->dispatch('backend/adminhtml/auth/logout');
+        $this->dispatch('backend/Adminhtml/auth/logout');
         $this->assertRedirect(
             $this->equalTo(
                 \Magento\TestFramework\Helper\Bootstrap::getObjectManager()->get(
@@ -155,7 +155,7 @@ class AuthTest extends \Magento\TestFramework\TestCase\AbstractController
     public function testDeniedJsonAction()
     {
         $this->_login();
-        $this->dispatch('backend/adminhtml/auth/deniedJson');
+        $this->dispatch('backend/Adminhtml/auth/deniedJson');
         $data = [
             'ajaxExpired' => 1,
             'ajaxRedirect' => \Magento\TestFramework\Helper\Bootstrap::getObjectManager()->get(
@@ -175,7 +175,7 @@ class AuthTest extends \Magento\TestFramework\TestCase\AbstractController
     public function testDeniedIframeAction()
     {
         $this->_login();
-        $this->dispatch('backend/adminhtml/auth/deniedIframe');
+        $this->dispatch('backend/Adminhtml/auth/deniedIframe');
         $homeUrl = \Magento\TestFramework\Helper\Bootstrap::getObjectManager()->get(
             \Magento\Backend\Helper\Data::class
         )->getHomePageUrl();
@@ -198,7 +198,7 @@ class AuthTest extends \Magento\TestFramework\TestCase\AbstractController
         $formKey = $this->_objectManager->get(\Magento\Framework\Data\Form\FormKey::class);
         $params['form_key'] = $formKey->getFormKey();
         $this->getRequest()->setPostValue($params);
-        $this->dispatch('backend/adminhtml/auth/login');
+        $this->dispatch('backend/Adminhtml/auth/login');
         $this->assertSessionMessages(
             $this->equalTo(
                 [
@@ -212,7 +212,7 @@ class AuthTest extends \Magento\TestFramework\TestCase\AbstractController
             \Magento\Backend\Model\UrlInterface::class
         );
         $backendUrlModel->turnOffSecretKey();
-        $url = $backendUrlModel->getUrl('adminhtml');
+        $url = $backendUrlModel->getUrl('Adminhtml');
         $this->assertRedirect($this->stringStartsWith($url));
     }
 

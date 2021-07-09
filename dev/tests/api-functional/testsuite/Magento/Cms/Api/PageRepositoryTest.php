@@ -625,7 +625,7 @@ class PageRepositoryTest extends WebapiAbstract
      */
     public function testSaveDesign(): void
     {
-        //Updating our adminhtml user's role to allow saving pages but not their design settings.
+        //Updating our Adminhtml user's role to allow saving pages but not their design settings.
         /** @var Role $role */
         $role = $this->roleFactory->create();
         $role->load('test_custom_role', 'role_name');
@@ -634,7 +634,7 @@ class PageRepositoryTest extends WebapiAbstract
         $rules->setRoleId($role->getId());
         $rules->setResources(['Magento_Cms::save']);
         $rules->saveRel();
-        //Using the adminhtml user with custom role.
+        //Using the Adminhtml user with custom role.
         $token = $this->adminTokens->createAdminAccessToken(
             'customRoleUser',
             \Magento\TestFramework\Bootstrap::ADMIN_PASSWORD
@@ -809,7 +809,7 @@ class PageRepositoryTest extends WebapiAbstract
      */
     private function getStoreIdByRequestStore(string $requestStoreCode): int
     {
-        $storeCode = $requestStoreCode === 'all' ? 'adminhtml' : $requestStoreCode;
+        $storeCode = $requestStoreCode === 'all' ? 'Adminhtml' : $requestStoreCode;
         $store = $this->storeManager->getStore($storeCode);
 
         return (int)$store->getId();

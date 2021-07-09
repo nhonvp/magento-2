@@ -8,7 +8,7 @@ namespace Magento\Backend\Block;
 /**
  * Test class for \Magento\Backend\Block\Widget
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class WidgetTest extends \PHPUnit\Framework\TestCase
 {

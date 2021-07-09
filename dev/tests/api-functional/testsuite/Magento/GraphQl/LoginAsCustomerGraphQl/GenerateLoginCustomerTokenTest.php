@@ -41,7 +41,7 @@ class GenerateLoginCustomerTokenTest extends GraphQlAbstract
     /**
      * Verify with Admin email ID and Magento_LoginAsCustomer::login is enabled
      *
-     * @magentoApiDataFixture Magento/LoginAsCustomer/_files/adminhtml.php
+     * @magentoApiDataFixture Magento/LoginAsCustomer/_files/Adminhtml.php
      * @magentoConfigFixture admin_store login_as_customer/general/enabled 1
      * @magentoApiDataFixture Magento/LoginAsCustomer/_files/customer.php
      * @throws Exception
@@ -65,7 +65,7 @@ class GenerateLoginCustomerTokenTest extends GraphQlAbstract
     /**
      * Verify with Admin email ID and Magento_LoginAsCustomer::login is disabled
      *
-     * @magentoApiDataFixture Magento/LoginAsCustomer/_files/adminhtml.php
+     * @magentoApiDataFixture Magento/LoginAsCustomer/_files/Adminhtml.php
      * @magentoConfigFixture admin_store login_as_customer/general/enabled 0
      * @magentoApiDataFixture Magento/LoginAsCustomer/_files/customer.php
      * @throws Exception
@@ -114,7 +114,7 @@ class GenerateLoginCustomerTokenTest extends GraphQlAbstract
     /**
      * Test with invalid data.
      *
-     * @magentoApiDataFixture Magento/LoginAsCustomer/_files/adminhtml.php
+     * @magentoApiDataFixture Magento/LoginAsCustomer/_files/Adminhtml.php
      * @magentoConfigFixture admin_store login_as_customer/general/enabled 1
      *
      * @dataProvider dataProviderInvalidInfo
@@ -186,7 +186,7 @@ MUTATION;
     /**
      * Generate customer authentication token
      *
-     * @magentoApiDataFixture Magento/LoginAsCustomer/_files/adminhtml.php
+     * @magentoApiDataFixture Magento/LoginAsCustomer/_files/Adminhtml.php
      *
      * @param string $username
      * @param string $password
@@ -203,7 +203,7 @@ MUTATION;
     }
 
     /**
-     * To get adminhtml access token
+     * To get Adminhtml access token
      *
      * @param string $userName
      * @param string $password

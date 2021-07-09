@@ -16,7 +16,7 @@ use PHPUnit\Framework\Constraint\StringContains;
  * Provide tests for CreditMemo save controller.
  *
  * @magentoDbIsolation enabled
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDataFixture Magento/Sales/_files/invoice.php
  */
 class SaveTest extends AbstractCreditmemoControllerTest

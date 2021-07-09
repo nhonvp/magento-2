@@ -8,7 +8,7 @@ namespace Magento\User\Controller\Adminhtml\Locks;
 /**
  * Testing unlock controller.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class MassUnlockTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {
@@ -32,7 +32,7 @@ class MassUnlockTest extends \Magento\TestFramework\TestCase\AbstractBackendCont
             'unlock',
             $userIds
         );
-        $this->dispatch('backend/adminhtml/locks/massunlock');
+        $this->dispatch('backend/Adminhtml/locks/massunlock');
 
         $this->assertSessionMessages(
             $this->containsEqual((string)__('Unlocked %1 user(s).', count($userIds))),

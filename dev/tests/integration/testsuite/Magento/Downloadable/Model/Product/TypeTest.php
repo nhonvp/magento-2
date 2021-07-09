@@ -34,7 +34,7 @@ class TypeTest extends \PHPUnit\Framework\TestCase
 
     /**
      * @magentoDataFixture Magento/Downloadable/_files/product_downloadable_with_files.php
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testDeleteTypeSpecificData()
     {
@@ -74,7 +74,7 @@ class TypeTest extends \PHPUnit\Framework\TestCase
 
     /**
      * @magentoDataFixture Magento/Downloadable/_files/product_downloadable_with_files.php
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @SuppressWarnings(PHPMD.ExcessiveMethodLength)
      * @SuppressWarnings(PHPMD.CyclomaticComplexity)
      * @SuppressWarnings(PHPMD.NPathComplexity)

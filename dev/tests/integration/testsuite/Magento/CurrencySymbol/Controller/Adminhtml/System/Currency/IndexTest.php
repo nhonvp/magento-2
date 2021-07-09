@@ -30,7 +30,7 @@ class IndexTest extends \Magento\TestFramework\TestCase\AbstractBackendControlle
             ScopeInterface::SCOPE_STORE,
             0
         );
-        $this->dispatch('backend/adminhtml/system_currency/index');
+        $this->dispatch('backend/Adminhtml/system_currency/index');
         $this->getResponse()->isSuccess();
         $body = $this->getResponse()->getBody();
         $this->assertStringContainsString('id="rate-form"', $body);

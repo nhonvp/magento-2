@@ -21,7 +21,7 @@ use Magento\TestFramework\Helper\Xpath;
 /**
  * Test cases related to check that simple product custom option renders as expected.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class OptionsTest extends AbstractRenderCustomOptionsTest
 {

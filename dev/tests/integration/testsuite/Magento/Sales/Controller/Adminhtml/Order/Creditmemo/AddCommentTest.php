@@ -14,7 +14,7 @@ use PHPUnit\Framework\Constraint\StringContains;
  * Class verifies creditmemo add comment functionality.
  *
  * @magentoDbIsolation enabled
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDataFixture Magento/Sales/_files/creditmemo_for_get.php
  */
 class AddCommentTest extends AbstractCreditmemoControllerTest

@@ -68,7 +68,7 @@ define([
 
                 $.ajax = jasmine.createSpy();
                 init({
-                    orderSaveUrl: '/adminhtml/paypal/transparent/requestSecureToken'
+                    orderSaveUrl: '/Adminhtml/paypal/transparent/requestSecureToken'
                 });
                 beforeSubmitOrderEvent = $.Event('beforeSubmitOrder');
                 $(formEl).trigger(beforeSubmitOrderEvent);

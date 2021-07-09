@@ -15,7 +15,7 @@ use Magento\TestFramework\TestCase\AbstractBackendController;
 /**
  * Tests for delete customer via backend/customer/index/delete controller.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class DeleteTest extends AbstractBackendController
 {

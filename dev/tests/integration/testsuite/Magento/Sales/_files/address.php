@@ -20,7 +20,7 @@ $address->setRegion(
 )->setCity(
     'Beverly Hills'
 )->setEmail(
-    'adminhtml@example.com'
+    'Adminhtml@example.com'
 )->setTelephone(
     '1111111111'
 )->setCountryId(

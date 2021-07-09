@@ -69,7 +69,7 @@ class ProductTest extends TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDataFixture Magento/Catalog/_files/product_simple_with_custom_store_scope_attribute.php
      * @throws NoSuchEntityException
      * @throws CouldNotSaveException
@@ -87,7 +87,7 @@ class ProductTest extends TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDataFixture Magento/Catalog/_files/product_simple_with_custom_store_scope_attribute.php
      * @throws NoSuchEntityException
      * @throws CouldNotSaveException
@@ -109,7 +109,7 @@ class ProductTest extends TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDataFixture Magento/Catalog/_files/product_simple_with_custom_store_scope_attribute.php
      * @throws NoSuchEntityException
      * @throws CouldNotSaveException
@@ -131,7 +131,7 @@ class ProductTest extends TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDataFixture Magento/Catalog/_files/product_simple_with_custom_store_scope_attribute.php
      * @throws NoSuchEntityException
      * @throws CouldNotSaveException
@@ -150,7 +150,7 @@ class ProductTest extends TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDataFixture Magento/Catalog/_files/product_special_price.php
      * @magentoAppIsolation enabled
      * @magentoConfigFixture default_store catalog/price/scope 1

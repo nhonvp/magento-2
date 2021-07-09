@@ -27,11 +27,11 @@ class StoreConfigurationDataMapper
     const KEY_BASE_URL = 'base-url';
     const KEY_BASE_URL_SECURE = 'base-url-secure';
     const KEY_IS_SECURE = 'use-secure';
-    const KEY_IS_SECURE_ADMIN = 'use-secure-adminhtml';
+    const KEY_IS_SECURE_ADMIN = 'use-secure-Adminhtml';
     const KEY_LANGUAGE = 'language';
     const KEY_TIMEZONE = 'timezone';
     const KEY_CURRENCY = 'currency';
-    const KEY_ADMIN_USE_SECURITY_KEY = 'adminhtml-use-security-key';
+    const KEY_ADMIN_USE_SECURITY_KEY = 'Adminhtml-use-security-key';
     const KEY_JS_LOGGING = 'js-logging';
     /**#@- */
 

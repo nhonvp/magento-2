@@ -9,7 +9,7 @@ declare(strict_types=1);
 namespace Magento\Reports\Controller\Adminhtml\Report\Statistics;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class IndexTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {

@@ -44,6 +44,11 @@
                     <label>Text Magenest Actor</label>
                     <frontend_model>Magenest\Movie\Block\System\Config\RowActor</frontend_model>
                 </field>
+                <field id="button_id" translate="label" type="button" sortOrder="13" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Button Click</label>
+                    <frontend_model>Magenest\Movie\Block\System\Config\Button</frontend_model>
+                </field>
             </group>
         </section>
     </system>

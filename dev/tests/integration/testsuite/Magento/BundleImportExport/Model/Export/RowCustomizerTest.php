@@ -6,7 +6,7 @@
 namespace Magento\BundleImportExport\Model\Export;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class RowCustomizerTest extends \PHPUnit\Framework\TestCase
 {

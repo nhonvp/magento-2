@@ -12,7 +12,7 @@ use Magento\TestFramework\Helper\Bootstrap;
 use Magento\Framework\App\Request\Http as HttpRequest;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class ConfigTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {
@@ -21,7 +21,7 @@ class ConfigTest extends \Magento\TestFramework\TestCase\AbstractBackendControll
      */
     public function testEditAction()
     {
-        $this->dispatch('backend/adminhtml/system_config/edit');
+        $this->dispatch('backend/Adminhtml/system_config/edit');
         $this->assertStringContainsString('<div id="system_config_tabs"', $this->getResponse()->getBody());
     }
 
@@ -54,7 +54,7 @@ class ConfigTest extends \Magento\TestFramework\TestCase\AbstractBackendControll
         )->setMethod(
             HttpRequest::METHOD_POST
         );
-        $this->dispatch('backend/adminhtml/system_config/save');
+        $this->dispatch('backend/Adminhtml/system_config/save');
 
         $this->assertTrue($this->getResponse()->isRedirect(), 'Redirect was expected, but none was performed.');
 

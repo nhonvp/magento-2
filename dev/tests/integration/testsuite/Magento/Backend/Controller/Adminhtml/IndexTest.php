@@ -8,7 +8,7 @@ namespace Magento\Backend\Controller\Adminhtml;
 use Magento\Framework\App\Request\Http as HttpRequest;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  */
 class IndexTest extends \Magento\TestFramework\TestCase\AbstractBackendController
@@ -20,13 +20,13 @@ class IndexTest extends \Magento\TestFramework\TestCase\AbstractBackendControlle
     public function testNotLoggedIndexAction()
     {
         $this->_auth->logout();
-        $this->dispatch('backend/adminhtml/index/index');
+        $this->dispatch('backend/Adminhtml/index/index');
         /** @var $backendUrlModel \Magento\Backend\Model\UrlInterface */
         $backendUrlModel = \Magento\TestFramework\Helper\Bootstrap::getObjectManager()->get(
             \Magento\Backend\Model\UrlInterface::class
         );
         $backendUrlModel->turnOffSecretKey();
-        $url = $backendUrlModel->getUrl('adminhtml');
+        $url = $backendUrlModel->getUrl('Adminhtml');
         $this->assertRedirect($this->stringStartsWith($url));
     }
 
@@ -37,7 +37,7 @@ class IndexTest extends \Magento\TestFramework\TestCase\AbstractBackendControlle
      */
     public function testLoggedIndexAction()
     {
-        $this->dispatch('backend/adminhtml/index/index');
+        $this->dispatch('backend/Adminhtml/index/index');
         $this->assertRedirect();
     }
 
@@ -49,7 +49,7 @@ class IndexTest extends \Magento\TestFramework\TestCase\AbstractBackendControlle
         $this->getRequest()->setParam('isAjax', 'true');
         $this->getRequest()->setMethod(HttpRequest::METHOD_POST);
         $this->getRequest()->setPostValue('query', 'dummy');
-        $this->dispatch('backend/adminhtml/index/globalSearch');
+        $this->dispatch('backend/Adminhtml/index/globalSearch');
 
         $actual = $this->getResponse()->getBody();
         $this->assertEquals([], json_decode($actual));

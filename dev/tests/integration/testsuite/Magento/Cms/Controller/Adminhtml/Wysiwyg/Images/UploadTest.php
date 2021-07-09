@@ -16,7 +16,7 @@ use Magento\Framework\App\Response\Http as Response;
 /**
  * Test for \Magento\Cms\Controller\Adminhtml\Wysiwyg\Images\Upload class.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class UploadTest extends \PHPUnit\Framework\TestCase
 {

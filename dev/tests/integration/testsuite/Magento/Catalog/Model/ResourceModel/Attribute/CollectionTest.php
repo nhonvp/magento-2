@@ -31,7 +31,7 @@ class CollectionTest extends TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @dataProvider attributesCollectionGetCurrentPageDataProvider
      *
      * @param array|null $condition

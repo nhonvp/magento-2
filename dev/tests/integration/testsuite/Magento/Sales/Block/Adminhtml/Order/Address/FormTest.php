@@ -24,7 +24,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @see \Magento\Sales\Block\Adminhtml\Order\Address\Form
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class FormTest extends TestCase
 {

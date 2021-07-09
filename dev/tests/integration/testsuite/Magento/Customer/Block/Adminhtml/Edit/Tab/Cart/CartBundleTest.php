@@ -17,7 +17,7 @@ use Magento\TestFramework\Helper\Bootstrap;
  * Class checks customer's shopping cart block with bundle product.
  *
  * @see \Magento\Customer\Block\Adminhtml\Edit\Tab\Cart
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class CartBundleTest extends AbstractCartTest
 {

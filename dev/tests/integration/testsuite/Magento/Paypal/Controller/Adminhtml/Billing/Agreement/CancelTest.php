@@ -6,7 +6,7 @@
 namespace Magento\Paypal\Controller\Adminhtml\Billing\Agreement;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class CancelTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {

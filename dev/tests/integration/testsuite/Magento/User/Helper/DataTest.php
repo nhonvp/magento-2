@@ -6,7 +6,7 @@
 namespace Magento\User\Helper;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class DataTest extends \PHPUnit\Framework\TestCase
 {

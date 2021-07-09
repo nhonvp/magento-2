@@ -20,7 +20,7 @@ use PHPUnit\Framework\TestCase;
  * Reorder with Configurable product integration tests.
  *
  * @see Create
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class ReorderTest extends TestCase
 {

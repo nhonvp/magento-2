@@ -14,7 +14,7 @@ use Magento\Quote\Model\Quote;
  * Class checks customer's shopping cart block with simple product and simple product with options.
  *
  * @see \Magento\Customer\Block\Adminhtml\Edit\Tab\Cart
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class CartTest extends AbstractCartTest
 {

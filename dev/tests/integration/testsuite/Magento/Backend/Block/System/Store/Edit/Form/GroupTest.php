@@ -7,7 +7,7 @@ namespace Magento\Backend\Block\System\Store\Edit\Form;
 
 /**
  * @magentoAppIsolation enabled
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class GroupTest extends \PHPUnit\Framework\TestCase
 {

@@ -31,7 +31,7 @@ class ProductRuleTest extends \PHPUnit\Framework\TestCase
      * @magentoDataFixture Magento/CatalogRule/_files/attribute.php
      * @magentoDataFixture Magento/CatalogRule/_files/rule_by_attribute.php
      * @magentoDataFixture Magento/Catalog/_files/product_simple.php
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testReindexAfterSuitableProductSaving()
     {

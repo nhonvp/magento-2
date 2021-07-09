@@ -6,7 +6,7 @@
 namespace Magento\Variable\Block\System\Variable;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class EditTest extends \PHPUnit\Framework\TestCase
 {

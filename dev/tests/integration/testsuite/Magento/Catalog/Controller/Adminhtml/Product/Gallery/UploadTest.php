@@ -17,9 +17,9 @@ use Magento\Framework\Serialize\Serializer\Json;
 use Magento\TestFramework\TestCase\AbstractBackendController;
 
 /**
- * Provide tests for adminhtml product upload image action.
+ * Provide tests for Adminhtml product upload image action.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class UploadTest extends AbstractBackendController
 {
@@ -67,7 +67,7 @@ class UploadTest extends AbstractBackendController
     }
 
     /**
-     * Test upload image on adminhtml product page.
+     * Test upload image on Adminhtml product page.
      *
      * @dataProvider uploadActionDataProvider
      * @magentoDbIsolation enabled
@@ -144,7 +144,7 @@ class UploadTest extends AbstractBackendController
     }
 
     /**
-     * Test upload image on adminhtml product page.
+     * Test upload image on Adminhtml product page.
      *
      * @dataProvider uploadActionWithErrorsDataProvider
      * @magentoDbIsolation enabled

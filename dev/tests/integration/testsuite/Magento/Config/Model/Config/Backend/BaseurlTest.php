@@ -6,7 +6,7 @@
 namespace Magento\Config\Model\Config\Backend;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class BaseurlTest extends \PHPUnit\Framework\TestCase
 {

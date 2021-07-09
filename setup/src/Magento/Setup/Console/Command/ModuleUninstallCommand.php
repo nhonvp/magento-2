@@ -418,7 +418,7 @@ class ModuleUninstallCommand extends AbstractModuleCommand
      */
     private function setAreaCode()
     {
-        $areaCode = 'adminhtml';
+        $areaCode = 'Adminhtml';
         /** @var \Magento\Framework\App\State $appState */
         $appState = $this->objectManager->get(\Magento\Framework\App\State::class);
         $appState->setAreaCode($areaCode);

@@ -22,7 +22,7 @@ class SwitchPriceAttributeScopeOnConfigChangeTest extends \PHPUnit\Framework\Tes
 
     /**
      * @magentoDbIsolation enabled
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testPriceAttributeHasScopeGlobal()
     {
@@ -37,7 +37,7 @@ class SwitchPriceAttributeScopeOnConfigChangeTest extends \PHPUnit\Framework\Tes
 
     /**
      * @magentoDbIsolation enabled
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testPriceAttributeHasScopeWebsite()
     {

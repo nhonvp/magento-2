@@ -69,7 +69,7 @@ class AbstractTest extends \PHPUnit\Framework\TestCase
     public function testGetAllIdsWithBind()
     {
         $this->_model->getSelect()->where('code = :code');
-        $this->_model->addBindParam('code', 'adminhtml');
+        $this->_model->addBindParam('code', 'Adminhtml');
         $this->assertEquals(['0'], $this->_model->getAllIds());
     }
 

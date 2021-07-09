@@ -338,7 +338,7 @@ class CreateAccountTest extends TestCase
     }
 
     /**
-     * Assert that when you create customer account via adminhtml, link with "set password" is send to customer email.
+     * Assert that when you create customer account via Adminhtml, link with "set password" is send to customer email.
      *
      * @return void
      */

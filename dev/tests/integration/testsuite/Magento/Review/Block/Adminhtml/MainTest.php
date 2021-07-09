@@ -10,7 +10,7 @@ class MainTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @magentoDataFixture Magento/Customer/_files/customer.php
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testConstruct()
     {

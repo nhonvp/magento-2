@@ -425,7 +425,7 @@ class InstallCommand extends AbstractSetupCommand
     }
 
     /**
-     * Performs validation of adminhtml options if at least one of them was set.
+     * Performs validation of Adminhtml options if at least one of them was set.
      *
      * @param InputInterface $input
      * @return array

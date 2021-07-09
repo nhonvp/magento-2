@@ -9,7 +9,7 @@ namespace Magento\Integration\Block\Adminhtml\Widget\Grid\Column\Renderer\Link;
 use Magento\Integration\Model\Integration;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDataFixture Magento/Integration/_files/integration_all_permissions.php
  */
 class ActivateTest extends \PHPUnit\Framework\TestCase

@@ -8,7 +8,7 @@ namespace Magento\Backend\Block\Widget\Grid\Massaction;
 class AdditionalTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testToHtml()
     {

@@ -6,7 +6,7 @@
 namespace Magento\User\Block\Role\Tab;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class EditTest extends \PHPUnit\Framework\TestCase
 {

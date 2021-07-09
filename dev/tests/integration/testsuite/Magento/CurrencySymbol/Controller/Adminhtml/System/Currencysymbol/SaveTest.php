@@ -38,7 +38,7 @@ class SaveTest extends \Magento\TestFramework\TestCase\AbstractBackendController
             ]
         );
         $request->setMethod(HttpRequest::METHOD_POST);
-        $this->dispatch('backend/adminhtml/system_currencysymbol/save');
+        $this->dispatch('backend/Adminhtml/system_currencysymbol/save');
 
         $this->assertRedirect();
 

@@ -13,7 +13,7 @@ use Magento\Catalog\Controller\Adminhtml\Product\Attribute\Save\AbstractSaveAttr
  * Test cases related to create attribute with yes/no input type.
  *
  * @magentoDbIsolation enabled
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class YesNoTest extends AbstractSaveAttributeTest
 {

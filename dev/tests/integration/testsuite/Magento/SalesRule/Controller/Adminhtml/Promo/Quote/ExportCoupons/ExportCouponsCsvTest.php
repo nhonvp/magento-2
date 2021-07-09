@@ -17,7 +17,7 @@ use Magento\TestFramework\Helper\Bootstrap;
  * Test export coupon csv
  *
  * Verify export csv
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDataFixture Magento/SalesRule/_files/cart_rule_with_coupon_list.php
  */
 class ExportCouponsCsvTest extends AbstractBackendController

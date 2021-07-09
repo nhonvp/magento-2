@@ -6,7 +6,7 @@
 namespace Magento\Authorization\Model\ResourceModel\Rules;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class CollectionTest extends \PHPUnit\Framework\TestCase
 {

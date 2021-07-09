@@ -11,7 +11,7 @@ use Magento\TestFramework\TestCase\AbstractBackendController;
 use Magento\Framework\App\Request\Http as HttpRequest;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class AjaxBlockTest extends AbstractBackendController
 {
@@ -28,7 +28,7 @@ class AjaxBlockTest extends AbstractBackendController
         $this->getRequest()->setMethod(HttpRequest::METHOD_POST);
         $this->getRequest()->setParam('block', $block);
 
-        $this->dispatch('backend/adminhtml/dashboard/ajaxBlock/');
+        $this->dispatch('backend/Adminhtml/dashboard/ajaxBlock/');
 
         $this->assertEquals(200, $this->getResponse()->getHttpResponseCode());
 

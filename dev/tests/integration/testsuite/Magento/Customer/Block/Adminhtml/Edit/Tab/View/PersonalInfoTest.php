@@ -12,7 +12,7 @@ use Magento\Customer\Controller\RegistryConstants;
  * Magento\Customer\Block\Adminhtml\Edit\Tab\View
  *
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class PersonalInfoTest extends \PHPUnit\Framework\TestCase
 {

@@ -6,7 +6,7 @@
 namespace Magento\Security\Model\Plugin;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoAppIsolation enabled
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
@@ -82,7 +82,7 @@ class AuthSessionTest extends \PHPUnit\Framework\TestCase
     /**
      * Test of prolong user action
      * session manager will not trigger new prolong if previous prolong was less than X sec ago
-     * X - is calculated based on current adminhtml session lifetime
+     * X - is calculated based on current Adminhtml session lifetime
      *
      * @see \Magento\Security\Model\AdminSessionsManager::lastProlongIsOldEnough
      * @magentoDbIsolation enabled
@@ -114,7 +114,7 @@ class AuthSessionTest extends \PHPUnit\Framework\TestCase
     /**
      * Test of prolong user action
      * session manager will trigger new prolong if previous prolong was more than X sec ago
-     * X - is calculated based on current adminhtml session lifetime
+     * X - is calculated based on current Adminhtml session lifetime
      *
      * @see \Magento\Security\Model\AdminSessionsManager::lastProlongIsOldEnough
      * @magentoDbIsolation enabled

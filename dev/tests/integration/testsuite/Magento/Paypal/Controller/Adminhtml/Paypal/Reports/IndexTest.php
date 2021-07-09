@@ -6,7 +6,7 @@
 namespace Magento\Paypal\Controller\Adminhtml\Paypal\Reports;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class IndexTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {

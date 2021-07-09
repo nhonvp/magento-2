@@ -13,7 +13,7 @@ use Magento\User\Model\User;
 use Magento\Authorization\Model\RulesFactory;
 use Magento\Authorization\Model\Rules;
 
-//Creating a new adminhtml user with a custom role to safely change role settings without affecting the main user's role.
+//Creating a new Adminhtml user with a custom role to safely change role settings without affecting the main user's role.
 /** @var Role $role */
 $role = Bootstrap::getObjectManager()->get(RoleFactory::class)->create();
 $role->setName('test_custom_role');

@@ -35,7 +35,7 @@ class InfoTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testToHtmlNoExistingIntegrationData()
     {
@@ -58,7 +58,7 @@ class InfoTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testToHtmlWithIntegrationData()
     {
@@ -66,13 +66,13 @@ class InfoTest extends \PHPUnit\Framework\TestCase
         $coreRegistry = $this->objectManager->get(\Magento\Framework\Registry::class);
         $coreRegistry->unregister(Integration::REGISTRY_KEY_CURRENT_INTEGRATION);
         $name = 'nameExample';
-        $email = 'adminhtml@example.com';
+        $email = 'Adminhtml@example.com';
         $endpoint = 'exampleEndpoint';
         $identityLinkUrl = 'identityLinkUrl';
         $integrationData = [
             Info::DATA_ID => '1',
             Info::DATA_NAME => $name,
-            Info::DATA_EMAIL => 'adminhtml@example.com',
+            Info::DATA_EMAIL => 'Adminhtml@example.com',
             Info::DATA_ENDPOINT => 'exampleEndpoint',
             Info::DATA_IDENTITY_LINK_URL => 'identityLinkUrl',
             Info::DATA_SETUP_TYPE => IntegrationModel::TYPE_MANUAL,

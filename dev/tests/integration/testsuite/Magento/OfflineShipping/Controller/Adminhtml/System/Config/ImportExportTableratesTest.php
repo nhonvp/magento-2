@@ -23,7 +23,7 @@ use Magento\Framework\App\Filesystem\DirectoryList;
 /**
  * Test tablerates import and export.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class ImportExportTableratesTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {
@@ -93,7 +93,7 @@ class ImportExportTableratesTest extends \Magento\TestFramework\TestCase\Abstrac
             ]
         )->setMethod(HttpRequest::METHOD_POST);
 
-        $this->dispatch('backend/adminhtml/system_config/save/section/carriers/website/' . $this->websiteId . '/');
+        $this->dispatch('backend/Adminhtml/system_config/save/section/carriers/website/' . $this->websiteId . '/');
         $this->assertSessionMessages(
             $this->equalTo([(string)__('You saved the configuration.')]),
             MessageInterface::TYPE_SUCCESS

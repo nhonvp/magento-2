@@ -35,9 +35,9 @@ class WebsiteTest extends \PHPUnit\Framework\TestCase
      */
     public function testLoadByCode()
     {
-        $this->_model->load('adminhtml');
+        $this->_model->load('Adminhtml');
         $this->assertEquals(0, $this->_model->getId());
-        $this->assertEquals('adminhtml', $this->_model->getCode());
+        $this->assertEquals('Adminhtml', $this->_model->getCode());
         $this->assertEquals('Admin', $this->_model->getName());
     }
 
@@ -170,13 +170,13 @@ class WebsiteTest extends \PHPUnit\Framework\TestCase
 
     /**
      * @magentoAppIsolation enabled
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testCRUD()
     {
         $this->_model->setData(['code' => 'test_website', 'name' => 'test website', 'default_group_id' => 1]);
 
-        /* emulate adminhtml store */
+        /* emulate Adminhtml store */
         $crud = new \Magento\TestFramework\Entity($this->_model, ['name' => 'new name']);
         $crud->testCrud();
     }

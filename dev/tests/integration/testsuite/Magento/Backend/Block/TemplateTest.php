@@ -8,7 +8,7 @@ namespace Magento\Backend\Block;
 /**
  * Test class for \Magento\Backend\Block\Template.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class TemplateTest extends \PHPUnit\Framework\TestCase
 {
@@ -36,7 +36,7 @@ class TemplateTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @covers \Magento\Backend\Block\Template::isOutputEnabled
      * @magentoConfigFixture current_store advanced/modules_disable_output/dummy 1
      */
@@ -47,7 +47,7 @@ class TemplateTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @covers \Magento\Backend\Block\Template::isOutputEnabled
      * @magentoConfigFixture current_store advanced/modules_disable_output/dummy 0
      */

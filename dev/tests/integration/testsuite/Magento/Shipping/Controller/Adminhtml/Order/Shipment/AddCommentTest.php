@@ -14,7 +14,7 @@ use PHPUnit\Framework\Constraint\StringContains;
  * Class verifies shipment add comment functionality.
  *
  * @magentoDbIsolation enabled
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDataFixture Magento/Sales/_files/shipment.php
  */
 class AddCommentTest extends AbstractShipmentControllerTest
@@ -22,7 +22,7 @@ class AddCommentTest extends AbstractShipmentControllerTest
     /**
      * @var string
      */
-    protected $uri = 'backend/adminhtml/order_shipment/addComment';
+    protected $uri = 'backend/Adminhtml/order_shipment/addComment';
 
     /**
      * @return void
@@ -35,7 +35,7 @@ class AddCommentTest extends AbstractShipmentControllerTest
                 'comment' => ['comment' => $comment, 'is_customer_notified' => true],
             ]
         );
-        $this->dispatch('backend/adminhtml/order_shipment/addComment');
+        $this->dispatch('backend/Adminhtml/order_shipment/addComment');
         $html = $this->getResponse()->getBody();
         $this->assertStringContainsString($comment, $html);
 

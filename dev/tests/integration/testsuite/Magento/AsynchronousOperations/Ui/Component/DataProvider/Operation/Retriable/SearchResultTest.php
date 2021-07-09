@@ -15,7 +15,7 @@ class SearchResultTest extends \PHPUnit\Framework\TestCase
     /**
      * @magentoDataFixture Magento/AsynchronousOperations/_files/bulk.php
      * @magentoDbIsolation enabled
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testGetTotalCount()
     {

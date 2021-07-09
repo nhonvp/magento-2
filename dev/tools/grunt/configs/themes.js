@@ -8,7 +8,7 @@
 /**
  * Define Themes
  *
- * area: area, one of (frontend|adminhtml|doc),
+ * area: area, one of (frontend|Adminhtml|doc),
  * name: theme name in format Vendor/theme-name,
  * locale: locale,
  * files: [
@@ -42,7 +42,7 @@ module.exports = {
         dsl: 'less'
     },
     backend: {
-        area: 'adminhtml',
+        area: 'Adminhtml',
         name: 'Magento/backend',
         locale: 'en_US',
         files: [

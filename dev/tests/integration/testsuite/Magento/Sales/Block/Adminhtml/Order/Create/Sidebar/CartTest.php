@@ -18,7 +18,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @see \Magento\Sales\Block\Adminhtml\Order\Create\Sidebar\Cart
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  */
 class CartTest extends TestCase

@@ -28,7 +28,7 @@ use PHPUnit\Framework\TestCase;
  * grid correctly renders and contains all necessary data.
  *
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  */
 class RenderOrdersTabTest extends TestCase

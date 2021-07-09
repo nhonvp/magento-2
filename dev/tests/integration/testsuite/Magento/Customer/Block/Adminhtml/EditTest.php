@@ -11,7 +11,7 @@ use Magento\TestFramework\Helper\Bootstrap;
 /**
  * Test for \Magento\Customer\Block\Adminhtml\Edit
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDataFixture Magento/Customer/_files/customer.php
  */
 class EditTest extends \PHPUnit\Framework\TestCase
@@ -43,7 +43,7 @@ class EditTest extends \PHPUnit\Framework\TestCase
     protected function setUp(): void
     {
         $objectManager = Bootstrap::getObjectManager();
-        $objectManager->get(\Magento\Framework\App\State::class)->setAreaCode('adminhtml');
+        $objectManager->get(\Magento\Framework\App\State::class)->setAreaCode('Adminhtml');
 
         $this->coreRegistry = $objectManager->get(\Magento\Framework\Registry::class);
         $this->coreRegistry->register(RegistryConstants::CURRENT_CUSTOMER_ID, self::$customerId);

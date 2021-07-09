@@ -10,7 +10,7 @@ use Magento\TestFramework\TestCase\AbstractBackendController;
 /**
  * Testing the list of locked users.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class GridTest extends AbstractBackendController
 {
@@ -22,7 +22,7 @@ class GridTest extends AbstractBackendController
      */
     public function testGridAction()
     {
-        $this->dispatch('backend/adminhtml/locks/grid');
+        $this->dispatch('backend/Adminhtml/locks/grid');
 
         $body = $this->getResponse()->getBody();
         $this->assertStringContainsString('data-column="username"', $body);

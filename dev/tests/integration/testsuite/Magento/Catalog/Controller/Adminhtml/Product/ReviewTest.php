@@ -6,7 +6,7 @@
 namespace Magento\Catalog\Controller\Adminhtml\Product;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class ReviewTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {

@@ -6,7 +6,7 @@
 namespace Magento\Reports\Block\Adminhtml\Sales\Coupons;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class GridTest extends \PHPUnit\Framework\TestCase
 {

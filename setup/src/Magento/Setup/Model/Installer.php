@@ -367,7 +367,7 @@ class Installer
             ];
         }
         if ($this->isAdminDataSet($request)) {
-            $script[] = ['Installing adminhtml user...', 'installAdminUser', [$request]];
+            $script[] = ['Installing Adminhtml user...', 'installAdminUser', [$request]];
         }
 
         if (!$this->isDryRun($request)) {
@@ -1263,7 +1263,7 @@ class Installer
     }
 
     /**
-     * Create adminhtml account
+     * Create Adminhtml account
      *
      * @param \ArrayObject|array $data
      * @return void
@@ -1278,7 +1278,7 @@ class Installer
         }
 
         $adminUserModuleIsInstalled = (bool)$this->deploymentConfig->get('modules/Magento_User');
-        //Admin user data is not system data, so we need to install it only if schema for adminhtml user was installed
+        //Admin user data is not system data, so we need to install it only if schema for Adminhtml user was installed
         if ($adminUserModuleIsInstalled) {
             $this->assertDbConfigExists();
             $data += ['db-prefix' => $this->deploymentConfig->get(ConfigOptionsListConstants::CONFIG_PATH_DB_PREFIX)];
@@ -1678,7 +1678,7 @@ class Installer
     }
 
     /**
-     * Checks that adminhtml data is not empty in request array
+     * Checks that Adminhtml data is not empty in request array
      *
      * @param \ArrayObject|array $request
      * @return bool

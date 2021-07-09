@@ -22,7 +22,7 @@ use Magento\TestFramework\TestCase\AbstractBackendController;
  * Checks category product index in cases when category unassigned from product
  *
  * @magentoDataFixture Magento/Catalog/_files/category_product_assigned_to_website.php
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation disabled
  */
 class CategoryIndexTest extends AbstractBackendController

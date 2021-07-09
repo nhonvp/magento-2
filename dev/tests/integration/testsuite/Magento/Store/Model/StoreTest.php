@@ -296,7 +296,7 @@ class StoreTest extends \PHPUnit\Framework\TestCase
         $objectManager->get(\Magento\Framework\App\Config\MutableScopeConfigInterface::class)
             ->setValue('web/url/use_store', true, ScopeInterface::SCOPE_STORE, 'secondstore');
 
-        $this->model->load('adminhtml');
+        $this->model->load('Adminhtml');
         $this->model
             ->expects($this->any())->method('getUrl')
             ->willReturn('http://localhost/index.php');
@@ -383,7 +383,7 @@ class StoreTest extends \PHPUnit\Framework\TestCase
 
     /**
      * @magentoAppIsolation enabled
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDbIsolation enabled
      */
     public function testCRUD()
@@ -411,7 +411,7 @@ class StoreTest extends \PHPUnit\Framework\TestCase
      *
      * @dataProvider saveValidationDataProvider
      * @magentoAppIsolation enabled
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDbIsolation enabled
      */
     public function testSaveValidation($badStoreData)

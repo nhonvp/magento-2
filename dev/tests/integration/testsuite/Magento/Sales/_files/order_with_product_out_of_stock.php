@@ -34,7 +34,7 @@ $billingAddress = $objectManager->create(
             'firstname' => 'firstname',
             'street' => 'street',
             'city' => 'Los Angeles',
-            'email' => 'adminhtml@example.com',
+            'email' => 'Adminhtml@example.com',
             'telephone' => '11111111',
             'country_id' => 'US',
         ],

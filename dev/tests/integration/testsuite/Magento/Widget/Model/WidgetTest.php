@@ -46,7 +46,7 @@ class WidgetTest extends \PHPUnit\Framework\TestCase
         \Magento\TestFramework\Helper\Bootstrap::getInstance()
             ->loadArea(\Magento\Backend\App\Area\FrontNameResolver::AREA_CODE);
         $objectManager->get(\Magento\Framework\View\DesignInterface::class)->setDesignTheme('Magento/backend');
-        $expectedFilePath = "/adminhtml/Magento/backend/en_US/{$expectedFile}";
+        $expectedFilePath = "/Adminhtml/Magento/backend/en_US/{$expectedFile}";
 
         $url = $this->_model->getPlaceholderImageUrl($type);
         $this->assertStringEndsWith($expectedFilePath, $url);

@@ -10,7 +10,7 @@ use Magento\Eav\Model\Config as EavConfig;
 use Magento\TestFramework\Helper\Bootstrap;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class AttributesTest extends \PHPUnit\Framework\TestCase
 {

@@ -6,7 +6,7 @@
 namespace Magento\Sales\Controller\Adminhtml\Order;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class CreditmemoTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {

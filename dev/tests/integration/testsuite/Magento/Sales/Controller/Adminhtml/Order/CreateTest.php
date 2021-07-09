@@ -21,7 +21,7 @@ use Magento\Store\Api\WebsiteRepositoryInterface;
 use Magento\Store\Model\ScopeInterface;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  *
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
@@ -83,7 +83,7 @@ class CreateTest extends \Magento\TestFramework\TestCase\AbstractBackendControll
     /**
      * Tests that shipping method 'Table rates' shows rates according to selected website.
      *
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDataFixture Magento/Quote/Fixtures/quote_sec_website.php
      * @magentoDataFixture Magento/OfflineShipping/_files/tablerates_second_website.php
      * @magentoDbIsolation disabled
@@ -184,7 +184,7 @@ class CreateTest extends \Magento\TestFramework\TestCase\AbstractBackendControll
 
     /**
      * @magentoDataFixture Magento/Catalog/_files/product_simple.php
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testIndexAction()
     {
@@ -283,7 +283,7 @@ class CreateTest extends \Magento\TestFramework\TestCase\AbstractBackendControll
 
     /**
      * @magentoDataFixture Magento/ConfigurableProduct/_files/product_configurable.php
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testConfigureProductToAddAction()
     {
@@ -320,7 +320,7 @@ class CreateTest extends \Magento\TestFramework\TestCase\AbstractBackendControll
             ]
         );
         \Magento\TestFramework\Helper\Bootstrap::getInstance()
-            ->loadArea('adminhtml');
+            ->loadArea('Adminhtml');
 
         $this->getRequest()->setMethod(HttpRequest::METHOD_POST);
         $this->dispatch('backend/sales/order_create/save');
@@ -331,7 +331,7 @@ class CreateTest extends \Magento\TestFramework\TestCase\AbstractBackendControll
      * Checks a case when shipping is the same as billing and billing address details was changed by request.
      * Both billing and shipping addresses should be updated.
      *
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDataFixture Magento/Sales/_files/quote_with_customer.php
      */
     public function testSyncBetweenQuoteAddresses()

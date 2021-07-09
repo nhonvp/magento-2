@@ -12,7 +12,7 @@ use Magento\TestFramework\Helper\Bootstrap;
 /**
  * Test class for \Magento\Integration\Block\Adminhtml\Integration\Tokens
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class TokensTest extends \PHPUnit\Framework\TestCase
 {

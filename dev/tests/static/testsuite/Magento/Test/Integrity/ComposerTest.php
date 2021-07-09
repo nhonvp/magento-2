@@ -205,7 +205,7 @@ class ComposerTest extends \PHPUnit\Framework\TestCase
                 break;
             case 'magento2-theme':
                 $this->assertMatchesRegularExpression(
-                    '/^magento\/theme-(?:adminhtml|frontend)(\-[a-z0-9_]+)+$/',
+                    '/^magento\/theme-(?:Adminhtml|frontend)(\-[a-z0-9_]+)+$/',
                     $json->name
                 );
                 $this->assertDependsOnPhp($json->require);

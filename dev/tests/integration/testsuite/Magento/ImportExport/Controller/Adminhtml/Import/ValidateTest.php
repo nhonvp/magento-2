@@ -12,7 +12,7 @@ use Magento\ImportExport\Model\Import;
 use Magento\ImportExport\Model\Import\ErrorProcessing\ProcessingErrorAggregatorInterface;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class ValidateTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {
@@ -68,7 +68,7 @@ class ValidateTest extends \Magento\TestFramework\TestCase\AbstractBackendContro
             ]
         );
 
-        $this->dispatch('backend/adminhtml/import/validate');
+        $this->dispatch('backend/Adminhtml/import/validate');
 
         $this->assertStringContainsString($message, $this->getResponse()->getBody());
         $this->assertStringNotContainsString('The file was not uploaded.', $this->getResponse()->getBody());

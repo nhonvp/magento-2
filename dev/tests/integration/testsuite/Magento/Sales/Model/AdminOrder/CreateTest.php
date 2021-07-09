@@ -22,7 +22,7 @@ use Magento\TestFramework\ObjectManager;
 
 /**
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoAppIsolation enabled
  */
 class CreateTest extends \PHPUnit\Framework\TestCase
@@ -736,7 +736,7 @@ class CreateTest extends \PHPUnit\Framework\TestCase
         } else {
             /**
              * Customer ID must be set to session to pass \Magento\Sales\Model\AdminOrder\Create::_validate()
-             * This code emulates order placement via adminhtml panel.
+             * This code emulates order placement via Adminhtml panel.
              */
             $session->setCustomerId(0);
         }

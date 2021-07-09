@@ -26,6 +26,5 @@ class Info extends \Magento\Framework\View\Element\Template
         echo'lastname :'; print_r($customerAttributeData['lastname']);echo '<br>';
         echo'email :';print_r($customerAttributeData['email']);echo '<br>';
 //        echo'avatar :';print_r($customerAttributeData['avatar']);echo '<br>';
-        echo'phone :';print_r($customerAttributeData['email']);echo '<br>';
     }
 }

@@ -56,7 +56,7 @@ class ProductIndexerTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testReindex()
     {
@@ -87,7 +87,7 @@ class ProductIndexerTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testCategoryMove()
     {
@@ -128,7 +128,7 @@ class ProductIndexerTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @depends testReindex
      */
     public function testCategoryDelete()
@@ -157,7 +157,7 @@ class ProductIndexerTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testCategoryCreate()
     {

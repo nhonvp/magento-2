@@ -11,7 +11,7 @@ use Magento\TestFramework\Helper\Bootstrap;
 /**
  * Test class for \Magento\User\Controller\Adminhtml\Auth
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class AuthTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {
@@ -21,7 +21,7 @@ class AuthTest extends \Magento\TestFramework\TestCase\AbstractBackendController
      */
     public function testFormForgotpasswordAction()
     {
-        $this->dispatch('backend/adminhtml/auth/forgotpassword');
+        $this->dispatch('backend/Adminhtml/auth/forgotpassword');
         $expected = 'Password Help';
         $this->assertStringContainsString($expected, $this->getResponse()->getBody());
     }
@@ -35,7 +35,7 @@ class AuthTest extends \Magento\TestFramework\TestCase\AbstractBackendController
     public function testForgotpasswordAction()
     {
         $this->getRequest()->setPostValue('email', 'test@test.com');
-        $this->dispatch('backend/adminhtml/auth/forgotpassword');
+        $this->dispatch('backend/Adminhtml/auth/forgotpassword');
         $this->assertRedirect(
             $this->equalTo(
                 Bootstrap::getObjectManager()->get(
@@ -48,8 +48,8 @@ class AuthTest extends \Magento\TestFramework\TestCase\AbstractBackendController
     /**
      * Test email sending for forgotPassword action
      *
-     * @magentoAdminConfigFixture adminhtml/emails/forgot_email_template admin_emails_forgot_email_template
-     * @magentoAdminConfigFixture adminhtml/emails/forgot_email_identity general
+     * @magentoAdminConfigFixture Adminhtml/emails/forgot_email_template admin_emails_forgot_email_template
+     * @magentoAdminConfigFixture Adminhtml/emails/forgot_email_identity general
      * @magentoDataFixture Magento/User/_files/user_with_role.php
      */
     public function testEmailSendForgotPasswordAction()
@@ -59,7 +59,7 @@ class AuthTest extends \Magento\TestFramework\TestCase\AbstractBackendController
             TransportBuilderMock::class
         );
         $this->getRequest()->setPostValue('email', 'adminUser@example.com');
-        $this->dispatch('backend/adminhtml/auth/forgotpassword');
+        $this->dispatch('backend/Adminhtml/auth/forgotpassword');
         $this->assertRedirect(
             $this->equalTo(
                 Bootstrap::getObjectManager()->get(
@@ -98,9 +98,9 @@ class AuthTest extends \Magento\TestFramework\TestCase\AbstractBackendController
         $user->save();
 
         $this->getRequest()->setQueryValue('token', $resetPasswordToken)->setQueryValue('id', $user->getId());
-        $this->dispatch('backend/adminhtml/auth/resetpassword');
+        $this->dispatch('backend/Adminhtml/auth/resetpassword');
 
-        $this->assertEquals('adminhtml', $this->getRequest()->getRouteName());
+        $this->assertEquals('Adminhtml', $this->getRequest()->getRouteName());
         $this->assertEquals('auth', $this->getRequest()->getControllerName());
         $this->assertEquals('resetpassword', $this->getRequest()->getActionName());
         $this->assertTrue((bool)strpos($this->getResponse()->getBody(), $resetPasswordToken));
@@ -113,7 +113,7 @@ class AuthTest extends \Magento\TestFramework\TestCase\AbstractBackendController
     public function testResetPasswordActionWithDummyToken()
     {
         $this->getRequest()->setQueryValue('token', 'dummy')->setQueryValue('id', 1);
-        $this->dispatch('backend/adminhtml/auth/resetpassword');
+        $this->dispatch('backend/Adminhtml/auth/resetpassword');
         $this->assertSessionMessages(
             $this->equalTo(['Your password reset link has expired.']),
             \Magento\Framework\Message\MessageInterface::TYPE_ERROR
@@ -158,7 +158,7 @@ class AuthTest extends \Magento\TestFramework\TestCase\AbstractBackendController
             $passwordConfirmation
         );
 
-        $this->dispatch('backend/adminhtml/auth/resetpasswordpost');
+        $this->dispatch('backend/Adminhtml/auth/resetpasswordpost');
 
         /** @var \Magento\Backend\Helper\Data $backendHelper */
         $backendHelper = $objectManager->get(\Magento\Backend\Helper\Data::class);
@@ -166,7 +166,7 @@ class AuthTest extends \Magento\TestFramework\TestCase\AbstractBackendController
             $this->assertRedirect($this->equalTo($backendHelper->getHomePageUrl()));
         } else {
             $this->assertRedirect(
-                $this->stringContains('backend/adminhtml/auth/resetpassword')
+                $this->stringContains('backend/Adminhtml/auth/resetpassword')
             );
         }
 
@@ -203,7 +203,7 @@ class AuthTest extends \Magento\TestFramework\TestCase\AbstractBackendController
     public function testResetPasswordPostActionWithDummyToken()
     {
         $this->getRequest()->setQueryValue('token', 'dummy')->setQueryValue('id', 1);
-        $this->dispatch('backend/adminhtml/auth/resetpasswordpost');
+        $this->dispatch('backend/Adminhtml/auth/resetpasswordpost');
         $this->assertSessionMessages(
             $this->equalTo(['Your password reset link has expired.']),
             \Magento\Framework\Message\MessageInterface::TYPE_ERROR
@@ -254,7 +254,7 @@ class AuthTest extends \Magento\TestFramework\TestCase\AbstractBackendController
             'invalid'
         );
 
-        $this->dispatch('backend/adminhtml/auth/resetpasswordpost');
+        $this->dispatch('backend/Adminhtml/auth/resetpasswordpost');
 
         $this->assertSessionMessages(
             $this->equalTo(['Your password confirmation must match your password.']),

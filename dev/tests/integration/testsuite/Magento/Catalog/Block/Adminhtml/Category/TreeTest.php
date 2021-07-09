@@ -6,7 +6,7 @@
 namespace Magento\Catalog\Block\Adminhtml\Category;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class TreeTest extends \PHPUnit\Framework\TestCase
 {

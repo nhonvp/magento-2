@@ -10,7 +10,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Test class for \Magento\Backend\Model\Session\AdminConfig.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class AdminConfigTest extends \PHPUnit\Framework\TestCase
 {
@@ -35,7 +35,7 @@ class AdminConfigTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Test for setting session name for adminhtml
+     * Test for setting session name for Adminhtml
      *
      */
     public function testSetSessionNameByConstructor()

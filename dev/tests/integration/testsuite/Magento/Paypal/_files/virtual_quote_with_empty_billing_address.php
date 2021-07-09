@@ -22,7 +22,7 @@ use Magento\TestFramework\Workaround\Override\Fixture\Resolver;
 
 Resolver::getInstance()->requireDataFixture('Magento/Customer/_files/customer.php');
 
-Bootstrap::getInstance()->loadArea('adminhtml');
+Bootstrap::getInstance()->loadArea('Adminhtml');
 $objectManager = Bootstrap::getObjectManager();
 
 /** @var CustomerRepositoryInterface $customerRepository */

@@ -27,7 +27,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Tests for image processing plugins for child products by saving a configurable product.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */

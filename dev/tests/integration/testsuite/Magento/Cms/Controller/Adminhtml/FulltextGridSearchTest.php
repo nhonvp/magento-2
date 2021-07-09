@@ -12,7 +12,7 @@ use Magento\TestFramework\TestCase\AbstractBackendController;
 /**
  * Testing seach in grid.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDataFixture Magento/Cms/Fixtures/page_list.php
  */
 class FulltextGridSearchTest extends AbstractBackendController

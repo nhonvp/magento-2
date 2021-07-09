@@ -12,7 +12,7 @@ use Magento\Framework\App\Config\ReinitableConfigInterface;
 /**
  * Test class for \Magento\Catalog\Model\Product\Attribute\Backend\Price.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
 class PriceTest extends \PHPUnit\Framework\TestCase
@@ -99,7 +99,7 @@ class PriceTest extends \PHPUnit\Framework\TestCase
     {
         /** @var \Magento\Store\Model\Store $store */
         $store = $this->objectManager->create(\Magento\Store\Model\Store::class);
-        $globalStoreId = $store->load('adminhtml')->getId();
+        $globalStoreId = $store->load('Adminhtml')->getId();
         $product = $this->productRepository->get('simple');
         $product->setPrice('9.99');
         $product->setStoreId($globalStoreId);
@@ -113,7 +113,7 @@ class PriceTest extends \PHPUnit\Framework\TestCase
      * @magentoDataFixture Magento/Store/_files/second_website_with_two_stores.php
      * @magentoConfigFixture current_store catalog/price/scope 1
      * @magentoDbIsolation disabled
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testAfterSaveWithDifferentStores()
     {
@@ -121,7 +121,7 @@ class PriceTest extends \PHPUnit\Framework\TestCase
         $store = $this->objectManager->create(
             \Magento\Store\Model\Store::class
         );
-        $globalStoreId = $store->load('adminhtml')->getId();
+        $globalStoreId = $store->load('Adminhtml')->getId();
         $secondStoreId = $store->load('fixture_second_store')->getId();
         $thirdStoreId = $store->load('fixture_third_store')->getId();
         /** @var \Magento\Catalog\Model\Product\Action $productAction */
@@ -151,7 +151,7 @@ class PriceTest extends \PHPUnit\Framework\TestCase
      * @magentoDataFixture Magento/Store/_files/second_website_with_two_stores.php
      * @magentoConfigFixture current_store catalog/price/scope 1
      * @magentoDbIsolation disabled
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testAfterSaveWithSameCurrency()
     {
@@ -159,7 +159,7 @@ class PriceTest extends \PHPUnit\Framework\TestCase
         $store = $this->objectManager->create(
             \Magento\Store\Model\Store::class
         );
-        $globalStoreId = $store->load('adminhtml')->getId();
+        $globalStoreId = $store->load('Adminhtml')->getId();
         $secondStoreId = $store->load('fixture_second_store')->getId();
         $thirdStoreId = $store->load('fixture_third_store')->getId();
         /** @var \Magento\Catalog\Model\Product\Action $productAction */
@@ -187,7 +187,7 @@ class PriceTest extends \PHPUnit\Framework\TestCase
 
     /**
      * @magentoDbIsolation disabled
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDataFixture Magento/Catalog/_files/product_simple.php
      * @magentoDataFixture Magento/Store/_files/second_website_with_two_stores.php
      * @magentoConfigFixture current_store catalog/price/scope 1
@@ -198,7 +198,7 @@ class PriceTest extends \PHPUnit\Framework\TestCase
         $store = $this->objectManager->create(
             \Magento\Store\Model\Store::class
         );
-        $globalStoreId = $store->load('adminhtml')->getId();
+        $globalStoreId = $store->load('Adminhtml')->getId();
         $secondStoreId = $store->load('fixture_second_store')->getId();
         $thirdStoreId = $store->load('fixture_third_store')->getId();
         /** @var \Magento\Catalog\Model\Product\Action $productAction */
@@ -239,7 +239,7 @@ class PriceTest extends \PHPUnit\Framework\TestCase
 
     /**
      * @magentoDbIsolation disabled
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDataFixture Magento/Catalog/_files/product_simple.php
      * @magentoDataFixture Magento/Store/_files/second_website_with_two_stores.php
      * @magentoConfigFixture default_store catalog/price/scope 1
@@ -258,7 +258,7 @@ class PriceTest extends \PHPUnit\Framework\TestCase
             'EUR' => ['USD' => 0.5]
         ]);
 
-        $globalStoreId = $store->load('adminhtml')->getId();
+        $globalStoreId = $store->load('Adminhtml')->getId();
         $secondStore = $store->load('fixture_second_store');
         $secondStoreId = $store->load('fixture_second_store')->getId();
         $thirdStoreId = $store->load('fixture_third_store')->getId();

@@ -8,7 +8,7 @@ declare(strict_types=1);
 $objectManager = \Magento\TestFramework\Helper\Bootstrap::getObjectManager();
 
 /**
- * Create an adminhtml user with expired and non-expired access date
+ * Create an Adminhtml user with expired and non-expired access date
  */
 
 /** @var $userModelNotExpired \Magento\User\Model\User */

@@ -22,7 +22,7 @@ use Magento\UrlRewrite\Service\V1\Data\UrlRewrite;
 /**
  * Test cases related to save category with enabled category flat.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation disabled
  */
 class SaveCategoryWithEnabledFlatTest extends AbstractSaveCategoryTest

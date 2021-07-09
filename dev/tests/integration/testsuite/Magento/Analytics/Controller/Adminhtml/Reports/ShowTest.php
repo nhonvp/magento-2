@@ -10,7 +10,7 @@ namespace Magento\Analytics\Controller\Adminhtml\Reports;
 use Magento\TestFramework\TestCase\AbstractBackendController;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class ShowTest extends AbstractBackendController
 {

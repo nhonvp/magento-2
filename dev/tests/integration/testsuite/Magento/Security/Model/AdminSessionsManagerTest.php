@@ -6,7 +6,7 @@
 namespace Magento\Security\Model;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class AdminSessionsManagerTest extends \PHPUnit\Framework\TestCase
 {
@@ -72,7 +72,7 @@ class AdminSessionsManagerTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Test if current adminhtml user is logged out
+     * Test if current Adminhtml user is logged out
      *
      * @magentoDbIsolation enabled
      */
@@ -89,7 +89,7 @@ class AdminSessionsManagerTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Test if the adminhtml session is created in database
+     * Test if the Adminhtml session is created in database
      *
      * @magentoDbIsolation enabled
      */
@@ -108,8 +108,8 @@ class AdminSessionsManagerTest extends \PHPUnit\Framework\TestCase
     /**
      * Test if other sessions are terminated if admin_account_sharing is disabled
      *
-     * @magentoAdminConfigFixture adminhtml/security/session_lifetime 100
-     * @magentoConfigFixture default_store adminhtml/security/admin_account_sharing 0
+     * @magentoAdminConfigFixture Adminhtml/security/session_lifetime 100
+     * @magentoConfigFixture default_store Adminhtml/security/admin_account_sharing 0
      * @magentoDbIsolation enabled
      */
     public function testTerminateOtherSessionsProcessLogin()
@@ -154,8 +154,8 @@ class AdminSessionsManagerTest extends \PHPUnit\Framework\TestCase
     /**
      * Test if other sessions were logged out if logoutOtherUserSessions() action was performed
      *
-     * @magentoAdminConfigFixture adminhtml/security/session_lifetime 100
-     * @magentoConfigFixture default_store adminhtml/security/admin_account_sharing 1
+     * @magentoAdminConfigFixture Adminhtml/security/session_lifetime 100
+     * @magentoConfigFixture default_store Adminhtml/security/admin_account_sharing 1
      * @magentoDbIsolation enabled
      */
     public function testLogoutOtherUserSessions()
@@ -204,7 +204,7 @@ class AdminSessionsManagerTest extends \PHPUnit\Framework\TestCase
      * Test for cleanExpiredSessions() method
      *
      * @magentoDataFixture Magento/Security/_files/adminsession.php
-     * @magentoAdminConfigFixture adminhtml/security/session_lifetime 1
+     * @magentoAdminConfigFixture Adminhtml/security/session_lifetime 1
      * @magentoDbIsolation enabled
      */
     public function testCleanExpiredSessions()

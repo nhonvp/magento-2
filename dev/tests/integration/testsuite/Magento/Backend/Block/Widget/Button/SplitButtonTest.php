@@ -15,7 +15,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Testing SplitButton widget
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class SplitButtonTest extends TestCase
 {

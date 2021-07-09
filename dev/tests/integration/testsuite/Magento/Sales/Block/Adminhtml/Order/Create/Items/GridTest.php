@@ -18,7 +18,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Checks order items grid
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  */
 class GridTest extends TestCase

@@ -103,7 +103,7 @@ class CategoryRepositoryTest extends TestCase
      * Test removal of categories.
      *
      * @magentoDataFixture Magento/Catalog/_files/categories.php
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      *
      * @return void
      */

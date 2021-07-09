@@ -12,7 +12,7 @@ use Magento\TestFramework\Helper\Bootstrap;
 /**
  * Test Customer account form block functionality
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class NewsletterTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {
@@ -35,7 +35,7 @@ class NewsletterTest extends \Magento\TestFramework\TestCase\AbstractBackendCont
     {
         parent::setUp();
         $objectManager = Bootstrap::getObjectManager();
-        $objectManager->get(\Magento\Framework\App\State::class)->setAreaCode('adminhtml');
+        $objectManager->get(\Magento\Framework\App\State::class)->setAreaCode('Adminhtml');
 
         $this->coreRegistry = $objectManager->get(\Magento\Framework\Registry::class);
         $this->block = $objectManager->get(

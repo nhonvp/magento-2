@@ -55,7 +55,7 @@ class AdminAccountTest extends TestCase
             AdminAccount::KEY_LAST_NAME => 'Doe',
             AdminAccount::KEY_EMAIL => 'john.doe@test.com',
             AdminAccount::KEY_PASSWORD => '123123q',
-            AdminAccount::KEY_USER => 'adminhtml',
+            AdminAccount::KEY_USER => 'Adminhtml',
             AdminAccount::KEY_PREFIX => 'pre_',
         ];
 
@@ -73,18 +73,18 @@ class AdminAccountTest extends TestCase
         // existing user data
         $existingUserData = [
             'email' => 'john.doe@test.com',
-            'username' => 'adminhtml',
+            'username' => 'Adminhtml',
             'user_id' => 1,
         ];
 
-        // existing adminhtml role data
+        // existing Adminhtml role data
         $existingAdminRoleData = [
             'parent_id'  => 0,
             'tree_level' => 2,
             'role_type'  => 'U',
             'user_id'    => 1,
             'user_type'  => 2,
-            'role_name'  => 'adminhtml',
+            'role_name'  => 'Adminhtml',
             'role_id'    => 1,
         ];
 
@@ -92,14 +92,14 @@ class AdminAccountTest extends TestCase
             [
                 'SELECT user_id, username, email FROM ' . $this->prefix .
                 'admin_user WHERE username = :username OR email = :email',
-                ['username' => 'adminhtml', 'email' => 'john.doe@test.com'],
+                ['username' => 'Adminhtml', 'email' => 'john.doe@test.com'],
                 null,
                 $existingUserData,
             ],
             [
                 'SELECT user_id, username, email FROM ' . $this->prefix .
                 'admin_user WHERE username = :username OR email = :email',
-                ['username' => 'adminhtml', 'email' => 'john.doe@test.com'],
+                ['username' => 'Adminhtml', 'email' => 'john.doe@test.com'],
                 null,
                 $existingUserData,
             ],
@@ -130,11 +130,11 @@ class AdminAccountTest extends TestCase
         // existing user data
         $existingUserData = [
             'email' => 'john.doe@test.com',
-            'username' => 'adminhtml',
+            'username' => 'Adminhtml',
             'user_id' => 1,
         ];
 
-        // speical adminhtml role data
+        // speical Adminhtml role data
         $administratorRoleData = [
             'parent_id'  => 0,
             'tree_level' => 1,
@@ -149,14 +149,14 @@ class AdminAccountTest extends TestCase
             [
                 'SELECT user_id, username, email FROM ' . $this->prefix .
                 'admin_user WHERE username = :username OR email = :email',
-                ['username' => 'adminhtml', 'email' => 'john.doe@test.com'],
+                ['username' => 'Adminhtml', 'email' => 'john.doe@test.com'],
                 null,
                 $existingUserData,
             ],
             [
                 'SELECT user_id, username, email FROM ' . $this->prefix .
                 'admin_user WHERE username = :username OR email = :email',
-                ['username' => 'adminhtml', 'email' => 'john.doe@test.com'],
+                ['username' => 'Adminhtml', 'email' => 'john.doe@test.com'],
                 null,
                 $existingUserData,
             ],
@@ -198,7 +198,7 @@ class AdminAccountTest extends TestCase
         $this->dbAdapter->expects(self::at(8))
             ->method('insert')
             ->with(self::equalTo('pre_admin_passwords'), self::anything());
-        // should only insert once (adminhtml role)
+        // should only insert once (Adminhtml role)
         $this->dbAdapter->expects(self::at(14))
             ->method('insert')
             ->with(self::equalTo('pre_authorization_role'), self::anything());
@@ -208,14 +208,14 @@ class AdminAccountTest extends TestCase
 
     public function testSaveNewUserAdminRoleExists()
     {
-        // existing adminhtml role data
+        // existing Adminhtml role data
         $existingAdminRoleData = [
             'parent_id'  => 0,
             'tree_level' => 2,
             'role_type'  => 'U',
             'user_id'    => 1,
             'user_type'  => 2,
-            'role_name'  => 'adminhtml',
+            'role_name'  => 'Adminhtml',
             'role_id'    => 1,
         ];
 
@@ -223,7 +223,7 @@ class AdminAccountTest extends TestCase
             [
                 'SELECT user_id, username, email FROM ' . $this->prefix .
                 'admin_user WHERE username = :username OR email = :email',
-                ['username' => 'adminhtml', 'email' => 'john.doe@test.com'],
+                ['username' => 'Adminhtml', 'email' => 'john.doe@test.com'],
                 null,
                 [],
             ],
@@ -256,7 +256,7 @@ class AdminAccountTest extends TestCase
 
     public function testSaveNewUserNewAdminRole()
     {
-        // special adminhtml role data
+        // special Adminhtml role data
         $administratorRoleData = [
             'parent_id'  => 0,
             'tree_level' => 1,
@@ -271,7 +271,7 @@ class AdminAccountTest extends TestCase
             [
                 'SELECT user_id, username, email FROM ' . $this->prefix .
                 'admin_user WHERE username = :username OR email = :email',
-                ['username' => 'adminhtml', 'email' => 'john.doe@test.com'],
+                ['username' => 'Adminhtml', 'email' => 'john.doe@test.com'],
                 null,
                 [],
             ],
@@ -308,7 +308,7 @@ class AdminAccountTest extends TestCase
         // after inserting new user
         $this->dbAdapter->expects($this->once())->method('lastInsertId')->willReturn(1);
 
-        // insert only (new user and new adminhtml role and new adminhtml password)
+        // insert only (new user and new Adminhtml role and new Adminhtml password)
         $this->dbAdapter->expects($this->exactly(3))->method('insert');
 
         $this->adminAccount->save();
@@ -339,7 +339,7 @@ class AdminAccountTest extends TestCase
         $this->expectExceptionMessage('An existing user has the given username but different email.');
         $existingUserData = [
             'email' => 'another.email@test.com',
-            'username' => 'adminhtml',
+            'username' => 'Adminhtml',
         ];
 
         $this->dbAdapter->expects($this->exactly(2))
@@ -371,7 +371,7 @@ class AdminAccountTest extends TestCase
             AdminAccount::KEY_LAST_NAME => 'Doe',
             AdminAccount::KEY_EMAIL => 'john.doe@test.com',
             AdminAccount::KEY_PASSWORD => '',
-            AdminAccount::KEY_USER => 'adminhtml',
+            AdminAccount::KEY_USER => 'Adminhtml',
             AdminAccount::KEY_PREFIX => '',
         ];
 
@@ -391,7 +391,7 @@ class AdminAccountTest extends TestCase
         $returnValueMap = [
             [
                 'SELECT user_id, username, email FROM admin_user WHERE username = :username OR email = :email',
-                ['username' => 'adminhtml', 'email' => 'john.doe@test.com'],
+                ['username' => 'Adminhtml', 'email' => 'john.doe@test.com'],
                 null,
                 $existingUserData,
             ]

@@ -40,7 +40,7 @@ class ReplaceFixtureTest extends AbstractOverridesTest
     public function testReplaceFixtureForClass(): void
     {
         $value = $this->config->getValue('test_section/test_group/field_1', ScopeConfigInterface::SCOPE_TYPE_DEFAULT);
-        $this->assertEquals('Overridden adminhtml config fixture for class', $value);
+        $this->assertEquals('Overridden Adminhtml config fixture for class', $value);
     }
 
     /**
@@ -66,10 +66,10 @@ class ReplaceFixtureTest extends AbstractOverridesTest
     {
         return [
             'first_data_set' => [
-                'expected_config_value' => 'Overridden adminhtml config fixture for method',
+                'expected_config_value' => 'Overridden Adminhtml config fixture for method',
             ],
             'second_data_set' => [
-                'expected_config_value' => 'Overridden adminhtml config fixture for data set',
+                'expected_config_value' => 'Overridden Adminhtml config fixture for data set',
             ],
         ];
     }
@@ -97,10 +97,10 @@ class ReplaceFixtureTest extends AbstractOverridesTest
     {
         return [
             'first_data_set' => [
-                'expected_config_value' => 'Overridden adminhtml config fixture for method from third module',
+                'expected_config_value' => 'Overridden Adminhtml config fixture for method from third module',
             ],
             'second_data_set' => [
-                'expected_config_value' => 'Overridden adminhtml config fixture for data set from third module',
+                'expected_config_value' => 'Overridden Adminhtml config fixture for data set from third module',
             ],
         ];
     }

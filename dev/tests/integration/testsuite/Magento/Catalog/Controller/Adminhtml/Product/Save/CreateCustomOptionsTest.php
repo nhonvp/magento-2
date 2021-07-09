@@ -17,7 +17,7 @@ use Magento\TestFramework\TestCase\AbstractBackendController;
  * Base test cases for product custom options with type "field".
  * Option add via dispatch product controller action save with options data in POST data.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  * @magentoDataFixture Magento/Catalog/_files/product_without_options.php
  */

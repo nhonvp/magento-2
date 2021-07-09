@@ -6,7 +6,7 @@
 namespace Magento\User\Block\Role\Grid;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class UserTest extends \PHPUnit\Framework\TestCase
 {

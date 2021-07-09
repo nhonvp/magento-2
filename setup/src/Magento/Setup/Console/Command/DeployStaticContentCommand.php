@@ -29,7 +29,7 @@ use Magento\Deploy\Service\DeployStaticContent;
 class DeployStaticContentCommand extends Command
 {
     /**
-     * Default language value. Always used for adminhtml, fallback if no frontend locale is supplied.
+     * Default language value. Always used for Adminhtml, fallback if no frontend locale is supplied.
      */
     const DEFAULT_LANGUAGE_VALUE = 'en_US';
 

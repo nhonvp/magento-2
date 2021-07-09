@@ -70,8 +70,8 @@ class GeneratorTest extends \PHPUnit\Framework\TestCase
         // Register the test theme
         ComponentRegistrar::register(
             ComponentRegistrar::THEME,
-            'adminhtml/default/backend',
-            $this->source . '/app/design/adminhtml/default/backend'
+            'Adminhtml/default/backend',
+            $this->source . '/app/design/Adminhtml/default/backend'
         );
 
         $this->generator = ServiceLocator::getDictionaryGenerator();

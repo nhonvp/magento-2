@@ -83,7 +83,7 @@ class AdminUserCreateCommandTest extends TestCase
 
         $this->questionHelperMock->expects($this->at(0))
             ->method('ask')
-            ->willReturn('adminhtml');
+            ->willReturn('Adminhtml');
 
         $this->questionHelperMock->expects($this->at(1))
             ->method('ask')
@@ -107,11 +107,11 @@ class AdminUserCreateCommandTest extends TestCase
         $installerMock = $this->createMock(Installer::class);
 
         $expectedData = [
-            'adminhtml-user' => 'adminhtml',
-            'adminhtml-password' => 'Password123',
-            'adminhtml-email' => 'john.doe@example.com',
-            'adminhtml-firstname' => 'John',
-            'adminhtml-lastname' => 'Doe',
+            'Adminhtml-user' => 'Adminhtml',
+            'Adminhtml-password' => 'Password123',
+            'Adminhtml-email' => 'john.doe@example.com',
+            'Adminhtml-firstname' => 'John',
+            'Adminhtml-lastname' => 'Doe',
             'magento-init-params' => null,
             'help' => false,
             'quiet' => false,
@@ -131,7 +131,7 @@ class AdminUserCreateCommandTest extends TestCase
         ]);
 
         $this->assertEquals(
-            'Created Magento administrator user named adminhtml' . PHP_EOL,
+            'Created Magento administrator user named Adminhtml' . PHP_EOL,
             $commandTester->getDisplay()
         );
     }
@@ -193,20 +193,20 @@ class AdminUserCreateCommandTest extends TestCase
     {
         return [
             [
-                [null, 'Doe', 'adminhtml', 'test@test.com', '123123q', '123123q'],
+                [null, 'Doe', 'Adminhtml', 'test@test.com', '123123q', '123123q'],
                 ['"First Name" is required. Enter and try again.']
             ],
             [
                 ['John', null, null, 'test@test.com', '123123q', '123123q'],
                 ['"User Name" is required. Enter and try again.', '"Last Name" is required. Enter and try again.'],
             ],
-            [['John', 'Doe', 'adminhtml', null, '123123q', '123123q'], ['Please enter a valid email.']],
+            [['John', 'Doe', 'Adminhtml', null, '123123q', '123123q'], ['Please enter a valid email.']],
             [
-                ['John', 'Doe', 'adminhtml', 'test', '123123q', '123123q'],
+                ['John', 'Doe', 'Adminhtml', 'test', '123123q', '123123q'],
                 ["'test' is not a valid email address in the basic format local-part@hostname"]
             ],
             [
-                ['John', 'Doe', 'adminhtml', 'test@test.com', '', ''],
+                ['John', 'Doe', 'Adminhtml', 'test@test.com', '', ''],
                 [
                     'Password is required field.',
                     'Your password must be at least 7 characters.',
@@ -214,17 +214,17 @@ class AdminUserCreateCommandTest extends TestCase
                 ]
             ],
             [
-                ['John', 'Doe', 'adminhtml', 'test@test.com', '123123', '123123'],
+                ['John', 'Doe', 'Adminhtml', 'test@test.com', '123123', '123123'],
                 [
                     'Your password must be at least 7 characters.',
                     'Your password must include both numeric and alphabetic characters.'
                 ]
             ],
             [
-                ['John', 'Doe', 'adminhtml', 'test@test.com', '1231231', '1231231'],
+                ['John', 'Doe', 'Adminhtml', 'test@test.com', '1231231', '1231231'],
                 ['Your password must include both numeric and alphabetic characters.']
             ],
-            [['John', 'Doe', 'adminhtml', 'test@test.com', '123123q', '123123q'], []],
+            [['John', 'Doe', 'Adminhtml', 'test@test.com', '123123q', '123123q'], []],
         ];
     }
 }

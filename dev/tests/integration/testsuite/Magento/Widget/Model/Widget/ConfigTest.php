@@ -6,7 +6,7 @@
 namespace Magento\Widget\Model\Widget;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class ConfigTest extends \PHPUnit\Framework\TestCase
 {
@@ -46,14 +46,14 @@ class ConfigTest extends \PHPUnit\Framework\TestCase
 
         $jsFilename = $plugins['src'];
         $this->assertStringMatchesFormat(
-            'http://localhost/static/%s/adminhtml/Magento/backend/en_US/%s/editor_plugin.js',
+            'http://localhost/static/%s/Adminhtml/Magento/backend/en_US/%s/editor_plugin.js',
             $jsFilename
         );
 
         $this->assertIsArray($plugins['options']['placeholders']);
 
         $this->assertStringStartsWith(
-            'http://localhost/index.php/backend/adminhtml/widget/index/key',
+            'http://localhost/index.php/backend/Adminhtml/widget/index/key',
             $plugins['options']['window_url']
         );
     }
@@ -64,6 +64,6 @@ class ConfigTest extends \PHPUnit\Framework\TestCase
 
         $url = $this->_model->getWidgetWindowUrl($config);
 
-        $this->assertStringStartsWith('http://localhost/index.php/backend/adminhtml/widget/index/skip_widgets', $url);
+        $this->assertStringStartsWith('http://localhost/index.php/backend/Adminhtml/widget/index/skip_widgets', $url);
     }
 }

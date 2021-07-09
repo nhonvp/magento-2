@@ -14,7 +14,7 @@ use Magento\Framework\View\LayoutInterface;
 /**
  * Test class for \Magento\Reports\Block\Adminhtml\Shopcart\Abandoned\Grid
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDataFixture Magento/Sales/_files/quote.php
  * @magentoDataFixture Magento/Customer/_files/customer.php
  */

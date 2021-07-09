@@ -20,7 +20,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Checks widget grid filtering and sorting
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoAppIsolation enabled
  * @magentoDbIsolation enabled
  */
@@ -308,7 +308,7 @@ class InstanceTest extends TestCase
     private function getGridCollection(): AbstractCollection
     {
         $layout = $this->preparePageLayout();
-        $containerBlock = $layout->getBlock('adminhtml.widget.instance.grid.container');
+        $containerBlock = $layout->getBlock('Adminhtml.widget.instance.grid.container');
         $grid = $containerBlock->getChildBlock('grid');
         $this->assertNotFalse($grid);
 

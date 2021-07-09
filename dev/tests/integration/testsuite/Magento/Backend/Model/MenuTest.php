@@ -8,7 +8,7 @@ namespace Magento\Backend\Model;
 /**
  * Test class for \Magento\Backend\Model\Auth.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class MenuTest extends \PHPUnit\Framework\TestCase
 {
@@ -57,7 +57,7 @@ class MenuTest extends \PHPUnit\Framework\TestCase
                     'id' => 'Magento_Backend::system2_acl',
                     'title' => 'Acl',
                     'module' => 'Magento_Backend',
-                    'action' => 'adminhtml/backend/acl/index',
+                    'action' => 'Adminhtml/backend/acl/index',
                     'resource' => 'Magento_Backend::system2_acl',
                 ]
             ),
@@ -65,7 +65,7 @@ class MenuTest extends \PHPUnit\Framework\TestCase
         );
 
         // Modify existing menu item
-        $menu->get('Magento_Backend::system2')->setTitle('Base system')->setAction('adminhtml/backend/system/base');
+        $menu->get('Magento_Backend::system2')->setTitle('Base system')->setAction('Adminhtml/backend/system/base');
         // remove dependency from config
 
         // Change sort order
@@ -108,7 +108,7 @@ class MenuTest extends \PHPUnit\Framework\TestCase
                     'id' => 'Magento_Backend::system3_acl',
                     'title' => 'Acl',
                     'module' => 'Magento_Backend',
-                    'action' => 'adminhtml/backend/acl/index',
+                    'action' => 'Adminhtml/backend/acl/index',
                     'resource' => 'Magento_Backend::system3_acl',
                 ]
             ),
@@ -121,7 +121,7 @@ class MenuTest extends \PHPUnit\Framework\TestCase
             . '"dependsOnModule":null,"toolTip":null,"title":"Extended System",'
             . '"target":null,"sub_menu":[{"parent_id":null,"module":"Magento_Backend","sort_index":null,'
             . '"dependsOnConfig":null,"id":"Magento_Backend::system3_acl","resource":"Magento_Backend::system3_acl",'
-            . '"path":"","action":"adminhtml\/backend\/acl\/index","dependsOnModule":null,"toolTip":null,"title":"Acl",'
+            . '"path":"","action":"Adminhtml\/backend\/acl\/index","dependsOnModule":null,"toolTip":null,"title":"Acl",'
             . '"target":null,"sub_menu":null}]}]';
         $this->assertEquals($expected, $serializedString);
     }
@@ -136,7 +136,7 @@ class MenuTest extends \PHPUnit\Framework\TestCase
             . '"path":"","action":null,"dependsOnModule":null,"toolTip":null,"title":"Extended System",'
             . '"target":null,"sub_menu":[{"parent_id":null,"module":"Magento_Backend","sort_index":null,'
             . '"dependsOnConfig":null,"id":"Magento_Backend::system3_acl","resource":"Magento_Backend::system3_acl",'
-            . '"path":"","action":"adminhtml\/backend\/acl\/index","dependsOnModule":null,"toolTip":null,"title":"Acl",'
+            . '"path":"","action":"Adminhtml\/backend\/acl\/index","dependsOnModule":null,"toolTip":null,"title":"Acl",'
             . '"target":null,"sub_menu":null}]}]';
         /** @var Menu $menu */
         $menu = $this->objectManager->get(\Magento\Backend\Model\MenuFactory::class)->create();
@@ -165,7 +165,7 @@ class MenuTest extends \PHPUnit\Framework\TestCase
                             'id' => 'Magento_Backend::system3_acl',
                             'resource' => 'Magento_Backend::system3_acl',
                             'path' => '',
-                            'action' => 'adminhtml/backend/acl/index',
+                            'action' => 'Adminhtml/backend/acl/index',
                             'dependsOnModule' => null,
                             'toolTip' => null,
                             'title' => 'Acl',

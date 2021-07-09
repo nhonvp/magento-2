@@ -18,7 +18,7 @@ use Magento\Framework\App\Request\Http as HttpRequest;
 /**
  * Test pages data provider.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class DataProviderTest extends TestCase
 {

@@ -7,7 +7,7 @@ namespace Magento\UrlRewrite\Block;
 
 /**
  * Test for \Magento\UrlRewrite\Block\Edit
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class EditTest extends \PHPUnit\Framework\TestCase
 {

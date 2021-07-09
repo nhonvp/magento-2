@@ -6,7 +6,7 @@
 namespace Magento\Reports\Block\Adminhtml\Sales\Shipping;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class GridTest extends \PHPUnit\Framework\TestCase
 {

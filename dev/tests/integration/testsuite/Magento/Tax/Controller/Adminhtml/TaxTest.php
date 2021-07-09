@@ -8,7 +8,7 @@ namespace Magento\Tax\Controller\Adminhtml;
 use Magento\Framework\Exception\NoSuchEntityException;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class TaxTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {

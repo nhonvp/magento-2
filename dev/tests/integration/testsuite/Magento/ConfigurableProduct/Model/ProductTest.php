@@ -34,7 +34,7 @@ class ProductTest extends \PHPUnit\Framework\TestCase
      * Check that no children identities are added to the parent product in frontend area
      *
      * @magentoDataFixture Magento/ConfigurableProduct/_files/product_configurable.php
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @return void
      */
     public function testGetIdentitiesForConfigurableProductInAdminArea(): void

@@ -17,7 +17,7 @@ use Magento\TestFramework\TestCase\AbstractBackendController;
  *
  * @see \Magento\Sales\Controller\Adminhtml\Order\Invoice\Start
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  */
 class StartTest extends AbstractBackendController

@@ -74,7 +74,7 @@ class PhpRule implements RuleInterface
      */
     protected $_defaultModules = [
         'frontend' => 'Magento\Theme',
-        'adminhtml' => 'Magento\Adminhtml',
+        'Adminhtml' => 'Magento\Adminhtml',
     ];
 
     /**
@@ -368,7 +368,7 @@ class PhpRule implements RuleInterface
          * of route
          */
         if (!preg_match(
-            '#controller/(adminhtml/)?(?<controller_name>.+)/(?<action_name>\w+).php$#',
+            '#controller/(Adminhtml/)?(?<controller_name>.+)/(?<action_name>\w+).php$#',
             $filePath,
             $fileParts
         )) {
@@ -523,7 +523,7 @@ class PhpRule implements RuleInterface
             return null;
         }
         $area = 'default';
-        if (preg_match('/\/(?<area>adminhtml|frontend)\//', $file, $matches)) {
+        if (preg_match('/\/(?<area>Adminhtml|frontend)\//', $file, $matches)) {
             $area = $matches['area'];
         }
         return $area;

@@ -19,8 +19,8 @@ module.exports = {
         updater: '../magento2-updater/pub/css'
     },
     less: {
-        setup: 'app/design/adminhtml/Magento/backend/web/app/setup/styles/less',
-        updater: 'app/design/adminhtml/Magento/backend/web/app/updater/styles/less'
+        setup: 'app/design/Adminhtml/Magento/backend/web/app/setup/styles/less',
+        updater: 'app/design/Adminhtml/Magento/backend/web/app/updater/styles/less'
     },
     uglify: {
         legacy: 'lib/web/legacy-build.min.js'

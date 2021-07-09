@@ -20,7 +20,7 @@ $tierPriceFactory = $objectManager->get(\Magento\Catalog\Api\Data\ProductTierPri
 /** @var  $tpExtensionAttributes */
 $tpExtensionAttributesFactory = $objectManager->get(ProductTierPriceExtensionFactory::class);
 
-$adminWebsite = $objectManager->get(\Magento\Store\Api\WebsiteRepositoryInterface::class)->get('adminhtml');
+$adminWebsite = $objectManager->get(\Magento\Store\Api\WebsiteRepositoryInterface::class)->get('Adminhtml');
 $tierPriceExtensionAttributes1 = $tpExtensionAttributesFactory->create()
     ->setWebsiteId($adminWebsite->getId());
 

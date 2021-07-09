@@ -8,7 +8,7 @@
  * Products generation to test base data
  */
 
-\Magento\TestFramework\Helper\Bootstrap::getInstance()->loadArea('adminhtml');
+\Magento\TestFramework\Helper\Bootstrap::getInstance()->loadArea('Adminhtml');
 
 $testCases = include __DIR__ . '/_algorithm_base_data.php';
 

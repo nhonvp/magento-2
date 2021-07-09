@@ -6,4 +6,4 @@
 
 use Magento\Framework\Component\ComponentRegistrar;
 
-ComponentRegistrar::register(ComponentRegistrar::THEME, 'adminhtml/FrameworkThemeTest/test', __DIR__);
+ComponentRegistrar::register(ComponentRegistrar::THEME, 'Adminhtml/FrameworkThemeTest/test', __DIR__);

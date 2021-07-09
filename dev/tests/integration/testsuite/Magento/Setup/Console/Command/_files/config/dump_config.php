@@ -6,9 +6,9 @@
 return [
     'scopes' => [
         'websites' => [
-            'adminhtml' => [
+            'Adminhtml' => [
                 'website_id' => '0',
-                'code' => 'adminhtml',
+                'code' => 'Adminhtml',
                 'name' => 'Admin',
                 'sort_order' => '0',
                 'default_group_id' => '0',
@@ -42,9 +42,9 @@ return [
             ],
         ],
         'stores' => [
-            'adminhtml' => [
+            'Adminhtml' => [
                 'store_id' => '0',
-                'code' => 'adminhtml',
+                'code' => 'Adminhtml',
                 'website_id' => '0',
                 'group_id' => '0',
                 'name' => 'Admin',
@@ -63,12 +63,12 @@ return [
         ],
     ],
     'themes' => [
-            'adminhtml/Magento/backend' => [
+            'Adminhtml/Magento/backend' => [
                     'parent_id' => null,
                     'theme_path' => 'Magento/backend',
                     'theme_title' => 'Magento 2 backend',
                     'is_featured' => '0',
-                    'area' => 'adminhtml',
+                    'area' => 'Adminhtml',
                     'type' => '0',
                     'code' => 'Magento/backend',
             ],

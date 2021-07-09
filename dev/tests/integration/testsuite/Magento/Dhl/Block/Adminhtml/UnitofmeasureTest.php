@@ -6,7 +6,7 @@
 namespace Magento\Dhl\Block\Adminhtml;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class UnitofmeasureTest extends \PHPUnit\Framework\TestCase
 {

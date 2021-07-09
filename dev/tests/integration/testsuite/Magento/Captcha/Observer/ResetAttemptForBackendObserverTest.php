@@ -17,7 +17,7 @@ use Magento\User\Model\UserFactory;
 /**
  * Class ResetAttemptForBackendObserverTest
  *
- * Test for checking that the adminhtml login attempts are removed after a successful login
+ * Test for checking that the Adminhtml login attempts are removed after a successful login
  */
 class ResetAttemptForBackendObserverTest extends \PHPUnit\Framework\TestCase
 {

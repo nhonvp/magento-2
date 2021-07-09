@@ -77,7 +77,7 @@ class UpdateCustomOptionsTest extends TestCase
             ->get(ProductCustomOptionValuesInterfaceFactory::class);
         $this->storeManager = $this->objectManager->get(StoreManagerInterface::class);
         $this->currentStoreId = $this->storeManager->getStore()->getId();
-        $adminStoreId = $this->storeManager->getStore('adminhtml')->getId();
+        $adminStoreId = $this->storeManager->getStore('Adminhtml')->getId();
         $this->storeManager->setCurrentStore($adminStoreId);
 
         parent::setUp();

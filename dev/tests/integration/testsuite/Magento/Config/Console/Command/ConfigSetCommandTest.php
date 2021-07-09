@@ -209,7 +209,7 @@ class ConfigSetCommandTest extends \PHPUnit\Framework\TestCase
         return [
             ['general/region/display_all', '1'],
             ['general/region/state_required', 'BR,FR', ScopeInterface::SCOPE_WEBSITE, 'base'],
-            ['adminhtml/security/use_form_key', '0'],
+            ['Adminhtml/security/use_form_key', '0'],
             ['general/group/subgroup/field', 'default_value'],
             ['general/group/subgroup/field', 'website_value', ScopeInterface::SCOPE_WEBSITE, 'base'],
         ];

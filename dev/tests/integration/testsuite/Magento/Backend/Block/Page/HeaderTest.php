@@ -7,7 +7,7 @@ namespace Magento\Backend\Block\Page;
 
 /**
  * Test \Magento\Backend\Block\Page\Header
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class HeaderTest extends \PHPUnit\Framework\TestCase
 {

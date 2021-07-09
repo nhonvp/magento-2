@@ -16,7 +16,7 @@ use Magento\Store\Model\Store;
 use Magento\TestFramework\Helper\Bootstrap;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class BaseUrlConfigPluginTest extends \PHPUnit\Framework\TestCase
 {

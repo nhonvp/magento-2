@@ -16,7 +16,7 @@ class IndexTest extends \Magento\TestFramework\TestCase\AbstractBackendControlle
      */
     public function testIndexAction()
     {
-        $this->dispatch('backend/adminhtml/system_currencysymbol/index');
+        $this->dispatch('backend/Adminhtml/system_currencysymbol/index');
 
         $body = $this->getResponse()->getBody();
         $this->assertStringContainsString('id="currency-symbols-form"', $body);

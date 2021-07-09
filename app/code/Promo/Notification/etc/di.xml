@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="backend_promo_listing_data_source" xsi:type="string">promo_promo_collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="promo_promo_collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">promo_notification</argument>
+            <argument name="resourceModel" xsi:type="string">Promo\Notification\Model\ResourceModel\Promo</argument>
+        </arguments>
+    </virtualType>
+</config>

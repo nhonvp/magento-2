@@ -73,9 +73,9 @@ class CspWhitelistXmlCollectorTest extends TestCase
     }
 
     /**
-     * Test collecting configurations from multiple XML files for adminhtml area.
+     * Test collecting configurations from multiple XML files for Adminhtml area.
      *
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @return void
      */
     public function testCollectingForAdminhtmlArea(): void
@@ -98,7 +98,7 @@ class CspWhitelistXmlCollectorTest extends TestCase
                 $this->assertInstanceOf(FetchPolicy::class, $policy);
                 $this->assertEquals(
                     [
-                        'https://adminhtml.magento.com',
+                        'https://Adminhtml.magento.com',
                         'https://devdocs.magento.com',
                         'example.magento.com'
                     ],
@@ -116,7 +116,7 @@ class CspWhitelistXmlCollectorTest extends TestCase
                 $this->assertInstanceOf(FetchPolicy::class, $policy);
                 $this->assertEquals(
                     [
-                        'https://adminhtml.magento.com',
+                        'https://Adminhtml.magento.com',
                         'https://devdocs.magento.com',
                         'example.magento.com'
                     ],

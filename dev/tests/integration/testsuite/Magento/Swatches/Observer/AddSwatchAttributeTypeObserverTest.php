@@ -18,7 +18,7 @@ use Magento\Framework\Event\ManagerInterface;
 class AddSwatchAttributeTypeObserverTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testAddSwatchAttributeTypes()
     {

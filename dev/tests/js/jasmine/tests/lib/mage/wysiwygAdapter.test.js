@@ -64,7 +64,7 @@ define([
             var decodedHtml = '<p>' +
                 '<img src="{{media url=&quot;wysiwyg/banana.jpg&quot;}}" alt="" width="612" height="459"></p>',
                 encodedHtml = '<p>' +
-                    '<img src="http://example.com/adminhtml/cms/wysiwyg/directive/___directive' +
+                    '<img src="http://example.com/Adminhtml/cms/wysiwyg/directive/___directive' +
                     '/e3ttZWRpYSB1cmw9Ind5c2l3eWcvYmFuYW5hLmpwZyJ9fQ%2C%2C" alt="" width="612" height="459">' +
                     '</p>';
 
@@ -81,7 +81,7 @@ define([
             var decodedHtml = '<p>' +
                 '<img src="{{media url=&quot;wysiwyg/banana.jpg&quot;}}" alt="" width="612" height="459"></p>',
                 encodedHtml = '<p>' +
-                    '<img src="http://example.com/adminhtml/cms/wysiwyg/directive/___directive' +
+                    '<img src="http://example.com/Adminhtml/cms/wysiwyg/directive/___directive' +
                     '/e3ttZWRpYSB1cmw9Ind5c2l3eWcvYmFuYW5hLmpwZyJ9fQ%2C%2C/key/' +
                     '5552655d13a141099d27f5d5b0c58869423fd265687167da12cad2bb39aa9a58" ' +
                     'alt="" width="612" height="459">' +
@@ -102,7 +102,7 @@ define([
             var decodedHtml = '<p>' +
                 '<img src="{{media url=&quot;wysiwyg/banana.jpg&quot;}}" alt="" width="612" height="459"></p>',
                 encodedHtml = '<p>' +
-                    '<img src="http://example.com/adminhtml/cms/wysiwyg/directive/___directive' +
+                    '<img src="http://example.com/Adminhtml/cms/wysiwyg/directive/___directive' +
                     '/e3ttZWRpYSB1cmw9Ind5c2l3eWcvYmFuYW5hLmpwZyJ9fQ%2C%2C?SID=something" ' +
                     'alt="" width="612" height="459">' +
                     '</p>',
@@ -121,7 +121,7 @@ define([
             var decodedHtml = '<p>' +
                 '<img src="{{media url=&quot;wysiwyg/banana.jpg&quot;}}" alt="" width="612" height="459"></p>',
                 encodedHtml = '<p>' +
-                    '<img src="http://example.com/adminhtml/cms/wysiwyg/directive/___directive' +
+                    '<img src="http://example.com/Adminhtml/cms/wysiwyg/directive/___directive' +
                     '/e3ttZWRpYSB1cmw9Ind5c2l3eWcvYmFuYW5hLmpwZyJ9fQ%2C%2C/key/' +
                     '5552655d13a141099d27f5d5b0c58869423fd265687167da12cad2bb39aa9a58?SID=something" ' +
                     'alt="" width="612" height="459">' +

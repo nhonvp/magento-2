@@ -8,7 +8,7 @@ namespace Magento\User\Controller\Adminhtml\User;
 /**
  * Test class for \Magento\User\Controller\Adminhtml\User\Role.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class RoleTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {
@@ -20,7 +20,7 @@ class RoleTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 
         $this->getRequest()->setParam('rid', $roleAdmin->getId());
 
-        $this->dispatch('backend/adminhtml/user_role/editrole');
+        $this->dispatch('backend/Adminhtml/user_role/editrole');
 
         $this->assertStringContainsString('Role Information', $this->getResponse()->getBody());
         $this->assertStringContainsString($roleAdmin->getRoleName(), $this->getResponse()->getBody());
@@ -32,7 +32,7 @@ class RoleTest extends \Magento\TestFramework\TestCase\AbstractBackendController
     public function testEditrolegridAction()
     {
         $this->getRequest()->setParam('ajax', true)->setParam('isAjax', true);
-        $this->dispatch('backend/adminhtml/user_role/editrolegrid');
+        $this->dispatch('backend/Adminhtml/user_role/editrolegrid');
         $expected = '%a<table %a id="roleUserGrid_table">%a';
         $this->assertStringMatchesFormat($expected, $this->getResponse()->getBody());
     }
@@ -43,7 +43,7 @@ class RoleTest extends \Magento\TestFramework\TestCase\AbstractBackendController
     public function testRoleGridAction()
     {
         $this->getRequest()->setParam('ajax', true)->setParam('isAjax', true)->setParam('user_id', 1);
-        $this->dispatch('backend/adminhtml/user_role/roleGrid');
+        $this->dispatch('backend/Adminhtml/user_role/roleGrid');
         $expected = '%a<table %a id="roleGrid_table">%a';
         $this->assertStringMatchesFormat($expected, $this->getResponse()->getBody());
     }

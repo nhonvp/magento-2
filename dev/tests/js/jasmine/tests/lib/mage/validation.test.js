@@ -416,7 +416,7 @@ define([
         });
     });
 
-    describe('Testing validate-adminhtml-password', function () {
+    describe('Testing validate-Adminhtml-password', function () {
         it('validate-admin-password', function () {
             expect($.validator.methods['validate-admin-password']
                 .call($.validator.prototype, '')).toEqual(true);

@@ -12,7 +12,7 @@ use Magento\Catalog\Controller\Adminhtml\Product\MassDeleteTest as CatalogMassDe
 /**
  * Test for mass configurable product deleting.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  */
 class MassDeleteTest extends CatalogMassDeleteTest

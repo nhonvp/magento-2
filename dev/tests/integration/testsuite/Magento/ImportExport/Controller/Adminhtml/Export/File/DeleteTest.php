@@ -17,7 +17,7 @@ use Magento\TestFramework\TestCase\AbstractBackendController;
 /**
  * Test for \Magento\ImportExport\Controller\Adminhtml\Export\File\Delete class.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class DeleteTest extends AbstractBackendController
 {
@@ -60,7 +60,7 @@ class DeleteTest extends AbstractBackendController
      * @param string $file
      * @dataProvider testExecuteProvider
      * @return void
-     * @magentoConfigFixture default_store adminhtml/security/use_form_key 1
+     * @magentoConfigFixture default_store Adminhtml/security/use_form_key 1
      */
     public function testExecute($file): void
     {
@@ -71,7 +71,7 @@ class DeleteTest extends AbstractBackendController
         $request->setMethod(Http::METHOD_POST);
 
         if ($this->varDirectory->isExist($fullPath)) {
-            $this->dispatch('backend/adminhtml/export_file/delete');
+            $this->dispatch('backend/Adminhtml/export_file/delete');
         } else {
             throw new \AssertionError('Export product file supposed to exist');
         }

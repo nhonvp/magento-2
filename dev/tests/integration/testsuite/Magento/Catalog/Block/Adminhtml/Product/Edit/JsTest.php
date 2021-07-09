@@ -7,7 +7,7 @@
 namespace Magento\Catalog\Block\Adminhtml\Product\Edit;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class JsTest extends \PHPUnit\Framework\TestCase
 {

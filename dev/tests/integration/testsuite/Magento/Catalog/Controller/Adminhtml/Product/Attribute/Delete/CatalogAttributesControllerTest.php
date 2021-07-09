@@ -12,7 +12,7 @@ namespace Magento\Catalog\Controller\Adminhtml\Product\Attribute\Delete;
  * "date", "select", "multiselect", "textarea", "texteditor", "text" and "boolean".
  * Attributes from Magento_Catalog and Magento_Eav modules.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  */
 class CatalogAttributesControllerTest extends AbstractDeleteAttributeControllerTest

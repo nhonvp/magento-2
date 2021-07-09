@@ -16,7 +16,7 @@ class StatusTest extends \PHPUnit\Framework\TestCase
     {
         return [
             'backend label' => [
-                'adminhtml',
+                'Adminhtml',
                 'Example',
             ],
             'store view label' => [

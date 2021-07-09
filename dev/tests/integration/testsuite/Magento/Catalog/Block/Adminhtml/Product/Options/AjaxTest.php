@@ -6,7 +6,7 @@
 namespace Magento\Catalog\Block\Adminhtml\Product\Options;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class AjaxTest extends \PHPUnit\Framework\TestCase
 {

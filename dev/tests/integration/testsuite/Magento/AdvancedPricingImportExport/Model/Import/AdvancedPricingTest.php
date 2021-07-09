@@ -8,7 +8,7 @@ namespace Magento\AdvancedPricingImportExport\Model\Import;
 use Magento\Framework\App\Filesystem\DirectoryList;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
 class AdvancedPricingTest extends \PHPUnit\Framework\TestCase
@@ -100,7 +100,7 @@ class AdvancedPricingTest extends \PHPUnit\Framework\TestCase
 
     /**
      * @magentoDataFixture Magento/AdvancedPricingImportExport/_files/create_products.php
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testImportAddUpdate()
     {
@@ -173,7 +173,7 @@ class AdvancedPricingTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDbIsolation enabled
      * @magentoAppIsolation enabled
      * @magentoDataFixture Magento/Catalog/_files/product_simple.php
@@ -242,7 +242,7 @@ class AdvancedPricingTest extends \PHPUnit\Framework\TestCase
 
     /**
      * @magentoDataFixture Magento/AdvancedPricingImportExport/_files/create_products.php
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testImportReplace()
     {

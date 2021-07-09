@@ -17,7 +17,7 @@ use Magento\TestFramework\TestCase\AbstractBackendController;
 /**
  * Saving product with linked products
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class LinksTest extends AbstractBackendController
 {

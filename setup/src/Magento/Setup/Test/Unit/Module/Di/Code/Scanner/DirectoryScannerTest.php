@@ -33,7 +33,7 @@ class DirectoryScannerTest extends TestCase
         $filePatterns = [
             'php' => '/.*\.php$/',
             'etc' => '/\/app\/etc\/.*\.xml$/',
-            'config' => '/\/etc\/(config([a-z0-9\.]*)?|adminhtml\/system)\.xml$/',
+            'config' => '/\/etc\/(config([a-z0-9\.]*)?|Adminhtml\/system)\.xml$/',
             'view' => '/\/view\/[a-z0-9A-Z\/\.]*\.xml$/',
             'design' => '/\/app\/design\/[a-z0-9A-Z\/\.]*\.xml$/',
         ];
@@ -47,11 +47,11 @@ class DirectoryScannerTest extends TestCase
                 $this->_testDir . '/app/code/Magento/SomeModule/Model/Test.php',
             ],
             'config' => [
-                $this->_testDir . '/app/code/Magento/SomeModule/etc/adminhtml/system.xml',
+                $this->_testDir . '/app/code/Magento/SomeModule/etc/Adminhtml/system.xml',
                 $this->_testDir . '/app/code/Magento/SomeModule/etc/config.xml',
             ],
             'view' => [$this->_testDir . '/app/code/Magento/SomeModule/view/frontend/default.xml'],
-            'design' => [$this->_testDir . '/app/design/adminhtml/Magento/backend/layout.xml'],
+            'design' => [$this->_testDir . '/app/design/Adminhtml/Magento/backend/layout.xml'],
             'etc' => [$this->_testDir . '/app/etc/additional.xml', $this->_testDir . '/app/etc/config.xml'],
         ];
         $this->assertEquals(sort($expected['php']), sort($actual['php']), 'Incorrect php files list');

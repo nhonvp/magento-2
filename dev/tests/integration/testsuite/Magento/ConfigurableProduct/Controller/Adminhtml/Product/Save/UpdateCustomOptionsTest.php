@@ -13,7 +13,7 @@ use Magento\Catalog\Controller\Adminhtml\Product\Save\UpdateCustomOptionsTest as
  * Base test cases for update configurable product custom options with type "field".
  * Option updating via dispatch product controller action save with updated options data in POST data.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  * @magentoDataFixture Magento/ConfigurableProduct/_files/product_configurable.php
  */

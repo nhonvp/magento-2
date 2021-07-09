@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="promo_notification" resource="default" engine="innodb" comment="Promo Notification Table">
+        <column xsi:type="int" name="entity_id" padding="10" unsigned="true" nullable="false" identity="true"
+                comment="Entity ID"/>
+        <column xsi:type="varchar" name="name" nullable="false" length="32" default="simple" comment="name"/>
+        <column xsi:type="varchar" name="status" nullable="true" length="100" comment="status"/>
+        <column xsi:type="varchar" name="short_description" nullable="true" length="100" comment="short_description"/>
+        <column xsi:type="varchar" name="redirect_url" nullable="true" length="100" comment="redirect_url"/>
+        <column xsi:type="timestamp" name="created_at" on_update="false" nullable="false" default="CURRENT_TIMESTAMP"
+                comment="Creation Time"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="entity_id"/>
+        </constraint>
+    </table>
+</schema>

@@ -7,7 +7,7 @@ namespace Magento\Newsletter\Block\Adminhtml\Queue\Edit;
 
 /**
  * Test class for \Magento\Newsletter\Block\Adminhtml\Queue\Edit\Form
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class FormTest extends \PHPUnit\Framework\TestCase
 {

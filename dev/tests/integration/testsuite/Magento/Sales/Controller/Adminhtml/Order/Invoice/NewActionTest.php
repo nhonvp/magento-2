@@ -18,7 +18,7 @@ use Magento\TestFramework\TestCase\AbstractBackendController;
  *
  * @see \Magento\Sales\Controller\Adminhtml\Order\Invoice\NewAction
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  */
 class NewActionTest extends AbstractBackendController

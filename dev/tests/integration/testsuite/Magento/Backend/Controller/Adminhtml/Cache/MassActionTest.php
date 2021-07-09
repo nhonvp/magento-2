@@ -59,7 +59,7 @@ class MassActionTest extends \Magento\TestFramework\TestCase\AbstractBackendCont
         $this->setAll(false);
 
         $this->getRequest()->setParams(['types' => $typesToEnable]);
-        $this->dispatch('backend/adminhtml/cache/massEnable');
+        $this->dispatch('backend/Adminhtml/cache/massEnable');
 
         foreach ($this->getCacheStates() as $cacheType => $cacheState) {
             if (in_array($cacheType, $typesToEnable)) {
@@ -80,7 +80,7 @@ class MassActionTest extends \Magento\TestFramework\TestCase\AbstractBackendCont
         $this->setAll(false);
 
         $this->getRequest()->setParams(['types' => $typesToEnable]);
-        $this->dispatch('backend/adminhtml/cache/massEnable');
+        $this->dispatch('backend/Adminhtml/cache/massEnable');
 
         foreach ($this->getCacheStates() as $cacheType => $cacheState) {
             $this->assertEquals(0, $cacheState, "Type '{$cacheType}' must remain disabled");
@@ -96,7 +96,7 @@ class MassActionTest extends \Magento\TestFramework\TestCase\AbstractBackendCont
         $this->setAll(true);
 
         $this->getRequest()->setParams(['types' => $typesToDisable]);
-        $this->dispatch('backend/adminhtml/cache/massDisable');
+        $this->dispatch('backend/Adminhtml/cache/massDisable');
 
         foreach ($this->getCacheStates() as $cacheType => $cacheState) {
             if (in_array($cacheType, $typesToDisable)) {
@@ -117,7 +117,7 @@ class MassActionTest extends \Magento\TestFramework\TestCase\AbstractBackendCont
         $this->setAll(true);
 
         $this->getRequest()->setParams(['types' => $typesToDisable]);
-        $this->dispatch('backend/adminhtml/cache/massDisable');
+        $this->dispatch('backend/Adminhtml/cache/massDisable');
 
         foreach ($this->getCacheStates() as $cacheType => $cacheState) {
             $this->assertEquals(1, $cacheState, "Type '{$cacheType}' must remain enabled");
@@ -166,7 +166,7 @@ class MassActionTest extends \Magento\TestFramework\TestCase\AbstractBackendCont
     public function testMassRefreshAction($typesToRefresh = [])
     {
         $this->getRequest()->setParams(['types' => $typesToRefresh]);
-        $this->dispatch('backend/adminhtml/cache/massRefresh');
+        $this->dispatch('backend/Adminhtml/cache/massRefresh');
 
         /** @var $cacheTypeList \Magento\Framework\App\Cache\TypeListInterface */
         $cacheTypeList = Bootstrap::getObjectManager()->get(\Magento\Framework\App\Cache\TypeListInterface::class);

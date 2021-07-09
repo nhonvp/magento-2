@@ -27,7 +27,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Test for plugin which is listening store resource model and on save replace cms page url rewrites.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
 class ViewTest extends TestCase

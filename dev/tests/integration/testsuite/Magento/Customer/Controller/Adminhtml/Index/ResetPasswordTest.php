@@ -10,7 +10,7 @@ use Magento\Framework\App\Request\Http as HttpRequest;
 /**
  * ResetPassword controller test.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class ResetPasswordTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {
@@ -107,7 +107,7 @@ class ResetPasswordTest extends \Magento\TestFramework\TestCase\AbstractBackendC
     }
 
     /**
-     * Checks reset password functionality with default settings, customer and adminhtml reset request events.
+     * Checks reset password functionality with default settings, customer and Adminhtml reset request events.
      *
      * @magentoConfigFixture current_store customer/password/limit_password_reset_requests_method 1
      * @magentoConfigFixture current_store customer/password/min_time_between_password_reset_requests 10

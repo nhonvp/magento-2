@@ -44,7 +44,7 @@ class PluginTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDataFixture Magento/Newsletter/_files/subscribers.php
      */
     public function testCustomerCreated()
@@ -74,7 +74,7 @@ class PluginTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDbIsolation enabled
      */
     public function testCustomerCreatedNotSubscribed()
@@ -94,7 +94,7 @@ class PluginTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDataFixture Magento/Newsletter/_files/subscribers.php
      */
     public function testCustomerUpdatedEmail()
@@ -117,7 +117,7 @@ class PluginTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDataFixture Magento/Newsletter/_files/subscribers.php
      */
     public function testCustomerDeletedByIdAdminArea()
@@ -135,7 +135,7 @@ class PluginTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDataFixture Magento/Newsletter/_files/subscribers.php
      */
     public function testCustomerDeletedAdminArea()
@@ -169,7 +169,7 @@ class PluginTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDbIsolation enabled
      */
     public function testCustomerWithZeroStoreIdIsSubscribed()

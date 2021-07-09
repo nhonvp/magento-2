@@ -31,7 +31,7 @@ class CarrierConfigFilesTest extends \PHPUnit\Framework\TestCase
      */
     public function testValidateShippingSourceModels()
     {
-        $config = $this->_reader->read('adminhtml');
+        $config = $this->_reader->read('Adminhtml');
 
         $carriers = $config['config']['system']['sections']['carriers']['children'];
         foreach ($carriers as $carrier) {

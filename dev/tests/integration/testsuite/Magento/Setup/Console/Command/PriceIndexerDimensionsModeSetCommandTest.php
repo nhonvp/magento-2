@@ -62,7 +62,7 @@ class PriceIndexerDimensionsModeSetCommandTest extends \Magento\TestFramework\In
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoAppIsolation enabled
      *
      * @param string $previousMode
@@ -122,7 +122,7 @@ class PriceIndexerDimensionsModeSetCommandTest extends \Magento\TestFramework\In
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoAppIsolation enabled
      */
     public function testSwitchModeForSameMode()
@@ -147,7 +147,7 @@ class PriceIndexerDimensionsModeSetCommandTest extends \Magento\TestFramework\In
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoAppIsolation enabled
      *
      */

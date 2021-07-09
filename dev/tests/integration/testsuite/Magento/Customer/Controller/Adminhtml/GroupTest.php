@@ -11,7 +11,7 @@ use Magento\Framework\Message\MessageInterface;
 use Magento\TestFramework\Helper\Bootstrap;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class GroupTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {

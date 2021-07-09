@@ -6,4 +6,4 @@
 
 use Magento\Framework\Component\ComponentRegistrar;
 
-ComponentRegistrar::register(ComponentRegistrar::THEME, 'adminhtml/Magento_EmailTest/default', __DIR__);
+ComponentRegistrar::register(ComponentRegistrar::THEME, 'Adminhtml/Magento_EmailTest/default', __DIR__);

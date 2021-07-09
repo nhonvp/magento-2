@@ -9,7 +9,7 @@ use Magento\Framework\Locale\Resolver;
 use Magento\TestFramework\Helper\Bootstrap;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class ResolverTest extends \PHPUnit\Framework\TestCase
 {

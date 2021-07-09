@@ -16,7 +16,7 @@ class LayoutRule implements \Magento\TestFramework\Dependency\RuleInterface
      */
     protected $_defaultModules = [
         'frontend' => 'Magento\Theme',
-        'adminhtml' => 'Magento\Adminhtml',
+        'Adminhtml' => 'Magento\Adminhtml',
     ];
 
     /**
@@ -475,7 +475,7 @@ class LayoutRule implements \Magento\TestFramework\Dependency\RuleInterface
     protected function _getAreaByFile($file)
     {
         $area = 'default';
-        if (preg_match('/\/(?<area>adminhtml|frontend)\//', $file, $matches)) {
+        if (preg_match('/\/(?<area>Adminhtml|frontend)\//', $file, $matches)) {
             $area = $matches['area'];
         }
         return $area;

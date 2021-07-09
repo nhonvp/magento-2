@@ -15,7 +15,7 @@ use Magento\Eav\Model\Entity\Attribute\Source\Table;
  * Test cases related to create attribute with input type text swatch.
  *
  * @magentoDbIsolation enabled
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class TextSwatchTest extends AbstractSaveAttributeTest
 {

@@ -20,7 +20,7 @@ $productRepository = $objectManager->create(ProductRepositoryInterface::class);
 $tierPriceFactory = $objectManager->get(ProductTierPriceInterfaceFactory::class);
 $tpExtensionAttributesFactory = $objectManager->get(ProductTierPriceExtensionFactory::class);
 $product = $productRepository->get('simple', false, null, true);
-$adminWebsite = $objectManager->get(WebsiteRepositoryInterface::class)->get('adminhtml');
+$adminWebsite = $objectManager->get(WebsiteRepositoryInterface::class)->get('Adminhtml');
 $tierPriceExtensionAttributes = $tpExtensionAttributesFactory->create()->setWebsiteId($adminWebsite->getId());
 $pricesForCustomerGroupsInput = [
     [

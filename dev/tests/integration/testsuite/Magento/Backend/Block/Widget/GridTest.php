@@ -6,7 +6,7 @@
 namespace Magento\Backend\Block\Widget;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
 class GridTest extends \PHPUnit\Framework\TestCase
@@ -62,13 +62,13 @@ class GridTest extends \PHPUnit\Framework\TestCase
         )->with(
             \Magento\Backend\Block\Widget\Button::class
         )->willReturn(
-            
+
                 \Magento\TestFramework\Helper\Bootstrap::getObjectManager()->get(
                     \Magento\Framework\View\LayoutInterface::class
                 )->createBlock(
                     \Magento\Backend\Block\Widget\Button::class
                 )
-            
+
         );
         $this->_layoutMock->expects(
             $this->any()
@@ -77,11 +77,11 @@ class GridTest extends \PHPUnit\Framework\TestCase
         )->with(
             \Magento\Framework\Json\Helper\Data::class
         )->willReturn(
-            
+
                 \Magento\TestFramework\Helper\Bootstrap::getObjectManager()->get(
                     \Magento\Framework\Json\Helper\Data::class
                 )
-            
+
         );
 
         $this->_block = \Magento\TestFramework\Helper\Bootstrap::getObjectManager()->get(

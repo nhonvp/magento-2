@@ -17,7 +17,7 @@ use Magento\Store\Model\StoreManagerInterface;
 /**
  * Test cases for save category controller.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  */
 class SaveCategoryTest extends AbstractSaveCategoryTest

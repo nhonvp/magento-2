@@ -18,7 +18,7 @@ use PHPUnit\Framework\TestCase;
  * Tests for remove quote items plugin.
  *
  * @see \Magento\Wishlist\Plugin\Model\ResourceModel\Product
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation disabled
  */
 class ProductTest extends TestCase

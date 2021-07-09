@@ -12,7 +12,7 @@ class MassMarkAsReadTest extends \Magento\TestFramework\TestCase\AbstractBackend
     protected function setUp(): void
     {
         $this->resource = 'Magento_AdminNotification::mark_as_read';
-        $this->uri = 'backend/adminhtml/notification/massmarkasread';
+        $this->uri = 'backend/Adminhtml/notification/massmarkasread';
         $this->httpMethod = HttpRequest::METHOD_POST;
         parent::setUp();
     }

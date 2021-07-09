@@ -6,13 +6,13 @@
 namespace Magento\Backend\Controller\Adminhtml\System;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class StoreTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {
     public function testIndexAction()
     {
-        $this->dispatch('backend/adminhtml/system_store/index');
+        $this->dispatch('backend/Adminhtml/system_store/index');
 
         $response = $this->getResponse()->getBody();
 
@@ -72,7 +72,7 @@ class StoreTest extends \Magento\TestFramework\TestCase\AbstractBackendControlle
         $post['form_key'] = $formKey->getFormKey();
         $this->getRequest()->setMethod('POST');
         $this->getRequest()->setPostValue($post);
-        $this->dispatch('backend/adminhtml/system_store/save');
+        $this->dispatch('backend/Adminhtml/system_store/save');
         //Check that errors was generated and set to session
         $this->assertSessionMessages(
             $this->containsEqual($message),

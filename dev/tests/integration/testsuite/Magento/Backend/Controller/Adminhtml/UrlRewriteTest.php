@@ -8,7 +8,7 @@ namespace Magento\Backend\Controller\Adminhtml;
 use Magento\Framework\App\Request\Http as HttpRequest;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class UrlRewriteTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {
@@ -32,12 +32,12 @@ class UrlRewriteTest extends \Magento\TestFramework\TestCase\AbstractBackendCont
                 'cms_page' => $page->getId(),
             ]
         );
-        $this->dispatch('backend/adminhtml/url_rewrite/save');
+        $this->dispatch('backend/Adminhtml/url_rewrite/save');
 
         $this->assertSessionMessages(
             $this->containsEqual('The URL Rewrite has been saved.'),
             \Magento\Framework\Message\MessageInterface::TYPE_SUCCESS
         );
-        $this->assertRedirect($this->stringContains('backend/adminhtml/url_rewrite/index'));
+        $this->assertRedirect($this->stringContains('backend/Adminhtml/url_rewrite/index'));
     }
 }

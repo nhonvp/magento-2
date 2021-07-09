@@ -39,7 +39,7 @@ class ResetQuoteAddressesTest extends \PHPUnit\Framework\TestCase
             ->setLastname('lastname')
             ->setStreet('street')
             ->setCity('Beverly Hills')
-            ->setEmail('adminhtml@example.com')
+            ->setEmail('Adminhtml@example.com')
             ->setTelephone('1111111111')
             ->setCountryId('US')
             ->setAddressType('billing');

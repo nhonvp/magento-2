@@ -10,7 +10,7 @@ class RemoveTest extends \Magento\TestFramework\TestCase\AbstractBackendControll
     protected function setUp(): void
     {
         $this->resource = 'Magento_AdminNotification::adminnotification_remove';
-        $this->uri = 'backend/adminhtml/notification/remove';
+        $this->uri = 'backend/Adminhtml/notification/remove';
         parent::setUp();
     }
 }

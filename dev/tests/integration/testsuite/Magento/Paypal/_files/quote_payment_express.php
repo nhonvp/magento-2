@@ -15,7 +15,7 @@ $objectManager = Bootstrap::getObjectManager();
 /** @var Quote $quote */
 $quote = $objectManager->get(QuoteFactory::class)->create();
 $quote->load('100000002', 'reserved_order_id');
-$quote->setCustomerEmail('adminhtml@example.com');
+$quote->setCustomerEmail('Adminhtml@example.com');
 /** @var $service \Magento\Quote\Api\CartManagementInterface */
 $service = \Magento\TestFramework\Helper\Bootstrap::getObjectManager()
     ->create(\Magento\Quote\Api\CartManagementInterface::class);

@@ -6,7 +6,7 @@
 namespace Magento\Variable\Controller\Adminhtml\System;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class VariableTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {
@@ -15,7 +15,7 @@ class VariableTest extends \Magento\TestFramework\TestCase\AbstractBackendContro
      */
     public function testEditAction()
     {
-        $this->dispatch('backend/adminhtml/system_variable/edit');
+        $this->dispatch('backend/Adminhtml/system_variable/edit');
         $body = $this->getResponse()->getBody();
         $this->assertStringContainsString('window.toggleValueElement = function(element) {', $body);
     }

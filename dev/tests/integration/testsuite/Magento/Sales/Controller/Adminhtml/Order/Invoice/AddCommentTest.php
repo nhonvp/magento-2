@@ -14,7 +14,7 @@ use PHPUnit\Framework\Constraint\StringContains;
  * Class verifies invoice add comment functionality.
  *
  * @magentoDbIsolation enabled
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDataFixture Magento/Sales/_files/invoice.php
  */
 class AddCommentTest extends AbstractInvoiceControllerTest

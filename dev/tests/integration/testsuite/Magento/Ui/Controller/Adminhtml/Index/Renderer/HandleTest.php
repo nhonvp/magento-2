@@ -11,7 +11,7 @@ use Magento\TestFramework\Helper\Bootstrap;
 use Magento\Framework\AuthorizationInterface;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class HandleTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {

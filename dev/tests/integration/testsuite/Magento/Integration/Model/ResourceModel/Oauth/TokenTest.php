@@ -151,22 +151,22 @@ class TokenTest extends \PHPUnit\Framework\TestCase
     public function deleteExpiredTokenUsingObserverDataProvider()
     {
         return [
-            "Clean up long before default adminhtml and default customer token life time" => [
+            "Clean up long before default Adminhtml and default customer token life time" => [
                 3600 - 6, // time passed after base creation time
                 [], // expected to be removed
                 ['#1', '#2', '#3', '#4', '#5', '#6'], // expected to exist
             ],
-            "Clean up just before default adminhtml and default customer token life time" => [
+            "Clean up just before default Adminhtml and default customer token life time" => [
                 3600 - 1, // time passed after base creation time
                 ['#4'], // expected to be removed
                 ['#1', '#2', '#3', '#5', '#6'], // expected to exist
             ],
-            "Clean up after default adminhtml token life time, but before default customer token life time" => [
+            "Clean up after default Adminhtml token life time, but before default customer token life time" => [
                 3600 + 1, // time passed after base creation time
                 ['#3', '#4'], // expected to be removed
                 ['#1', '#2', '#5', '#6'], // expected to exist
             ],
-            "Clean up after default customer and default adminhtml token life time" => [
+            "Clean up after default customer and default Adminhtml token life time" => [
                 14400 + 1, // time passed after base creation time
                 ['#1', '#3', '#4'], // expected to be removed
                 ['#2', '#5', '#6'], // expected to exist
@@ -212,13 +212,13 @@ class TokenTest extends \PHPUnit\Framework\TestCase
     public function deleteExpiredTokensDataProvider()
     {
         return [
-          "Clean up for adminhtml tokens which were created ('token_lifetime' + 1 second) ago" => [
+          "Clean up for Adminhtml tokens which were created ('token_lifetime' + 1 second) ago" => [
               self::TOKEN_LIFETIME * 60 * 60 + 1, // time passed after base creation time
               [UserContextInterface::USER_TYPE_ADMIN], // token types to clean up
               ['#1'], // expected to be removed
               ['#2', '#3', '#4', '#5', '#6'], // expected to exist
           ],
-          "Clean up for adminhtml, integration, guest tokens which were created ('token_lifetime' + 6 second) ago" => [
+          "Clean up for Adminhtml, integration, guest tokens which were created ('token_lifetime' + 6 second) ago" => [
               self::TOKEN_LIFETIME * 60 * 60 + 6, // time passed after base creation time
               [ // token types to clean up
                   UserContextInterface::USER_TYPE_ADMIN,
@@ -228,7 +228,7 @@ class TokenTest extends \PHPUnit\Framework\TestCase
               ['#1', '#2', '#5', '#6'], // expected to be removed
               ['#3', '#4'], // expected to exist
           ],
-          "Clean up for adminhtml, integration, customer tokens which were created ('token_lifetime' + 6 second) ago" => [
+          "Clean up for Adminhtml, integration, customer tokens which were created ('token_lifetime' + 6 second) ago" => [
               self::TOKEN_LIFETIME * 60 * 60 + 6, // time passed after base creation time
               [ // token types to clean up
                   UserContextInterface::USER_TYPE_ADMIN,
@@ -238,7 +238,7 @@ class TokenTest extends \PHPUnit\Framework\TestCase
               ['#1', '#2', '#3', '#4', '#5', '#6'], // expected to be removed
               [], // expected to exist
           ],
-          "Clean up for adminhtml, integration, customer tokens which were created ('token_lifetime' + 1 second) ago" => [
+          "Clean up for Adminhtml, integration, customer tokens which were created ('token_lifetime' + 1 second) ago" => [
               self::TOKEN_LIFETIME * 60 * 60 + 1, // time passed after base creation time
               [ // token types to clean up
                   UserContextInterface::USER_TYPE_ADMIN,

@@ -56,14 +56,14 @@ class DataTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * From the adminhtml panel with custom URL we should have generated frontend URL
+     * From the Adminhtml panel with custom URL we should have generated frontend URL
      *
      * @param string $modelName
      * @param string $getIdMethod
      * @param int $entityId
      * @param string $code
      * @param string $expected
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoConfigFixture admin_store web/unsecure/base_link_url http://admin.localhost/
      * @dataProvider getTrackingPopupUrlBySalesModelDataProvider
      */

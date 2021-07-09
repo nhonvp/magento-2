@@ -26,7 +26,7 @@ use PHPUnit\Framework\MockObject\MockObject;
 /**
  * Tests for update quote item in customer shopping cart.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
 class UpdateTest extends AbstractBackendController

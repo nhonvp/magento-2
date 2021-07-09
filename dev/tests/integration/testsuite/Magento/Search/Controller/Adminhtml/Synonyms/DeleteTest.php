@@ -16,7 +16,7 @@ use Magento\Search\Model\ResourceModel\SynonymGroup\Collection;
 /**
  * Test for class \Magento\Search\Controller\Adminhtml\Synonyms\Delete
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class DeleteTest extends AbstractBackendController
 {

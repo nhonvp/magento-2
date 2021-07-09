@@ -12,7 +12,7 @@ use Magento\TestFramework\Helper\Bootstrap;
 /**
  * Test class for Magento\User\Controller\Adminhtml\User\InvalidateToken.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class InvalidateTokenTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {
@@ -37,7 +37,7 @@ class InvalidateTokenTest extends \Magento\TestFramework\TestCase\AbstractBacken
 
         // invalidate token
         $this->getRequest()->setParam('user_id', $adminUserId);
-        $this->dispatch('backend/adminhtml/user/invalidateToken');
+        $this->dispatch('backend/Adminhtml/user/invalidateToken');
         $token = $tokenModel->loadByAdminId($adminUserId);
         $this->assertNull($token->getId());
     }
@@ -73,7 +73,7 @@ class InvalidateTokenTest extends \Magento\TestFramework\TestCase\AbstractBacken
 
         // invalidate tokens
         $this->getRequest()->setParam('user_id', $adminUserId);
-        $this->dispatch('backend/adminhtml/user/invalidateToken');
+        $this->dispatch('backend/Adminhtml/user/invalidateToken');
         foreach ($tokenModelCollectionFactory->create()->addFilterByAdminId($adminUserId) as $token) {
             $this->assertEquals(1, $token->getRevoked());
         }
@@ -90,12 +90,12 @@ class InvalidateTokenTest extends \Magento\TestFramework\TestCase\AbstractBacken
         $adminUserId = $userModel->loadByUsername($adminUserNameFromFixture)->getId();
         // invalidate token
         $this->getRequest()->setParam('user_id', $adminUserId);
-        $this->dispatch('backend/adminhtml/user/invalidateToken');
+        $this->dispatch('backend/Adminhtml/user/invalidateToken');
     }
 
     public function testInvalidateTokenNoUser()
     {
-        $this->dispatch('backend/adminhtml/user/invalidateToken');
+        $this->dispatch('backend/Adminhtml/user/invalidateToken');
         $this->assertSessionMessages(
             $this->equalTo(['We can\'t find a user to revoke.']),
             MessageInterface::TYPE_ERROR
@@ -107,6 +107,6 @@ class InvalidateTokenTest extends \Magento\TestFramework\TestCase\AbstractBacken
         $adminUserId = 999;
         // invalidate token
         $this->getRequest()->setParam('user_id', $adminUserId);
-        $this->dispatch('backend/adminhtml/user/invalidateToken');
+        $this->dispatch('backend/Adminhtml/user/invalidateToken');
     }
 }

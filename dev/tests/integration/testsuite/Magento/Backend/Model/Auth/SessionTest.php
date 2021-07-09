@@ -10,7 +10,7 @@ use Magento\TestFramework\Bootstrap as TestHelper;
 use Magento\TestFramework\Helper\Bootstrap;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoAppIsolation enabled
  * @magentoDbIsolation enabled
  */

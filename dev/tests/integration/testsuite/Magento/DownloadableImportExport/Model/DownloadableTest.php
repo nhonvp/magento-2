@@ -33,7 +33,7 @@ class DownloadableTest extends AbstractProductExportImportTestCase
     /**
      * Run import/export tests.
      *
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDbIsolation disabled
      * @magentoAppIsolation enabled
      *

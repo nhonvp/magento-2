@@ -15,7 +15,7 @@ use Magento\Framework\Escaper;
 /**
  * Test cases related to check that shipment creates as expected or proper error message appear.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  *
  * @see \Magento\Shipping\Controller\Adminhtml\Order\Shipment\Save::execute
@@ -211,7 +211,7 @@ class CreateShipmentForOrderTest extends AbstractShipmentControllerTest
         $this->performShipmentCreationRequest($postData);
         $this->assertCreateShipmentRequestWithError(
             "Shipment Document Validation Error(s):\nYou can't create a shipment without products.",
-            "adminhtml/order_shipment/new/order_id/{$orderId}"
+            "Adminhtml/order_shipment/new/order_id/{$orderId}"
         );
     }
 
@@ -235,7 +235,7 @@ class CreateShipmentForOrderTest extends AbstractShipmentControllerTest
         $this->performShipmentCreationRequest($postData);
         $this->assertCreateShipmentRequestWithError(
             "Shipment Document Validation Error(s):\nYou can't create a shipment without products.",
-            "adminhtml/order_shipment/new/order_id/{$postData['order_id']}"
+            "Adminhtml/order_shipment/new/order_id/{$postData['order_id']}"
         );
     }
 
@@ -251,7 +251,7 @@ class CreateShipmentForOrderTest extends AbstractShipmentControllerTest
 
     /**
      * Set POST data and type POST to request
-     * and perform request by path backend/adminhtml/order_shipment/save.
+     * and perform request by path backend/Adminhtml/order_shipment/save.
      *
      * @param array $postData
      * @return void
@@ -260,7 +260,7 @@ class CreateShipmentForOrderTest extends AbstractShipmentControllerTest
     {
         $this->getRequest()->setPostValue($postData)
             ->setMethod(HttpRequest::METHOD_POST);
-        $this->dispatch('backend/adminhtml/order_shipment/save');
+        $this->dispatch('backend/Adminhtml/order_shipment/save');
     }
 
     /**

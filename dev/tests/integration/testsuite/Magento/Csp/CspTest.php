@@ -45,9 +45,9 @@ class CspTest extends AbstractController
      * @magentoConfigFixture default_store csp/policies/storefront/script_src/none 0
      * @magentoConfigFixture default_store csp/policies/storefront/script_src/self 1
      * @magentoConfigFixture default_store csp/policies/storefront/script_src/inline 1
-     * @magentoConfigFixture default_store csp/policies/adminhtml/font_src/policy_id font-src
-     * @magentoConfigFixture default_store csp/policies/adminhtml/font_src/none 0
-     * @magentoConfigFixture default_store csp/policies/adminhtml/font_src/self 1
+     * @magentoConfigFixture default_store csp/policies/Adminhtml/font_src/policy_id font-src
+     * @magentoConfigFixture default_store csp/policies/Adminhtml/font_src/none 0
+     * @magentoConfigFixture default_store csp/policies/Adminhtml/font_src/self 1
      * @return void
      */
     public function testStorefrontPolicies(): void
@@ -72,16 +72,16 @@ class CspTest extends AbstractController
     /**
      * Check that configured policies are rendered on backend.
      *
-     * @magentoAppArea adminhtml
-     * @magentoConfigFixture default_store csp/policies/adminhtml/default_src/policy_id default-src
-     * @magentoConfigFixture default_store csp/policies/adminhtml/default_src/none 0
-     * @magentoConfigFixture default_store csp/policies/adminhtml/default_src/hosts/example http://magento.com
-     * @magentoConfigFixture default_store csp/policies/adminhtml/default_src/hosts/example2 http://devdocs.magento.com
-     * @magentoConfigFixture default_store csp/policies/adminhtml/default_src/self 1
-     * @magentoConfigFixture default_store csp/policies/adminhtml/script_src/policy_id script-src
-     * @magentoConfigFixture default_store csp/policies/adminhtml/script_src/none 0
-     * @magentoConfigFixture default_store csp/policies/adminhtml/default_src/self 1
-     * @magentoConfigFixture default_store csp/policies/adminhtml/default_src/inline 1
+     * @magentoAppArea Adminhtml
+     * @magentoConfigFixture default_store csp/policies/Adminhtml/default_src/policy_id default-src
+     * @magentoConfigFixture default_store csp/policies/Adminhtml/default_src/none 0
+     * @magentoConfigFixture default_store csp/policies/Adminhtml/default_src/hosts/example http://magento.com
+     * @magentoConfigFixture default_store csp/policies/Adminhtml/default_src/hosts/example2 http://devdocs.magento.com
+     * @magentoConfigFixture default_store csp/policies/Adminhtml/default_src/self 1
+     * @magentoConfigFixture default_store csp/policies/Adminhtml/script_src/policy_id script-src
+     * @magentoConfigFixture default_store csp/policies/Adminhtml/script_src/none 0
+     * @magentoConfigFixture default_store csp/policies/Adminhtml/default_src/self 1
+     * @magentoConfigFixture default_store csp/policies/Adminhtml/default_src/inline 1
      * @magentoConfigFixture default_store csp/policies/storefront/font_src/policy_id font-src
      * @magentoConfigFixture default_store csp/policies/storefront/font_src/none 0
      * @magentoConfigFixture default_store csp/policies/storefront/font_src/self 1
@@ -114,7 +114,7 @@ class CspTest extends AbstractController
      * @magentoConfigFixture default_store csp/policies/storefront/default_src/self 1
      * @magentoConfigFixture default_store csp/mode/storefront/report_only 1
      * @magentoConfigFixture default_store csp/mode/storefront/report_uri /cspEndpoint/
-     * @magentoConfigFixture default_store csp/mode/adminhtml/report_only 0
+     * @magentoConfigFixture default_store csp/mode/Adminhtml/report_only 0
      * @return void
      */
     public function testReportOnlyMode(): void
@@ -141,7 +141,7 @@ class CspTest extends AbstractController
      * @magentoConfigFixture default_store csp/policies/storefront/default_src/self 1
      * @magentoConfigFixture default_store csp/mode/storefront/report_only 0
      * @magentoConfigFixture default_store csp/mode/storefront/report_uri /cspEndpoint/
-     * @magentoConfigFixture default_store csp/mode/adminhtml/report_only 0
+     * @magentoConfigFixture default_store csp/mode/Adminhtml/report_only 0
      * @return void
      */
     public function testRestrictMode(): void

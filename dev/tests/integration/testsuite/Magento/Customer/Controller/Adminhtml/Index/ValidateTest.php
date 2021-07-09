@@ -15,7 +15,7 @@ use Magento\TestFramework\TestCase\AbstractBackendController;
 /**
  * Tests for validation customer via backend/customer/index/validate controller.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class ValidateTest extends AbstractBackendController
 {

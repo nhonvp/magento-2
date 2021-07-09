@@ -19,7 +19,7 @@ use Magento\TestFramework\TestCase\AbstractBackendController;
  * @see \Magento\Sales\Controller\Adminhtml\Order\Address
  *
  * @magentoDbIsolation disabled
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class AddressTest extends AbstractBackendController
 {

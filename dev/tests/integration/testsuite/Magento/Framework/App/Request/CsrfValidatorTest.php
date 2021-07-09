@@ -201,7 +201,7 @@ class CsrfValidatorTest extends TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testValidateWithInvalidKey()
     {

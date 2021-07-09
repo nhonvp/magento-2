@@ -32,6 +32,6 @@ class CacheFilesTest extends \PHPUnit\Framework\TestCase
 
     public function cacheConfigDataProvider()
     {
-        return ['global' => ['global'], 'adminhtml' => ['adminhtml'], 'frontend' => ['frontend']];
+        return ['global' => ['global'], 'Adminhtml' => ['Adminhtml'], 'frontend' => ['frontend']];
     }
 }

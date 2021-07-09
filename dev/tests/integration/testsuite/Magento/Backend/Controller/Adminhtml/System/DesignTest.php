@@ -6,7 +6,7 @@
 namespace Magento\Backend\Controller\Adminhtml\System;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class DesignTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {
@@ -15,7 +15,7 @@ class DesignTest extends \Magento\TestFramework\TestCase\AbstractBackendControll
      */
     public function testEditAction()
     {
-        $this->dispatch('backend/adminhtml/system_design/edit');
+        $this->dispatch('backend/Adminhtml/system_design/edit');
         $this->assertStringMatchesFormat('%A<a%Aid="design_tabs_general"%A', $this->getResponse()->getBody());
     }
 }

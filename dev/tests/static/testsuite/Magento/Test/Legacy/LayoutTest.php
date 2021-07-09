@@ -47,42 +47,42 @@ class LayoutTest extends \PHPUnit\Framework\TestCase
      */
     protected $_obsoleteReferences = [
         'adminhtml_user_edit' => [
-            'adminhtml.permissions.user.edit.tabs',
-            'adminhtml.permission.user.edit.tabs',
-            'adminhtml.permissions.user.edit',
-            'adminhtml.permission.user.edit',
-            'adminhtml.permissions.user.roles.grid.js',
-            'adminhtml.permission.user.roles.grid.js',
-            'adminhtml.permissions.user.edit.tab.roles',
-            'adminhtml.permissions.user.edit.tab.roles.js',
+            'Adminhtml.permissions.user.edit.tabs',
+            'Adminhtml.permission.user.edit.tabs',
+            'Adminhtml.permissions.user.edit',
+            'Adminhtml.permission.user.edit',
+            'Adminhtml.permissions.user.roles.grid.js',
+            'Adminhtml.permission.user.roles.grid.js',
+            'Adminhtml.permissions.user.edit.tab.roles',
+            'Adminhtml.permissions.user.edit.tab.roles.js',
         ],
         'adminhtml_user_role_index' => [
-            'adminhtml.permission.role.index',
-            'adminhtml.permissions.role.index',
-            'adminhtml.permissions.role.grid',
+            'Adminhtml.permission.role.index',
+            'Adminhtml.permissions.role.index',
+            'Adminhtml.permissions.role.grid',
         ],
-        'adminhtml_user_role_rolegrid' => ['adminhtml.permission.role.grid', 'adminhtml.permissions.role.grid'],
+        'adminhtml_user_role_rolegrid' => ['Adminhtml.permission.role.grid', 'Adminhtml.permissions.role.grid'],
         'adminhtml_user_role_editrole' => [
-            'adminhtml.permissions.editroles',
-            'adminhtml.permissions.tab.rolesedit',
-            'adminhtml.permission.roles.users.grid.js',
-            'adminhtml.permissions.roles.users.grid.js',
-            'adminhtml.permission.role.buttons',
-            'adminhtml.permissions.role.buttons',
-            'adminhtml.permission.role.edit.gws',
+            'Adminhtml.permissions.editroles',
+            'Adminhtml.permissions.tab.rolesedit',
+            'Adminhtml.permission.roles.users.grid.js',
+            'Adminhtml.permissions.roles.users.grid.js',
+            'Adminhtml.permission.role.buttons',
+            'Adminhtml.permissions.role.buttons',
+            'Adminhtml.permission.role.edit.gws',
         ],
         'adminhtml_user_role_editrolegrid' => [
-            'adminhtml.permission.role.grid.user',
-            'adminhtml.permissions.role.grid.user',
+            'Adminhtml.permission.role.grid.user',
+            'Adminhtml.permissions.role.grid.user',
         ],
-        'adminhtml_user_index' => ['adminhtml.permission.user.index', 'adminhtml.permissions.user.index'],
+        'adminhtml_user_index' => ['Adminhtml.permission.user.index', 'Adminhtml.permissions.user.index'],
         'adminhtml_user_rolegrid' => [
-            'adminhtml.permissions.user.rolegrid',
-            'adminhtml.permission.user.rolegrid',
+            'Adminhtml.permissions.user.rolegrid',
+            'Adminhtml.permission.user.rolegrid',
         ],
         'adminhtml_user_rolesgrid' => [
-            'adminhtml.permissions.user.rolesgrid',
-            'adminhtml.permission.user.rolesgrid',
+            'Adminhtml.permissions.user.rolesgrid',
+            'Adminhtml.permission.user.rolesgrid',
         ],
     ];
 
@@ -139,16 +139,16 @@ class LayoutTest extends \PHPUnit\Framework\TestCase
                 if (false !== strpos(
                     $layoutFile,
                     $componentRegistrar->getPath(ComponentRegistrar::MODULE, 'Magento_Sales')
-                    . '/view/adminhtml/layout/sales_order'
+                    . '/view/Adminhtml/layout/sales_order'
                 ) || false !== strpos(
                     $layoutFile,
                     $componentRegistrar->getPath(ComponentRegistrar::MODULE, 'Magento_Shipping')
-                    . '/view/adminhtml/layout/adminhtml_order'
+                    . '/view/Adminhtml/layout/adminhtml_order'
                 )
                     || false !== strpos(
                         $layoutFile,
                         $componentRegistrar->getPath(ComponentRegistrar::MODULE, 'Magento_Catalog')
-                        . '/view/adminhtml/layout/catalog_product_grid.xml'
+                        . '/view/Adminhtml/layout/catalog_product_grid.xml'
                     )
                 ) {
                     $this->markTestIncomplete(

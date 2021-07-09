@@ -6,5 +6,5 @@
 
 use Magento\TestFramework\Workaround\Override\Fixture\Resolver;
 
-\Magento\TestFramework\Helper\Bootstrap::getInstance()->loadArea('adminhtml');
+\Magento\TestFramework\Helper\Bootstrap::getInstance()->loadArea('Adminhtml');
 Resolver::getInstance()->requireDataFixture('Magento/Catalog/_files/category.php');

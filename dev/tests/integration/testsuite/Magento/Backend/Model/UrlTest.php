@@ -15,7 +15,7 @@ use Magento\TestFramework\Helper\Bootstrap;
 /**
  * Test class for \Magento\Backend\Model\UrlInterface.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class UrlTest extends \PHPUnit\Framework\TestCase
 {
@@ -80,21 +80,12 @@ class UrlTest extends \PHPUnit\Framework\TestCase
 
         return [
             [
-                'routePath' => 'adminhtml/auth/login',
+                'routePath' => 'Adminhtml/auth/login',
                 'requestParams' => [],
-                'expectedResult'=> 'adminhtml/auth/login/key/',
+                'expectedResult'=> 'Adminhtml/auth/login/key/',
             ],
             [
-                'routePath' => 'adminhtml/auth/login',
-                'requestParams' => [],
-                'expectedResult'=> '/param1/a1==/',
-                'routeParams' => [
-                    '_escape_params' => false,
-                    'param1' => 'a1==',
-                ],
-            ],
-            [
-                'routePath' => 'adminhtml/auth/login',
+                'routePath' => 'Adminhtml/auth/login',
                 'requestParams' => [],
                 'expectedResult'=> '/param1/a1==/',
                 'routeParams' => [
@@ -103,7 +94,16 @@ class UrlTest extends \PHPUnit\Framework\TestCase
                 ],
             ],
             [
-                'routePath' => 'adminhtml/auth/login',
+                'routePath' => 'Adminhtml/auth/login',
+                'requestParams' => [],
+                'expectedResult'=> '/param1/a1==/',
+                'routeParams' => [
+                    '_escape_params' => false,
+                    'param1' => 'a1==',
+                ],
+            ],
+            [
+                'routePath' => 'Adminhtml/auth/login',
                 'requestParams' => ['param2' => 'a2=='],
                 'expectedResult'=> '/param2/a2==/',
                 'routeParams' => [
@@ -112,7 +112,7 @@ class UrlTest extends \PHPUnit\Framework\TestCase
                 ],
             ],
             [
-                'routePath' => 'adminhtml/auth/login',
+                'routePath' => 'Adminhtml/auth/login',
                 'requestParams' => [],
                 'expectedResult' => '/param3/' . $escaper->encodeUrlParam('a3==') . '/',
                 'routeParams' => [
@@ -121,7 +121,7 @@ class UrlTest extends \PHPUnit\Framework\TestCase
                 ],
             ],
             [
-                'routePath' => 'adminhtml/auth/login',
+                'routePath' => 'Adminhtml/auth/login',
                 'requestParams' => ['param4' => 'a4=='],
                 'expectedResult' => '/param4/' . $escaper->encodeUrlParam('a4==') . '/',
                 'routeParams' => [
@@ -188,28 +188,28 @@ class UrlTest extends \PHPUnit\Framework\TestCase
                 $encryptor->getHash('default_router' . 'controller' . 'action' . 'salt'),
             ],
             [
-                'adminhtml',
+                'Adminhtml',
                 '',
                 '',
-                $encryptor->getHash('adminhtml' . 'default_controller' . 'default_action' . 'salt'),
+                $encryptor->getHash('Adminhtml' . 'default_controller' . 'default_action' . 'salt'),
             ],
             [
-                'adminhtml',
+                'Adminhtml',
                 '',
                 'action',
-                $encryptor->getHash('adminhtml' . 'default_controller' . 'action' . 'salt'),
+                $encryptor->getHash('Adminhtml' . 'default_controller' . 'action' . 'salt'),
             ],
             [
-                'adminhtml',
+                'Adminhtml',
                 'controller',
                 '',
-                $encryptor->getHash('adminhtml' . 'controller' . 'default_action' . 'salt'),
+                $encryptor->getHash('Adminhtml' . 'controller' . 'default_action' . 'salt'),
             ],
             [
-                'adminhtml',
+                'Adminhtml',
                 'controller',
                 'action',
-                $encryptor->getHash('adminhtml' . 'controller' . 'action' . 'salt'),
+                $encryptor->getHash('Adminhtml' . 'controller' . 'action' . 'salt'),
             ],
         ];
     }

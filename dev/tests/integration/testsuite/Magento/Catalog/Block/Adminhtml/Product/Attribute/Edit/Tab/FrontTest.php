@@ -6,7 +6,7 @@
 namespace Magento\Catalog\Block\Adminhtml\Product\Attribute\Edit\Tab;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class FrontTest extends \PHPUnit\Framework\TestCase
 {

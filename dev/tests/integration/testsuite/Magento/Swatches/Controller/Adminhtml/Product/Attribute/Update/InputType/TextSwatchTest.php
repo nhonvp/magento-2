@@ -14,7 +14,7 @@ use Magento\Swatches\Model\Swatch;
  * Test cases related to update attribute with input type text swatch.
  *
  * @magentoDbIsolation enabled
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class TextSwatchTest extends AbstractUpdateSwatchAttributeTest
 {

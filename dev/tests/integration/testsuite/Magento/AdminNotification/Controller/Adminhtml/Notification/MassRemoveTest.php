@@ -12,7 +12,7 @@ class MassRemoveTest extends \Magento\TestFramework\TestCase\AbstractBackendCont
     protected function setUp(): void
     {
         $this->resource = 'Magento_AdminNotification::adminnotification_remove';
-        $this->uri = 'backend/adminhtml/notification/massremove';
+        $this->uri = 'backend/Adminhtml/notification/massremove';
         $this->httpMethod = HttpRequest::METHOD_POST;
         parent::setUp();
     }

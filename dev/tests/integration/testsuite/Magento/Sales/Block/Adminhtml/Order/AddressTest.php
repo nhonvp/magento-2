@@ -22,7 +22,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @see \Magento\Sales\Block\Adminhtml\Order\Address
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class AddressTest extends TestCase
 {

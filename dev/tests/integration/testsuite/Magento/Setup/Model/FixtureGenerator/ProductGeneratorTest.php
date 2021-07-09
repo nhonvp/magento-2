@@ -13,7 +13,7 @@ use Magento\Store\Model\WebsiteRepository;
 use Magento\TestFramework\Helper\Bootstrap;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDataFixture Magento/Catalog/_files/category.php
  * @magentoDataFixture Magento/Store/_files/second_website_with_two_stores.php
  */

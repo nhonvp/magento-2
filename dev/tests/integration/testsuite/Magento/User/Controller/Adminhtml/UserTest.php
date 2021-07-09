@@ -10,7 +10,7 @@ use Magento\Framework\App\Request\Http as HttpRequest;
 use Magento\TestFramework\Bootstrap;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class UserTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {
@@ -19,7 +19,7 @@ class UserTest extends \Magento\TestFramework\TestCase\AbstractBackendController
      */
     public function testIndexAction()
     {
-        $this->dispatch('backend/adminhtml/user/index');
+        $this->dispatch('backend/Adminhtml/user/index');
         $response = $this->getResponse()->getBody();
         $this->assertStringContainsString('Users', $response);
         $this->assertEquals(
@@ -37,8 +37,8 @@ class UserTest extends \Magento\TestFramework\TestCase\AbstractBackendController
     public function testSaveActionNoData()
     {
         $this->getRequest()->setMethod(HttpRequest::METHOD_POST);
-        $this->dispatch('backend/adminhtml/user/save');
-        $this->assertRedirect($this->stringContains('backend/adminhtml/user/index/'));
+        $this->dispatch('backend/Adminhtml/user/save');
+        $this->assertRedirect($this->stringContains('backend/Adminhtml/user/index/'));
     }
 
     /**
@@ -59,16 +59,16 @@ class UserTest extends \Magento\TestFramework\TestCase\AbstractBackendController
         $user->delete();
         $this->getRequest()->setMethod(HttpRequest::METHOD_POST);
         $this->getRequest()->setPostValue('user_id', $userId);
-        $this->dispatch('backend/adminhtml/user/save');
+        $this->dispatch('backend/Adminhtml/user/save');
         $this->assertSessionMessages(
             $this->equalTo(['This user no longer exists.']),
             \Magento\Framework\Message\MessageInterface::TYPE_ERROR
         );
-        $this->assertRedirect($this->stringContains('backend/adminhtml/user/index/'));
+        $this->assertRedirect($this->stringContains('backend/Adminhtml/user/index/'));
     }
 
     /**
-     * Verify that users cannot be saved if the adminhtml password is not correct
+     * Verify that users cannot be saved if the Adminhtml password is not correct
      *
      * @magentoDbIsolation enabled
      */
@@ -86,13 +86,13 @@ class UserTest extends \Magento\TestFramework\TestCase\AbstractBackendController
                 'password_confirmation' => 'password_with_1_number',
             ]
         );
-        $this->dispatch('backend/adminhtml/user/save');
+        $this->dispatch('backend/Adminhtml/user/save');
         $this->assertSessionMessages(
             $this->equalTo(
                 ['The password entered for the current user is invalid. Verify the password and try again.']
             )
         );
-        $this->assertRedirect($this->stringContains('backend/adminhtml/user/edit'));
+        $this->assertRedirect($this->stringContains('backend/Adminhtml/user/edit'));
     }
 
     /**
@@ -115,12 +115,12 @@ class UserTest extends \Magento\TestFramework\TestCase\AbstractBackendController
                 \Magento\User\Block\User\Edit\Tab\Main::CURRENT_USER_PASSWORD_FIELD => Bootstrap::ADMIN_PASSWORD,
             ]
         );
-        $this->dispatch('backend/adminhtml/user/save');
+        $this->dispatch('backend/Adminhtml/user/save');
         $this->assertSessionMessages(
             $this->equalTo(['You saved the user.']),
             \Magento\Framework\Message\MessageInterface::TYPE_SUCCESS
         );
-        $this->assertRedirect($this->stringContains('backend/adminhtml/user/index/'));
+        $this->assertRedirect($this->stringContains('backend/Adminhtml/user/index/'));
     }
 
     /**
@@ -143,12 +143,12 @@ class UserTest extends \Magento\TestFramework\TestCase\AbstractBackendController
                 \Magento\User\Block\User\Edit\Tab\Main::CURRENT_USER_PASSWORD_FIELD => Bootstrap::ADMIN_PASSWORD,
             ]
         );
-        $this->dispatch('backend/adminhtml/user/save/active_tab/main_section');
+        $this->dispatch('backend/Adminhtml/user/save/active_tab/main_section');
         $this->assertSessionMessages(
             $this->equalTo(['A user with the same user name or email already exists.']),
             \Magento\Framework\Message\MessageInterface::TYPE_ERROR
         );
-        $this->assertRedirect($this->stringContains('backend/adminhtml/user/edit/'));
+        $this->assertRedirect($this->stringContains('backend/Adminhtml/user/edit/'));
         $this->assertRedirect($this->matchesRegularExpression('/^((?!active_tab).)*$/'));
     }
 
@@ -165,14 +165,14 @@ class UserTest extends \Magento\TestFramework\TestCase\AbstractBackendController
     {
         $this->getRequest()->setMethod(HttpRequest::METHOD_POST);
         $this->getRequest()->setPostValue($postData);
-        $this->dispatch('backend/adminhtml/user/save');
+        $this->dispatch('backend/Adminhtml/user/save');
 
         $objectManager = \Magento\TestFramework\Helper\Bootstrap::getObjectManager();
         /** @var $user \Magento\User\Model\User */
         $user = $objectManager->create(\Magento\User\Model\User::class);
         $user->loadByUsername($postData['username']);
         if ($isPasswordCorrect) {
-            $this->assertRedirect($this->stringContains('backend/adminhtml/user/index'));
+            $this->assertRedirect($this->stringContains('backend/Adminhtml/user/index'));
             $this->assertEquals($postData['username'], $user->getUsername());
             $this->assertEquals($postData['email'], $user->getEmail());
             $this->assertEquals($postData['firstname'], $user->getFirstname());
@@ -180,7 +180,7 @@ class UserTest extends \Magento\TestFramework\TestCase\AbstractBackendController
             $encryptor = $objectManager->get(\Magento\Framework\Encryption\EncryptorInterface::class);
             $this->assertTrue($encryptor->validateHash($postData['password'], $user->getPassword()));
         } else {
-            $this->assertRedirect($this->stringContains('backend/adminhtml/user/edit'));
+            $this->assertRedirect($this->stringContains('backend/Adminhtml/user/edit'));
             $this->assertEmpty($user->getData());
         }
     }
@@ -224,7 +224,7 @@ class UserTest extends \Magento\TestFramework\TestCase\AbstractBackendController
     public function testRoleGridAction()
     {
         $this->getRequest()->setParam('ajax', true)->setParam('isAjax', true);
-        $this->dispatch('backend/adminhtml/user/roleGrid');
+        $this->dispatch('backend/Adminhtml/user/roleGrid');
         $expected = '%a<table %a id="permissionsUserGrid_table">%a';
         $this->assertStringMatchesFormat($expected, $this->getResponse()->getBody());
     }
@@ -237,7 +237,7 @@ class UserTest extends \Magento\TestFramework\TestCase\AbstractBackendController
     public function testRolesGridAction()
     {
         $this->getRequest()->setParam('ajax', true)->setParam('isAjax', true)->setParam('user_id', 1);
-        $this->dispatch('backend/adminhtml/user/rolesGrid');
+        $this->dispatch('backend/Adminhtml/user/rolesGrid');
         $expected = '%a<table %a id="permissionsUserRolesGrid_table">%a';
         $this->assertStringMatchesFormat($expected, $this->getResponse()->getBody());
     }
@@ -250,10 +250,10 @@ class UserTest extends \Magento\TestFramework\TestCase\AbstractBackendController
     public function testEditAction()
     {
         $this->getRequest()->setParam('user_id', 1);
-        $this->dispatch('backend/adminhtml/user/edit');
+        $this->dispatch('backend/Adminhtml/user/edit');
         $response = $this->getResponse()->getBody();
         //check "User Information" header and fieldset
-        $this->assertStringContainsString('data-ui-id="adminhtml-user-edit-tabs-title"', $response);
+        $this->assertStringContainsString('data-ui-id="Adminhtml-user-edit-tabs-title"', $response);
         $this->assertStringContainsString('User Information', $response);
         $this->assertEquals(
             1,
@@ -279,7 +279,7 @@ class UserTest extends \Magento\TestFramework\TestCase\AbstractBackendController
         ];
 
         $this->getRequest()->setPostValue($data);
-        $this->dispatch('backend/adminhtml/user/validate');
+        $this->dispatch('backend/Adminhtml/user/validate');
         $body = $this->getResponse()->getBody();
 
         $this->assertEquals('{"error":0}', $body);
@@ -300,7 +300,7 @@ class UserTest extends \Magento\TestFramework\TestCase\AbstractBackendController
         ];
 
         $this->getRequest()->setPostValue($data);
-        $this->dispatch('backend/adminhtml/user/validate');
+        $this->dispatch('backend/Adminhtml/user/validate');
         $body = $this->getResponse()->getBody();
 
         $this->assertEquals('{"error":0}', $body);
@@ -324,7 +324,7 @@ class UserTest extends \Magento\TestFramework\TestCase\AbstractBackendController
          * set customer data
          */
         $this->getRequest()->setPostValue($data);
-        $this->dispatch('backend/adminhtml/user/validate');
+        $this->dispatch('backend/Adminhtml/user/validate');
         $body = $this->getResponse()->getBody();
 
         $this->assertStringContainsString('{"error":1,"html_message":', $body);

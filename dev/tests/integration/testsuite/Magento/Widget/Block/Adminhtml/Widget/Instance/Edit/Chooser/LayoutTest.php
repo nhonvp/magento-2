@@ -6,7 +6,7 @@
 namespace Magento\Widget\Block\Adminhtml\Widget\Instance\Edit\Chooser;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class LayoutTest extends \PHPUnit\Framework\TestCase
 {

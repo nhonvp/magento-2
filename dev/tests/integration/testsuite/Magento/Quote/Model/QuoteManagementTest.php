@@ -181,7 +181,7 @@ class QuoteManagementTest extends TestCase
     /**
      * Tries to create order with product that has child items and one of them was deleted.
      *
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoAppIsolation enabled
      * @magentoDataFixture Magento/Sales/_files/quote_with_bundle.php
      */

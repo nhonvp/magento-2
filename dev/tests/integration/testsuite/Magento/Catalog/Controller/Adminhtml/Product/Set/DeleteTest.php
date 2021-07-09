@@ -21,7 +21,7 @@ use Magento\TestFramework\TestCase\AbstractBackendController;
 /**
  * Test for attribute set deleting.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  */
 class DeleteTest extends AbstractBackendController

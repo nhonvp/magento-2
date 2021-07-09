@@ -247,7 +247,7 @@ class ConfigImportCommandTest extends \PHPUnit\Framework\TestCase
         $importCommandTester->execute([]);
 
         $this->assertStringContainsString(
-            'Scopes data should have at least one not adminhtml website, group and store.',
+            'Scopes data should have at least one not Adminhtml website, group and store.',
             $importCommandTester->getDisplay()
         );
         $this->assertSame(Cli::RETURN_FAILURE, $importCommandTester->getStatusCode());

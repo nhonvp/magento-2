@@ -6,7 +6,7 @@
 namespace Magento\Sales\Block\Adminhtml\Items;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class AbstractTest extends \PHPUnit\Framework\TestCase
 {

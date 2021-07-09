@@ -15,7 +15,7 @@ use Magento\TestFramework\Helper\Bootstrap;
  * Class checks customer's shopping cart block with configurable product.
  *
  * @see \Magento\Customer\Block\Adminhtml\Edit\Tab\Cart
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class CartConfigurableTest extends AbstractCartTest
 {

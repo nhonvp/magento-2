@@ -17,7 +17,7 @@ use PHPUnit\Framework\TestCase;
 
 /**
  * Provide tests for RemoveProducts plugin.
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class RemoveProductsTest extends TestCase
 {

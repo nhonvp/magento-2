@@ -13,7 +13,7 @@ $category->setId(
 )->setCreatedAt(
     '2017-05-5 09:50:07'
 )->setName(
-    'category-adminhtml'
+    'category-Adminhtml'
 )->setParentId(
     2
 )->setPath(
@@ -29,7 +29,7 @@ $category->setId(
 )->setPosition(
     1
 )->setUrlKey(
-    'category-adminhtml'
+    'category-Adminhtml'
 )->save();
 
 /** @var \Magento\Store\Model\Store $store */

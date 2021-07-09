@@ -6,7 +6,7 @@
 namespace Magento\Backend\Model\Translate;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class InlineTest extends \PHPUnit\Framework\TestCase
 {

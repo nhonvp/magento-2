@@ -19,7 +19,7 @@ use Magento\Tax\Model\Rate\Provider as RatesProvider;
 /**
  * Tests for Tax Rules controllers.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class RuleTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {

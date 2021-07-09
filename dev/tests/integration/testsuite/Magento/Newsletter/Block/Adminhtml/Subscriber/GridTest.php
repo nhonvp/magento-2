@@ -8,7 +8,7 @@ declare(strict_types=1);
 namespace Magento\Newsletter\Block\Adminhtml\Subscriber;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  *
  * @see \Magento\Newsletter\Block\Adminhtml\Subscriber\Grid
@@ -83,7 +83,7 @@ class GridTest extends \PHPUnit\Framework\TestCase
      */
     private function getMassActionBlock()
     {
-        return $this->layout->getBlock('adminhtml.newslettrer.subscriber.grid.massaction');
+        return $this->layout->getBlock('Adminhtml.newslettrer.subscriber.grid.massaction');
     }
 
     /**

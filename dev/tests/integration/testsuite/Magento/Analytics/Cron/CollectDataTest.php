@@ -19,7 +19,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @see \Magento\Analytics\Cron\CollectData
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class CollectDataTest extends TestCase
 {

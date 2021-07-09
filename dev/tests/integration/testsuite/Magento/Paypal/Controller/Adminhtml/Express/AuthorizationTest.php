@@ -21,7 +21,7 @@ use Magento\Sales\Model\ValidatorResultInterface;
 /**
  * Makes a test of the payment authorization for Paypal Express when payment action is order.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class AuthorizationTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {

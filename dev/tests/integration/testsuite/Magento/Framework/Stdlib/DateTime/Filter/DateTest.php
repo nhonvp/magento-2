@@ -53,7 +53,7 @@ class DateTest extends \PHPUnit\Framework\TestCase
     public function testFilter($inputData, $expectedDate)
     {
         $this->markTestSkipped(
-            'Input data not realistic with actual request payload from adminhtml UI. See MAGETWO-59810'
+            'Input data not realistic with actual request payload from Adminhtml UI. See MAGETWO-59810'
         );
         $this->assertEquals($expectedDate, $this->dateFilter->filter($inputData));
     }

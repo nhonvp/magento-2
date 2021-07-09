@@ -13,7 +13,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Verify chart data by different period.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class ChartTest extends TestCase
 {

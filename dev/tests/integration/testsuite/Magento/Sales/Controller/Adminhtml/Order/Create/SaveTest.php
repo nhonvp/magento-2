@@ -24,7 +24,7 @@ use PHPUnit\Framework\MockObject\MockObject as MockObject;
 /**
  * Class test backend order save.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
 class SaveTest extends AbstractBackendController

@@ -60,7 +60,7 @@ class UiComponentFactoryTest extends TestCase
      * Test creating a component.
      *
      * @return void
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testCreate(): void
     {

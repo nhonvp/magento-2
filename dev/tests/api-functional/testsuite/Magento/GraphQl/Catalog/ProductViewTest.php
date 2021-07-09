@@ -280,7 +280,7 @@ QUERY;
             'Filter category',
             $responseObject->getData('products/items/0/categories/1/name')
         );
-        //canonical_url will be null unless the adminhtml setting catalog/seo/product_canonical_tag is turned ON
+        //canonical_url will be null unless the Adminhtml setting catalog/seo/product_canonical_tag is turned ON
         self::assertNull($responseObject->getData('products/items/0/canonical_url'));
     }
 

@@ -14,7 +14,7 @@ use Magento\TestFramework\Helper\Bootstrap;
 use Magento\TestFramework\Helper\Xpath;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
 class FormTest extends \PHPUnit\Framework\TestCase
@@ -78,7 +78,7 @@ class FormTest extends \PHPUnit\Framework\TestCase
         /** @var $layout \Magento\Framework\View\LayoutInterface */
         $layout = Bootstrap::getObjectManager()->create(
             \Magento\Framework\View\Layout::class,
-            ['area' => 'adminhtml']
+            ['area' => 'Adminhtml']
         );
         Bootstrap::getObjectManager()->get(
             ScopeInterface::class

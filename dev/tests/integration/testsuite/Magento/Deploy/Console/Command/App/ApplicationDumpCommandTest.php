@@ -272,11 +272,11 @@ class ApplicationDumpCommandTest extends \PHPUnit\Framework\TestCase
                 'theme_path' => 'Magento/backend',
                 'theme_title' => 'Magento 2 backend',
                 'is_featured' => '0',
-                'area' => 'adminhtml',
+                'area' => 'Adminhtml',
                 'type' => '0',
                 'code' => 'Magento/backend',
             ],
-            $config['themes']['adminhtml/Magento/backend']
+            $config['themes']['Adminhtml/Magento/backend']
         );
         $this->assertEquals(
             [

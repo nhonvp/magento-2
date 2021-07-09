@@ -14,7 +14,7 @@ use Magento\Framework\Registry;
 use Magento\TestFramework\Helper\Bootstrap;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class ContentTest extends \PHPUnit\Framework\TestCase
 {

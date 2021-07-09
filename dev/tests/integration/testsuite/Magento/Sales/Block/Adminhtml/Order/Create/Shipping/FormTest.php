@@ -14,7 +14,7 @@ use Magento\Sales\Block\Adminhtml\Order\Create\AbstractAddressFormTest;
 /**
  * Class checks shipping address form behaviour
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  */
 class FormTest extends AbstractAddressFormTest

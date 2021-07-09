@@ -10,7 +10,7 @@ use Magento\TestFramework\Helper\Bootstrap;
 /**
  * Test class for \Magento\Paypal\Controller\Adminhtml\Billing\Agreement
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class AgreementTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {

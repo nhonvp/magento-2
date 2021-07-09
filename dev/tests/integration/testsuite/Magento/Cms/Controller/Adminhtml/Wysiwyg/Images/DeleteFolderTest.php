@@ -12,7 +12,7 @@ use Magento\Framework\App\Response\HttpFactory as ResponseFactory;
 /**
  * Test for \Magento\Cms\Controller\Adminhtml\Wysiwyg\Images\DeleteFolder class.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class DeleteFolderTest extends \PHPUnit\Framework\TestCase
 {

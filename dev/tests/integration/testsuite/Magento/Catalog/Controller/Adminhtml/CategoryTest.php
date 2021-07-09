@@ -26,9 +26,9 @@ use Magento\Catalog\Model\Category as CategoryModel;
 use Magento\Catalog\Model\CategoryFactory as CategoryModelFactory;
 
 /**
- * Test for adminhtml category functionality.
+ * Test for Adminhtml category functionality.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
 class CategoryTest extends AbstractBackendController
@@ -885,11 +885,11 @@ class CategoryTest extends AbstractBackendController
     }
 
     /**
-     * Verify that the category cannot be saved if the category url matches the adminhtml url.
+     * Verify that the category cannot be saved if the category url matches the Adminhtml url.
      *
      * @return void
-     * @magentoConfigFixture adminhtml/url/use_custom_path 1
-     * @magentoConfigFixture adminhtml/url/custom_path backend
+     * @magentoConfigFixture Adminhtml/url/use_custom_path 1
+     * @magentoConfigFixture Adminhtml/url/custom_path backend
      */
     public function testSaveWithCustomBackendNameAction(): void
     {
@@ -911,7 +911,7 @@ class CategoryTest extends AbstractBackendController
             $this->equalTo(
                 [
                     'URL key "backend" matches a reserved endpoint name '
-                    . '(adminhtml, soap, rest, graphql, standard, backend). Use another URL key.'
+                    . '(Adminhtml, soap, rest, graphql, standard, backend). Use another URL key.'
                 ]
             ),
             MessageInterface::TYPE_ERROR

@@ -26,7 +26,7 @@ class ConditionsTest extends \PHPUnit\Framework\TestCase
         $this->objectManager = \Magento\TestFramework\Helper\Bootstrap::getObjectManager();
         $this->block = $this->objectManager->create(
             \Magento\CatalogWidget\Block\Product\Widget\Conditions::class
-        )->setArea('adminhtml');
+        )->setArea('Adminhtml');
     }
 
     public function testRender()

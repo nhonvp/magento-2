@@ -19,7 +19,7 @@ use Magento\TestFramework\TestCase\AbstractBackendController;
 /**
  * Test mass subscribe action on customers grid.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  */
 class MassUnsubscribeTest extends AbstractBackendController

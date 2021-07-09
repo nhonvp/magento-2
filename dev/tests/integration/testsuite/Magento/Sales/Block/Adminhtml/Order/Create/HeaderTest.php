@@ -8,7 +8,7 @@ namespace Magento\Sales\Block\Adminhtml\Order\Create;
 use Magento\TestFramework\Helper\Bootstrap;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class HeaderTest extends \PHPUnit\Framework\TestCase
 {

@@ -6,9 +6,9 @@
 return [
     'scopes' => [
         'websites' => [
-            'adminhtml' => [
+            'Adminhtml' => [
                 'website_id' => '0',
-                'code' => 'adminhtml',
+                'code' => 'Adminhtml',
                 'name' => 'Admin',
                 'sort_order' => '0',
                 'default_group_id' => '0',
@@ -58,9 +58,9 @@ return [
             ],
         ],
         'stores' => [
-            'adminhtml' => [
+            'Adminhtml' => [
                 'store_id' => '0',
-                'code' => 'adminhtml',
+                'code' => 'Adminhtml',
                 'website_id' => '0',
                 'group_id' => '0',
                 'name' => 'Admin24',

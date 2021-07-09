@@ -6,7 +6,7 @@
 namespace Magento\Authorization\Model\ResourceModel\Role\Grid;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class CollectionTest extends \PHPUnit\Framework\TestCase
 {

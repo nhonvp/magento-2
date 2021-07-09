@@ -21,7 +21,7 @@ use PHPUnit\Framework\TestCase;
  * Class to test Coupon codes grid
  *
  * @magentoDbIsolation enabled
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDataFixture Magento/SalesRule/_files/cart_rule_with_coupon_list.php
  * @see \Magento\SalesRule\Block\Adminhtml\Promo\Quote\Edit\Tab\Coupons\Grid
  */

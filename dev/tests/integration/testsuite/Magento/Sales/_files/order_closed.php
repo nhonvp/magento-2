@@ -61,7 +61,7 @@ $addressData = [
     AddressInterface::FIRSTNAME => 'firstname',
     AddressInterface::STREET => 'street',
     AddressInterface::CITY => 'Los Angeles',
-    CustomerInterface::EMAIL => 'adminhtml@example.com',
+    CustomerInterface::EMAIL => 'Adminhtml@example.com',
     AddressInterface::TELEPHONE => '11111111',
     AddressInterface::COUNTRY_ID => 'US',
 ];

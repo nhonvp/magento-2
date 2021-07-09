@@ -192,7 +192,7 @@ class InstallStoreConfigurationCommand extends AbstractSetupCommand
                 StoreConfigurationDataMapper::KEY_IS_SECURE_ADMIN,
                 null,
                 InputOption::VALUE_REQUIRED,
-                'Run adminhtml interface with SSL. '
+                'Run Adminhtml interface with SSL. '
                 . 'Deprecated, use config:set with path web/secure/use_in_adminhtml'
             ),
             new InputOption(
@@ -200,7 +200,7 @@ class InstallStoreConfigurationCommand extends AbstractSetupCommand
                 null,
                 InputOption::VALUE_REQUIRED,
                 'Whether to use a "security key" feature in Magento Admin URLs and forms. '
-                . 'Deprecated, use config:set with path adminhtml/security/use_form_key'
+                . 'Deprecated, use config:set with path Adminhtml/security/use_form_key'
             ),
         ];
     }

@@ -23,7 +23,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @see \Magento\Sales\Block\Adminhtml\Order\View
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  */
 class ViewTest extends TestCase

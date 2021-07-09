@@ -8,7 +8,7 @@ namespace Magento\Captcha\Observer;
 /**
  * Test captcha observer behavior
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class CaseCheckUserForgotPasswordBackendWhenCaptchaFailedTest extends \Magento\TestFramework\TestCase\AbstractController
 {
@@ -16,16 +16,16 @@ class CaseCheckUserForgotPasswordBackendWhenCaptchaFailedTest extends \Magento\T
      * @magentoDbIsolation enabled
      * @magentoAppIsolation enabled
      * @magentoDataFixture Magento/Captcha/_files/dummy_user.php
-     * @magentoAdminConfigFixture adminhtml/captcha/enable 1
-     * @magentoAdminConfigFixture adminhtml/captcha/forms backend_forgotpassword
-     * @magentoAdminConfigFixture adminhtml/captcha/mode always
+     * @magentoAdminConfigFixture Adminhtml/captcha/enable 1
+     * @magentoAdminConfigFixture Adminhtml/captcha/forms backend_forgotpassword
+     * @magentoAdminConfigFixture Adminhtml/captcha/mode always
      */
     public function testCheckUserForgotPasswordBackendWhenCaptchaFailed()
     {
         $this->getRequest()->setPostValue(
             ['email' => 'dummy@dummy.com', 'captcha' => ['backend_forgotpassword' => 'dummy']]
         );
-        $this->dispatch('backend/adminhtml/auth/forgotpassword');
-        $this->assertRedirect($this->stringContains('backend/adminhtml/auth/forgotpassword'));
+        $this->dispatch('backend/Adminhtml/auth/forgotpassword');
+        $this->assertRedirect($this->stringContains('backend/Adminhtml/auth/forgotpassword'));
     }
 }

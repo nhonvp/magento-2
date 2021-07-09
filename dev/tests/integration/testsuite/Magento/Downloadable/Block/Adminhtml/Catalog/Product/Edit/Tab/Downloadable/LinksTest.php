@@ -15,7 +15,7 @@ namespace Magento\Downloadable\Block\Adminhtml\Catalog\Product\Edit\Tab\Download
 class LinksTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      */
     public function testGetUploadButtonsHtml()
     {
@@ -53,7 +53,7 @@ class LinksTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoAppIsolation enabled
      */
     public function testGetLinkData()
@@ -81,7 +81,7 @@ class LinksTest extends \PHPUnit\Framework\TestCase
      * @magentoAppIsolation enabled
      * @dataProvider productLinksTitleDataProvider
      *
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @param string $productType
      * @param string $linksTitle
      * @param string $expectedResult

@@ -87,7 +87,7 @@ abstract class AbstractController extends TestCase
     }
 
     /**
-     * Ensure that there were no error messages displayed on the adminhtml panel
+     * Ensure that there were no error messages displayed on the Adminhtml panel
      */
     protected function assertPostConditions(): void
     {

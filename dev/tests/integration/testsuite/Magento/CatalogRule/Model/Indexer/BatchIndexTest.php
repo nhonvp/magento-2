@@ -10,7 +10,7 @@ use Magento\TestFramework\Helper\Bootstrap;
 
 /**
  * @magentoAppIsolation enabled
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDataFixture Magento/CatalogRule/_files/two_rules.php
  * @magentoDataFixture Magento/Catalog/_files/product_simple.php
  */
@@ -63,7 +63,7 @@ class BatchIndexTest extends \PHPUnit\Framework\TestCase
      * @magentoDbIsolation disabled
      * @dataProvider dataProvider
      * @magentoAppIsolation enabled
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDataFixtureBeforeTransaction Magento/CatalogRule/_files/two_rules.php
      * @magentoDataFixture Magento/Catalog/_files/product_simple.php
      */

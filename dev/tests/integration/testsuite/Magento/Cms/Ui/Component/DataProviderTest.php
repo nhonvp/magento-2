@@ -19,7 +19,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Checks Cms UI component data provider behaviour
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  */
 class DataProviderTest extends TestCase

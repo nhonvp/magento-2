@@ -9,7 +9,7 @@ use Magento\Downloadable\Api\DomainManagerInterface;
 use Magento\Framework\App\Filesystem\DirectoryList;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
 class DownloadableTest extends \PHPUnit\Framework\TestCase
@@ -80,7 +80,7 @@ class DownloadableTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDbIsolation enabled
      * @magentoAppIsolation enabled
      *

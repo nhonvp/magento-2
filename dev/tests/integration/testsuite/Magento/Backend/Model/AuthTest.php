@@ -11,7 +11,7 @@ use Magento\Framework\Exception\AuthenticationException;
 /**
  * Test class for \Magento\Backend\Model\Auth.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoAppIsolation enabled
  * @magentoDbIsolation enabled
  */
@@ -119,7 +119,7 @@ class AuthTest extends \PHPUnit\Framework\TestCase
 
     /**
      * Disabled form security in order to prevent exit from the app
-     * @magentoAdminConfigFixture adminhtml/security/session_lifetime 100
+     * @magentoAdminConfigFixture Adminhtml/security/session_lifetime 100
      */
     public function testIsLoggedIn()
     {

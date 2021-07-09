@@ -7,7 +7,7 @@ namespace Magento\UrlRewrite\Block\Cms\Page\Edit;
 
 /**
  * Test for \Magento\UrlRewrite\Block\Cms\Page\Edit\FormTest
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class FormTest extends \PHPUnit\Framework\TestCase
 {

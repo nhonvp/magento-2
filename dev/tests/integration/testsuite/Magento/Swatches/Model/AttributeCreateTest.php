@@ -16,7 +16,7 @@ use Magento\Eav\Api\Data\AttributeOptionInterfaceFactory;
 class AttributeCreateTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDbIsolation enabled
      */
     public function testSetScopeDefault()

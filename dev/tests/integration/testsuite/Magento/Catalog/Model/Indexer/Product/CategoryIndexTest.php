@@ -23,7 +23,7 @@ use Magento\TestFramework\Indexer\TestCase;
 /**
  * Checks category products indexing
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoAppIsolation enabled
  * @magentoDbIsolation disabled
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)

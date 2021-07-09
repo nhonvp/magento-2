@@ -13,7 +13,7 @@ use Magento\Catalog\Model\Product\Type\AbstractType;
 /**
  * Class checks dynamic bundle product save behavior
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class DynamicBundleProductTest extends AbstractBundleProductSaveTest
 {

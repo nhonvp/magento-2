@@ -21,7 +21,7 @@ class Action extends Column
             foreach ($dataSource['data']['items'] as & $item) {
                 $item[$this->getData('name')] = [
                     'edit' => [
-                        'href' => $url . 'adminhtml/helloworld/post/addNew/id/' . $item["subscription_id"],
+                        'href' => $url . 'Adminhtml/helloworld/post/addNew/id/' . $item["subscription_id"],
                         'label' => __('Edit')
                     ]
                 ];

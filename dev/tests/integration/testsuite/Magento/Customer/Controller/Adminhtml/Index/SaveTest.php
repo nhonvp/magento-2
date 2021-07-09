@@ -32,7 +32,7 @@ use PHPUnit\Framework\MockObject\MockObject;
 /**
  * Tests for save customer via backend/customer/index/save controller.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
 class SaveTest extends AbstractBackendController

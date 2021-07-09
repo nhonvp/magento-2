@@ -13,7 +13,7 @@ use Magento\TestFramework\TestCase\AbstractBackendController;
  * New condition html test
  *
  * Verify the request object contains the proper form object for condition
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class NewConditionHtmlTest extends AbstractBackendController
 {

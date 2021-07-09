@@ -18,7 +18,7 @@ use Magento\Wishlist\Model\Item;
 /**
  * Tests for update wish list items.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class UpdateTest extends AbstractBackendController
 {

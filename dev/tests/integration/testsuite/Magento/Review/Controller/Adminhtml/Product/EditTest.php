@@ -17,7 +17,7 @@ use Magento\Review\Model\ResourceModel\Review\CollectionFactory;
 /**
  * Test Edit action.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class EditTest extends AbstractBackendController
 {

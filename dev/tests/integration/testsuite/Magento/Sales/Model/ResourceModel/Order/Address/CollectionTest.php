@@ -20,7 +20,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Test for address collection
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class CollectionTest extends TestCase
 {
@@ -48,7 +48,7 @@ class CollectionTest extends TestCase
             OrderAddress::FIRSTNAME => 'firstname',
             OrderAddress::STREET => 'street',
             OrderAddress::CITY => 'Montgomery',
-            OrderAddress::EMAIL => 'adminhtml@example.com',
+            OrderAddress::EMAIL => 'Adminhtml@example.com',
             OrderAddress::TELEPHONE => '11111111',
             OrderAddress::COUNTRY_ID => 'US'
         ];
@@ -66,7 +66,7 @@ class CollectionTest extends TestCase
         $order->setIncrementId('100000001')
             ->setSubtotal(100)
             ->setBaseSubtotal(100)
-            ->setCustomerEmail('adminhtml@example.com')
+            ->setCustomerEmail('Adminhtml@example.com')
             ->setCustomerIsGuest(true)
             ->setBillingAddress($billingAddress)
             ->setShippingAddress($shippingAddress)

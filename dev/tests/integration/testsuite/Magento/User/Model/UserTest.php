@@ -15,7 +15,7 @@ use Magento\TestFramework\Helper\Bootstrap;
 use Magento\User\Model\User as UserModel;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
 class UserTest extends \PHPUnit\Framework\TestCase
@@ -102,9 +102,9 @@ class UserTest extends \PHPUnit\Framework\TestCase
     public function testLoadByUsername()
     {
         $this->_model->loadByUsername('non_existing_user');
-        $this->assertNull($this->_model->getId(), 'The adminhtml user has an unexpected ID');
+        $this->assertNull($this->_model->getId(), 'The Adminhtml user has an unexpected ID');
         $this->_model->loadByUsername(\Magento\TestFramework\Bootstrap::ADMIN_NAME);
-        $this->assertNotEmpty($this->_model->getId(), 'The adminhtml user should have been loaded');
+        $this->assertNotEmpty($this->_model->getId(), 'The Adminhtml user should have been loaded');
     }
 
     /**
@@ -221,8 +221,8 @@ class UserTest extends \PHPUnit\Framework\TestCase
 
     /**
      * @magentoAppIsolation enabled
-     * @magentoAdminConfigFixture adminhtml/captcha/enable 0
-     * @magentoAdminConfigFixture adminhtml/security/use_case_sensitive_login 1
+     * @magentoAdminConfigFixture Adminhtml/captcha/enable 0
+     * @magentoAdminConfigFixture Adminhtml/security/use_case_sensitive_login 1
      */
     public function testAuthenticate()
     {
@@ -237,8 +237,8 @@ class UserTest extends \PHPUnit\Framework\TestCase
 
     /**
      * @magentoAppIsolation enabled
-     * @magentoAdminConfigFixture adminhtml/captcha/enable 0
-     * @magentoConfigFixture current_store adminhtml/security/use_case_sensitive_login 0
+     * @magentoAdminConfigFixture Adminhtml/captcha/enable 0
+     * @magentoConfigFixture current_store Adminhtml/security/use_case_sensitive_login 0
      */
     public function testAuthenticateCaseInsensitive()
     {
@@ -285,7 +285,7 @@ class UserTest extends \PHPUnit\Framework\TestCase
 
     /**
      * @magentoDbIsolation enabled
-     * @magentoAdminConfigFixture adminhtml/captcha/enable 0
+     * @magentoAdminConfigFixture Adminhtml/captcha/enable 0
      */
     public function testLoginsAreLogged()
     {
@@ -489,7 +489,7 @@ class UserTest extends \PHPUnit\Framework\TestCase
     /**
      * @magentoDbIsolation enabled
      * @magentoAppIsolation enabled
-     * @magentoConfigFixture default/adminhtml/emails/password_reset_link_expiration_period 2
+     * @magentoConfigFixture default/Adminhtml/emails/password_reset_link_expiration_period 2
      */
     public function testIsResetPasswordLinkTokenExpired()
     {
@@ -516,7 +516,7 @@ class UserTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Here we test if adminhtml identity check executed successfully
+     * Here we test if Adminhtml identity check executed successfully
      *
      * @magentoDataFixture Magento/User/_files/user_with_role.php
      */

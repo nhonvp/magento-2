@@ -19,7 +19,7 @@ use Magento\TestFramework\TestCase\AbstractBackendController;
  * Base test cases for delete product custom option with type "field".
  * Option deleting via product controller action save.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  * @magentoDataFixture Magento/Catalog/_files/product_without_options.php
  */

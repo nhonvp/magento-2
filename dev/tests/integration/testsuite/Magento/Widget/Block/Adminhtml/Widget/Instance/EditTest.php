@@ -6,7 +6,7 @@
 namespace Magento\Widget\Block\Adminhtml\Widget\Instance;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class EditTest extends \PHPUnit\Framework\TestCase
 {

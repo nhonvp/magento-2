@@ -6,7 +6,7 @@
 namespace Magento\Paypal\Controller\Adminhtml\Paypal\Reports;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class FetchTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {

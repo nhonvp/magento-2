@@ -6,7 +6,7 @@
 namespace Magento\Widget\Controller\Adminhtml;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class WidgetTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {
@@ -19,7 +19,7 @@ class WidgetTest extends \Magento\TestFramework\TestCase\AbstractBackendControll
             'widget',
             '{"widget_type":"Magento\\\\Cms\\\\Block\\\\Widget\\\\Page\\\\Link","values":{}}'
         );
-        $this->dispatch('backend/adminhtml/widget/loadOptions');
+        $this->dispatch('backend/Adminhtml/widget/loadOptions');
         $output = $this->getResponse()->getBody();
         //searching for label with text "CMS Page"
         $this->assertStringContainsString(

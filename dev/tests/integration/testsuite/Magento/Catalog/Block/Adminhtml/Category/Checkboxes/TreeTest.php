@@ -6,7 +6,7 @@
 namespace Magento\Catalog\Block\Adminhtml\Category\Checkboxes;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  * @magentoAppIsolation enabled
  */

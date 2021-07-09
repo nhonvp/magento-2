@@ -31,7 +31,7 @@ use Psr\Log\LoggerInterface;
  * Testing for saving an existing or creating a new attribute set.
  *
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoAppIsolation enabled
  */
 class SaveTest extends AbstractBackendController

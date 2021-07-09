@@ -6,7 +6,7 @@
 namespace Magento\User\Block\User\Edit\Tab;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class MainTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {
@@ -27,7 +27,7 @@ class MainTest extends \Magento\TestFramework\TestCase\AbstractBackendController
         $objectManager = \Magento\TestFramework\Helper\Bootstrap::getObjectManager();
 
         $this->_block = $objectManager->create(\Magento\User\Block\User\Edit\Tab\Main::class);
-        $this->_block->setArea('adminhtml');
+        $this->_block->setArea('Adminhtml');
         $this->_user = $objectManager->create(\Magento\User\Model\User::class);
 
         $objectManager->get(\Magento\Framework\Registry::class)->register('permissions_user', $this->_user);
@@ -58,7 +58,7 @@ class MainTest extends \Magento\TestFramework\TestCase\AbstractBackendController
         $this->assertEquals(
             1,
             \Magento\TestFramework\Helper\Xpath::getElementsCountForXpath(
-                '//input[contains(@class,"validate-adminhtml-password") and @type="password" and @name="password"]',
+                '//input[contains(@class,"validate-Adminhtml-password") and @type="password" and @name="password"]',
                 $actualHtml
             )
         );
@@ -86,7 +86,7 @@ class MainTest extends \Magento\TestFramework\TestCase\AbstractBackendController
         $this->assertEquals(
             1,
             \Magento\TestFramework\Helper\Xpath::getElementsCountForXpath(
-                '//input[contains(@class,"validate-adminhtml-password") and contains(@class,"required-entry") and  '
+                '//input[contains(@class,"validate-Adminhtml-password") and contains(@class,"required-entry") and  '
                 . '@type="password" and @name="password"]',
                 $actualHtml
             )

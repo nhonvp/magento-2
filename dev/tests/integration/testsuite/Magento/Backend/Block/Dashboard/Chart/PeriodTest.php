@@ -18,7 +18,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Checks chart periods on Magento dashboard
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class PeriodTest extends TestCase
 {

@@ -9,7 +9,7 @@ namespace Magento\Backend\Model\Search;
 use Magento\TestFramework\Helper\Bootstrap;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDataFixture Magento/Customer/_files/three_customers.php
  * @magentoDataFixture Magento/Customer/_files/customer_address.php
  */

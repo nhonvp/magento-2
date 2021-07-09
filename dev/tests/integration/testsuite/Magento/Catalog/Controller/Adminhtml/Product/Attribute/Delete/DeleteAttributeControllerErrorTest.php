@@ -16,7 +16,7 @@ use Magento\Framework\Message\MessageInterface;
 /**
  * Error during delete attribute using catalog/product_attribute/delete controller action.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  */
 class DeleteAttributeControllerErrorTest extends AbstractDeleteAttributeControllerTest

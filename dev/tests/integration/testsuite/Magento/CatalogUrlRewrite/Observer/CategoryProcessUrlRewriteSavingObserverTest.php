@@ -19,7 +19,7 @@ use Magento\CatalogUrlRewrite\Model\CategoryUrlRewriteGenerator;
  * - has children
  * - generate current
  * - has rewrites history
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class CategoryProcessUrlRewriteSavingObserverTest extends \PHPUnit\Framework\TestCase
 {

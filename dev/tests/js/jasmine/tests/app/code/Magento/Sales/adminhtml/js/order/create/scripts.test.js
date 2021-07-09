@@ -101,12 +101,12 @@ define([
         $(formEl).validate({});
         $(formEl).find(':radio[value="payment1"]').testPaymentMethodA({
             code: 'payment1',
-            orderSaveUrl: '/adminhtml/sales/order/create/payment_method/payment1',
+            orderSaveUrl: '/Adminhtml/sales/order/create/payment_method/payment1',
             orderFormSelector: '#' + formEl.id
         });
         $(formEl).find(':radio[value="payment2"]').testPaymentMethodB({
             code: 'payment2',
-            orderSaveUrl: '/adminhtml/sales/order/create/payment_method/payment2',
+            orderSaveUrl: '/Adminhtml/sales/order/create/payment_method/payment2',
             orderFormSelector: '#' + formEl.id
         });
         $(formEl).off('realOrder').on('realOrder', function () {

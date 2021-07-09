@@ -7,7 +7,7 @@ namespace Magento\Catalog\Model\Product\Attribute\Backend;
 
 /**
  * Test class for \Magento\Catalog\Model\Product\Attribute\Backend\Sku.
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class SkuTest extends \PHPUnit\Framework\TestCase
 {
@@ -39,7 +39,7 @@ class SkuTest extends \PHPUnit\Framework\TestCase
 
     /**
      * @magentoDataFixture Magento/Catalog/_files/product_simple.php
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDbIsolation enabled
      */
     public function testGenerateUniqueLongSku()

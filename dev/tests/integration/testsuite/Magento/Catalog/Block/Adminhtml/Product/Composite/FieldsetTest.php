@@ -21,7 +21,7 @@ use PHPUnit\Framework\TestCase;
  * Test Fieldset block in composite product configuration layout
  *
  * @see \Magento\Catalog\Block\Adminhtml\Product\Composite\Fieldset
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class FieldsetTest extends TestCase
 {

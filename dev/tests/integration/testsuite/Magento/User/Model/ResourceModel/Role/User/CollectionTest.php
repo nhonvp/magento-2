@@ -7,7 +7,7 @@ namespace Magento\User\Model\ResourceModel\Role\User;
 
 /**
  * Role user collection test
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class CollectionTest extends \PHPUnit\Framework\TestCase
 {

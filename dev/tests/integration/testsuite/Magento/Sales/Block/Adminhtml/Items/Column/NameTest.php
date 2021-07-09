@@ -8,7 +8,7 @@ declare(strict_types=1);
 namespace Magento\Sales\Block\Adminhtml\Items\Column;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class NameTest extends \PHPUnit\Framework\TestCase
 {

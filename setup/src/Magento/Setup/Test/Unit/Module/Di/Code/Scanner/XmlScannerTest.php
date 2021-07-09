@@ -36,7 +36,7 @@ class XmlScannerTest extends TestCase
         );
         $testDir = __DIR__ . '/../../' . '/_files';
         $this->_testFiles = [
-            $testDir . '/app/code/Magento/SomeModule/etc/adminhtml/system.xml',
+            $testDir . '/app/code/Magento/SomeModule/etc/Adminhtml/system.xml',
             $testDir . '/app/code/Magento/SomeModule/etc/di.xml',
             $testDir . '/app/code/Magento/SomeModule/view/frontend/default.xml',
         ];

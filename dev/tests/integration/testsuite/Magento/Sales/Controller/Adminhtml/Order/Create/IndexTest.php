@@ -18,7 +18,7 @@ use Magento\TestFramework\TestCase\AbstractBackendController;
  *
  * @see \Magento\Sales\Controller\Adminhtml\Order\Create\Index
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  */
 class IndexTest extends AbstractBackendController

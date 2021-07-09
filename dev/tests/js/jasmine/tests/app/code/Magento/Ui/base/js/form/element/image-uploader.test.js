@@ -8,7 +8,7 @@
 define([
     'jquery',
     'Magento_Ui/js/form/element/image-uploader',
-    'mage/adminhtml/browser'
+    'mage/Adminhtml/browser'
 ], function ($, ImageUploader, browser) {
     'use strict';
 

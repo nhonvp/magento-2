@@ -6,7 +6,7 @@
 namespace Magento\Backend\Block\Widget;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class ContainerTest extends \PHPUnit\Framework\TestCase
 {

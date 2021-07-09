@@ -12,7 +12,7 @@ use Magento\Framework\FlagManager;
 use Magento\TestFramework\Helper\Bootstrap;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class ReportUrlProviderTest extends \PHPUnit\Framework\TestCase
 {

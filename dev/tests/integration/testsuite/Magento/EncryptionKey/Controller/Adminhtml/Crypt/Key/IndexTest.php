@@ -12,7 +12,7 @@ class IndexTest extends \Magento\TestFramework\TestCase\AbstractBackendControlle
      */
     public function testIndexAction()
     {
-        $this->dispatch('backend/adminhtml/crypt_key/index');
+        $this->dispatch('backend/Adminhtml/crypt_key/index');
 
         $body = $this->getResponse()->getBody();
         $this->assertStringContainsString('<h1 class="page-title">Encryption Key</h1>', $body);

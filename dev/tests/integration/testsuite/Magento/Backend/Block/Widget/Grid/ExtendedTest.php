@@ -6,7 +6,7 @@
 namespace Magento\Backend\Block\Widget\Grid;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class ExtendedTest extends \PHPUnit\Framework\TestCase
 {

@@ -17,7 +17,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Tests for update quote items plugin
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class UpdateQuoteItemsTest extends TestCase
 {

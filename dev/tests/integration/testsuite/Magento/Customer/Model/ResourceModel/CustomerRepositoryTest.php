@@ -472,7 +472,7 @@ class CustomerRepositoryTest extends \PHPUnit\Framework\TestCase
     /**
      * Test delete
      *
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDataFixture Magento/Customer/_files/customer.php
      * @magentoAppIsolation enabled
      */
@@ -490,7 +490,7 @@ class CustomerRepositoryTest extends \PHPUnit\Framework\TestCase
     /**
      * Test delete by id
      *
-     * @magentoAppArea adminhtml
+     * @magentoAppArea Adminhtml
      * @magentoDataFixture Magento/Customer/_files/customer.php
      * @magentoAppIsolation enabled
      */

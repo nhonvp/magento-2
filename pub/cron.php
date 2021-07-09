@@ -25,7 +25,7 @@ try {
     }
     $opt['standaloneProcessStarted'] = '0';
     $params = $_SERVER;
-    $params[StoreManager::PARAM_RUN_CODE] = 'adminhtml';
+    $params[StoreManager::PARAM_RUN_CODE] = 'Adminhtml';
     $params[Store::CUSTOM_ENTRY_POINT_PARAM] = true;
     $bootstrap = \Magento\Framework\App\Bootstrap::create(BP, $params);
     /** @var \Magento\Framework\App\Cron $app */

@@ -88,7 +88,7 @@ class SessionTest extends TestCase
 
         $this->assertArrayHasKey(12, $options);
         $this->assertInstanceOf(TextConfigOption::class, $options[12]);
-        $this->assertEquals('session-save-redis-break-after-adminhtml', $options[12]->getName());
+        $this->assertEquals('session-save-redis-break-after-Adminhtml', $options[12]->getName());
 
         $this->assertArrayHasKey(13, $options);
         $this->assertInstanceOf(TextConfigOption::class, $options[13]);
@@ -291,7 +291,7 @@ class SessionTest extends TestCase
             ['session-save-redis-log-level', 'log_level', '2'],
             ['session-save-redis-max-concurrency', 'max_concurrency', '3'],
             ['session-save-redis-break-after-frontend', 'break_after_frontend', '10'],
-            ['session-save-redis-break-after-adminhtml', 'break_after_adminhtml', '20'],
+            ['session-save-redis-break-after-Adminhtml', 'break_after_adminhtml', '20'],
             ['session-save-redis-first-lifetime', 'first_lifetime', '300'],
             ['session-save-redis-bot-first-lifetime', 'bot_first_lifetime', '30'],
             ['session-save-redis-bot-lifetime', 'bot_lifetime', '3600'],

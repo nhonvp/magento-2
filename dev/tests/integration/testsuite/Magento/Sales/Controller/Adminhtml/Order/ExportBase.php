@@ -13,7 +13,7 @@ use Magento\Sales\Api\Data\OrderInterfaceFactory;
 use Magento\TestFramework\TestCase\AbstractBackendController;
 
 /**
- * Tests for order/invoice/shipment/credit memo export via adminhtml grids.
+ * Tests for order/invoice/shipment/credit memo export via Adminhtml grids.
  *
  * @magentoDbIsolation disabled
  */

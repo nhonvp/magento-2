@@ -8,7 +8,7 @@ namespace Magento\Backend\Controller\Adminhtml\System;
 use Magento\TestFramework\Bootstrap;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class AccountTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {
@@ -50,7 +50,7 @@ class AccountTest extends \Magento\TestFramework\TestCase\AbstractBackendControl
             \Magento\Backend\Block\System\Account\Edit\Form::IDENTITY_VERIFICATION_PASSWORD_FIELD,
             Bootstrap::ADMIN_PASSWORD
         );
-        $this->dispatch('backend/adminhtml/system_account/save');
+        $this->dispatch('backend/Adminhtml/system_account/save');
 
         /** @var $user \Magento\User\Model\User */
         $user = \Magento\TestFramework\Helper\Bootstrap::getObjectManager()->create(

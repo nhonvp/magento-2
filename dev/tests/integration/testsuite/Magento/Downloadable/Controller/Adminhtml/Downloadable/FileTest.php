@@ -11,7 +11,7 @@ use Magento\Framework\Serialize\Serializer\Json;
 /**
  * Magento\Downloadable\Controller\Adminhtml\Downloadable\File
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class FileTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {
@@ -61,7 +61,7 @@ class FileTest extends \Magento\TestFramework\TestCase\AbstractBackendController
         ];
 
         $this->getRequest()->setMethod('POST');
-        $this->dispatch('backend/adminhtml/downloadable_file/upload/type/samples');
+        $this->dispatch('backend/Adminhtml/downloadable_file/upload/type/samples');
         $body = $this->getResponse()->getBody();
         $result = $this->jsonSerializer->unserialize($body);
         $this->assertEquals(0, $result['error']);
@@ -91,7 +91,7 @@ class FileTest extends \Magento\TestFramework\TestCase\AbstractBackendController
         ];
 
         $this->getRequest()->setMethod('POST');
-        $this->dispatch('backend/adminhtml/downloadable_file/upload/type/samples');
+        $this->dispatch('backend/Adminhtml/downloadable_file/upload/type/samples');
         $body = $this->getResponse()->getBody();
         $result = $this->jsonSerializer->unserialize($body);
 
@@ -125,7 +125,7 @@ class FileTest extends \Magento\TestFramework\TestCase\AbstractBackendController
         $this->getRequest()->setPostValue($postData);
         $this->getRequest()->setMethod('POST');
 
-        $this->dispatch('backend/adminhtml/downloadable_file/upload');
+        $this->dispatch('backend/Adminhtml/downloadable_file/upload');
 
         $body = $this->getResponse()->getBody();
         $result = $this->jsonSerializer->unserialize($body);

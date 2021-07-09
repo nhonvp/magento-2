@@ -9,7 +9,7 @@ namespace Magento\Tax\Controller\Adminhtml;
 use Magento\Framework\App\Request\Http as HttpRequest;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class RateTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {

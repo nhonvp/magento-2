@@ -22,7 +22,7 @@ class FixtureModel
     /**
      * Area code
      */
-    const AREA_CODE = 'adminhtml';
+    const AREA_CODE = 'Adminhtml';
 
     /**
      * Fixtures file name pattern

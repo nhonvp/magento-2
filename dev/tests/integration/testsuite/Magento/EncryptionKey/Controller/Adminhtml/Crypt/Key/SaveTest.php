@@ -21,7 +21,7 @@ class SaveTest extends \Magento\TestFramework\TestCase\AbstractBackendController
         $request
             ->setPostValue('generate_random', $ifGenerateRandom)
             ->setPostValue('crypt_key', $encryptionKey);
-        $this->dispatch('backend/adminhtml/crypt_key/save');
+        $this->dispatch('backend/Adminhtml/crypt_key/save');
         $this->assertSessionMessages(
             $this->containsEqual('Please enter an encryption key.'),
             \Magento\Framework\Message\MessageInterface::TYPE_ERROR
@@ -45,7 +45,7 @@ class SaveTest extends \Magento\TestFramework\TestCase\AbstractBackendController
         $request
             ->setPostValue('generate_random', $ifGenerateRandom)
             ->setPostValue('crypt_key', $encryptionKey);
-        $this->dispatch('backend/adminhtml/crypt_key/save');
+        $this->dispatch('backend/Adminhtml/crypt_key/save');
 
         $this->assertRedirect();
         $this->assertSessionMessages(
@@ -68,7 +68,7 @@ class SaveTest extends \Magento\TestFramework\TestCase\AbstractBackendController
             'crypt_key' => $encryptionKey,
         ];
         $this->getRequest()->setPostValue($params);
-        $this->dispatch('backend/adminhtml/crypt_key/save');
+        $this->dispatch('backend/Adminhtml/crypt_key/save');
 
         $this->assertRedirect();
         $this->assertSessionMessages(
@@ -94,7 +94,7 @@ class SaveTest extends \Magento\TestFramework\TestCase\AbstractBackendController
         $request
             ->setPostValue('generate_random', $ifGenerateRandom)
             ->setPostValue('crypt_key', $encryptionKey);
-        $this->dispatch('backend/adminhtml/crypt_key/save');
+        $this->dispatch('backend/Adminhtml/crypt_key/save');
 
         $this->assertRedirect();
         $this->assertSessionMessages(

@@ -8,9 +8,9 @@ $designChanges = [
     ['store' => 'default', 'design' => 'default_yesterday_design', 'date' => '-1 day'],
     ['store' => 'default', 'design' => 'default_today_design', 'date' => 'now'],
     ['store' => 'default', 'design' => 'default_tomorrow_design', 'date' => '+1 day'],
-    ['store' => 'adminhtml', 'design' => 'admin_yesterday_design', 'date' => '-1 day'],
-    ['store' => 'adminhtml', 'design' => 'admin_today_design', 'date' => 'now'],
-    ['store' => 'adminhtml', 'design' => 'admin_tomorrow_design', 'date' => '+1 day'],
+    ['store' => 'Adminhtml', 'design' => 'admin_yesterday_design', 'date' => '-1 day'],
+    ['store' => 'Adminhtml', 'design' => 'admin_today_design', 'date' => 'now'],
+    ['store' => 'Adminhtml', 'design' => 'admin_tomorrow_design', 'date' => '+1 day'],
 ];
 foreach ($designChanges as $designChangeData) {
     $storeId = \Magento\TestFramework\Helper\Bootstrap::getObjectManager()->get(

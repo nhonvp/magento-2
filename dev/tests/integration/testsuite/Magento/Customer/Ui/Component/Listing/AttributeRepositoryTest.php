@@ -13,7 +13,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Test for \Magento\Customer\Ui\Component\Listing\AttributeRepository.
  *
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class AttributeRepositoryTest extends TestCase
 {

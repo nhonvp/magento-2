@@ -6,7 +6,7 @@
 namespace Magento\Paypal\Controller\Adminhtml\Billing\Agreement;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class DeleteTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {

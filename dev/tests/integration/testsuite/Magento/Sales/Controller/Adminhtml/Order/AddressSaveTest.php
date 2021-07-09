@@ -21,7 +21,7 @@ use Magento\TestFramework\TestCase\AbstractBackendController;
  * @see \Magento\Sales\Controller\Adminhtml\Order\AddressSave
  *
  * @magentoDbIsolation disabled
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  */
 class AddressSaveTest extends AbstractBackendController
 {

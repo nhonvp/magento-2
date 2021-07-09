@@ -9,7 +9,7 @@ use Magento\Framework\Exception\LocalizedException;
 use Magento\Framework\App\Request\Http as HttpRequest;
 
 /**
- * @magentoAppArea adminhtml
+ * @magentoAppArea Adminhtml
  * @magentoDbIsolation enabled
  *
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
@@ -265,7 +265,7 @@ class AttributeTest extends \Magento\TestFramework\TestCase\AbstractBackendContr
     public function testLargeOptionsDataSet()
     {
         $maxInputVars = ini_get('max_input_vars');
-        // Each option is at least 4 variables array (order, adminhtml value, first store view value, delete flag).
+        // Each option is at least 4 variables array (order, Adminhtml value, first store view value, delete flag).
         // Set options count to exceed max_input_vars by 100 options (400 variables).
         $optionsCount = floor($maxInputVars / 4) + 100;
         $attributeData = $this->getLargeOptionsSetAttributeData();
@@ -328,7 +328,7 @@ class AttributeTest extends \Magento\TestFramework\TestCase\AbstractBackendContr
      */
     protected function _translate($string)
     {
-        // emulate adminhtml store and design
+        // emulate Adminhtml store and design
         \Magento\TestFramework\Helper\Bootstrap::getObjectManager()->get(
             \Magento\Framework\View\DesignInterface::class
         )->setDesignTheme(
