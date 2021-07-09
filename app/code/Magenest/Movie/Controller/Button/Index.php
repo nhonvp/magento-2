@@ -8,7 +8,6 @@ class Index extends \Magento\Framework\App\Action\Action
     {
         $this->_view->loadLayout();
         $this->_view->renderLayout();
-
     }
 }
 ?>

@@ -23,6 +23,5 @@ class Showdata extends Action
     {
         $resultPage = $this->resultPageFactory->create();
         return $resultPage;
-
     }
 }
